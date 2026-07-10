@@ -3,46 +3,556 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Hammed Babatunde Buari | AI Evaluation Specialist</title>
-  <meta name="description" content="AI Evaluation Specialist focused on LLM response review, data quality, UX review, healthcare operations evaluation, and structured human feedback." />
+
+  <meta name="description" content="Portfolio of Hammed Babatunde Buari — AI Evaluation Specialist focused on LLM response review, data quality, UX review, healthcare operations evaluation, and structured human feedback." />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(248, 250, 252, 0.92);
+      border-bottom: 1px solid #e5e7eb;
+      backdrop-filter: blur(14px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.4rem;
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid #dbeafe;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1.4rem;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.06em;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 1.2rem;
+      color: #4b5563;
+      margin-bottom: 2rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.9rem 1.25rem;
+      border-radius: 12px;
+      font-weight: 800;
+      border: 1px solid #d1d5db;
+    }
+
+    .btn-primary {
+      background: #111827;
+      color: white;
+      border-color: #111827;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #111827;
+    }
+
+    .metrics {
+      margin-top: 3.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .metric {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 1.2rem;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.6rem;
+      color: #2563eb;
+    }
+
+    .metric span {
+      color: #6b7280;
+      font-size: 0.92rem;
+    }
+
+    section {
+      padding: 4.5rem 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 2rem;
+    }
+
+    .kicker {
+      color: #2563eb;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      margin-bottom: 1rem;
+    }
+
+    .muted {
+      color: #4b5563;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      padding: 1.4rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.65rem;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: #4b5563;
+      font-size: 0.98rem;
+    }
+
+    .dark {
+      background: #111827;
+      color: white;
+      border-radius: 32px;
+      padding: 3rem;
+    }
+
+    .dark .muted,
+    .dark .card p {
+      color: #d1d5db;
+    }
+
+    .dark .card {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .timeline-item {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 1.3rem;
+    }
+
+    .timeline-item span {
+      color: #2563eb;
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .timeline-item h3 {
+      margin: 0.35rem 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .skills span {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+      color: #374151;
+    }
+
+    .contact-box {
+      background: #111827;
+      color: white;
+      border-radius: 28px;
+      padding: 3rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-links a {
+      background: white;
+      color: #111827;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      font-weight: 800;
+    }
+
+    footer {
+      padding: 2rem 0;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 850px) {
+      .nav-links {
+        display: none;
+      }
+
+      .metrics,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dark,
+      .contact-box {
+        padding: 2rem;
+      }
+
+      .hero {
+        padding-top: 4rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Hammed Babatunde Buari</h1>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#">Hammed Buari</a>
+      <div class="nav-links">
+        <a href="#expertise">Expertise</a>
+        <a href="#framework">Framework</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <h2>AI Evaluation Specialist | Data Quality Professional | UX Quality Reviewer</h2>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">AI Evaluation • LLM Review • Data Quality</div>
 
-  <p>
-    I evaluate AI-generated outputs, LLM responses, datasets, digital workflows, and user-facing products against structured quality rubrics.
-  </p>
+        <h1>Evaluating AI outputs for accuracy, reasoning, usability, and trust.</h1>
 
-  <h2>Core Focus</h2>
-  <ul>
-    <li>LLM Response Review</li>
-    <li>AI Agent Evaluation</li>
-    <li>Prompt Evaluation</li>
-    <li>Human Feedback / RLHF Support</li>
-    <li>Data Validation</li>
-    <li>Healthcare Operations Evaluation</li>
-    <li>UX Quality Review</li>
-  </ul>
+        <p>
+          I’m Hammed Babatunde Buari, an AI Evaluation Specialist and Data Quality Professional reviewing AI-generated responses, datasets, digital workflows, and user-facing products against structured quality rubrics.
+        </p>
 
-  <h2>Experience</h2>
-  <p>
-    Freelance AI Evaluation and Technical Assessment Contributor, Data Analyst / AI Trainer, Healthcare Data Validator, UX Designer, and Full Stack Software Development Trainee.
-  </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View Portfolio Projects</a>
+          <a class="btn btn-secondary" href="mailto:hammedbuarib@gmail.com">Contact Me</a>
+        </div>
 
-  <h2>Featured Projects</h2>
-  <ul>
-    <li>Enterprise AI Evaluation Projects</li>
-    <li>Healthcare Data Validation</li>
-    <li>E-commerce Mobile App Redesign</li>
-    <li>Gazetteer Application</li>
-    <li>Company Directory Dashboard</li>
-  </ul>
+        <div class="metrics">
+          <div class="metric">
+            <strong>AI</strong>
+            <span>LLM response and agent evaluation</span>
+          </div>
+          <div class="metric">
+            <strong>QA</strong>
+            <span>Rubric-based quality review</span>
+          </div>
+          <div class="metric">
+            <strong>Data</strong>
+            <span>Healthcare and operational datasets</span>
+          </div>
+          <div class="metric">
+            <strong>UX</strong>
+            <span>User-facing workflow review</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: hammedbuarib@gmail.com</p>
-  <p>GitHub: https://github.com/hammedbuari</p>
+    <section id="expertise">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Core Expertise</div>
+          <h2>Built for human-in-the-loop AI quality work.</h2>
+          <p class="muted">
+            My work combines AI evaluation, data validation, UX review, annotation, ranking, healthcare operations, and structured written feedback.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>LLM Response Review</h3>
+            <p>Assessing factual accuracy, reasoning quality, completeness, clarity, consistency, and instruction adherence.</p>
+          </div>
+          <div class="card">
+            <h3>AI Agent Evaluation</h3>
+            <p>Reviewing task completion, workflow quality, ambiguity, output reliability, and user-facing usefulness.</p>
+          </div>
+          <div class="card">
+            <h3>Data Quality Assurance</h3>
+            <p>Validating datasets for completeness, duplication, anomalies, consistency, reporting quality, and operational readiness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="framework">
+      <div class="container">
+        <div class="dark">
+          <div class="section-head">
+            <div class="kicker">Evaluation Framework</div>
+            <h2>How I review AI-generated work.</h2>
+            <p class="muted">
+              I evaluate outputs through practical dimensions that matter in real user-facing AI systems.
+            </p>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <h3>Accuracy</h3>
+              <p>Is the response factually reliable, complete, and free from unsupported claims?</p>
+            </div>
+            <div class="card">
+              <h3>Reasoning</h3>
+              <p>Does the answer follow a logical structure and avoid hidden assumptions or contradictions?</p>
+            </div>
+            <div class="card">
+              <h3>Instruction Fit</h3>
+              <p>Does the output follow the user’s request, constraints, format, and intended task?</p>
+            </div>
+            <div class="card">
+              <h3>Safety & Bias</h3>
+              <p>Does the output avoid harmful, biased, misleading, or overconfident content?</p>
+            </div>
+            <div class="card">
+              <h3>Usability</h3>
+              <p>Is the response clear, concise, well-structured, and useful for the end user?</p>
+            </div>
+            <div class="card">
+              <h3>Presentation Quality</h3>
+              <p>Does the output look polished, readable, correctly formatted, and professionally delivered?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Experience</div>
+          <h2>Relevant professional background.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>2025 — Present</span>
+            <h3>Freelance AI Evaluation & Technical Assessment Contributor</h3>
+            <p>Evaluate AI-generated responses, documents, technical content, and enterprise AI outputs against structured rubrics.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>Jul 2025 — Present</span>
+            <h3>Data Analyst / AI Trainer — FEMTECH</h3>
+            <p>Review datasets, perform annotation, classification, bias review, and operational quality checks.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>May 2023 — Jun 2025</span>
+            <h3>Data Validator / Data Analyst — WHO</h3>
+            <p>Validated healthcare and public health datasets for completeness, accuracy, consistency, and reporting readiness.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>2022 — 2023</span>
+            <h3>Full Stack Software Development Trainee</h3>
+            <p>Built web applications and dashboards while strengthening API integration, debugging, testing, and documentation skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Featured Projects</div>
+          <h2>Portfolio work aligned to AI evaluation roles.</h2>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Enterprise AI Evaluation Projects</h3>
+            <p>Reviewed generative AI outputs for factual accuracy, reasoning quality, instruction following, consistency, and clarity.</p>
+          </div>
+
+          <div class="card">
+            <h3>Healthcare Data Validation</h3>
+            <p>Validated healthcare datasets, flagged anomalies, checked missing values, and supported structured reporting.</p>
+          </div>
+
+          <div class="card">
+            <h3>E-commerce Mobile App Redesign</h3>
+            <p>Improved usability through structured UX evaluation, workflow review, and interface feedback.</p>
+          </div>
+
+          <div class="card">
+            <h3>Gazetteer Application</h3>
+            <p>API-driven location app demonstrating data handling, API integration, and technical problem-solving.</p>
+          </div>
+
+          <div class="card">
+            <h3>Company Directory Dashboard</h3>
+            <p>Dashboard supporting structured information access, operational reporting, and user-friendly navigation.</p>
+          </div>
+
+          <div class="card">
+            <h3>AI Evaluation Toolkit</h3>
+            <p>Planned repository for rubrics, response ranking examples, evaluator notes, and scoring templates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Skills</div>
+          <h2>Tools and quality review strengths.</h2>
+        </div>
+
+        <div class="skills">
+          <span>AI Evaluation</span>
+          <span>LLM Review</span>
+          <span>Prompt Evaluation</span>
+          <span>RLHF Support</span>
+          <span>Human Feedback</span>
+          <span>Response Ranking</span>
+          <span>Annotation</span>
+          <span>Data Validation</span>
+          <span>Bias Review</span>
+          <span>UX Review</span>
+          <span>Healthcare Operations</span>
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Tableau</span>
+          <span>Excel</span>
+          <span>Google Workspace</span>
+          <span>PowerPoint</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="kicker">Contact</div>
+          <h2>Available for AI Evaluation, Data Quality, UX Review, and Technical Assessment roles.</h2>
+          <p class="muted">
+            Best aligned to AI Evaluator, AI Trainer, LLM Response Evaluator, Data Quality Analyst, Human Feedback Reviewer, Healthcare Operations Evaluator, UX Quality Reviewer, and Technical Assessment Contributor roles.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:hammedbuarib@gmail.com">Email</a>
+            <a href="https://github.com/hammedbuari" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Hammed Babatunde Buari. AI Evaluation • Data Quality • UX Review.
+    </div>
+  </footer>
 </body>
 </html>
