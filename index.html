@@ -1422,6 +1422,509 @@
     padding: 1.5rem;
   }
 }
+/*****************************************
+ RELEASE 4.0
+ SESSION 3 — REAL EVALUATION CASE STUDY
+ Evidence in Practice
+*****************************************/
+  .case-study-section {
+  padding: 7.5rem 0;
+  background: #f8fafc;
+}
+
+.case-study-container {
+  max-width: 1120px;
+}
+
+.case-study-header {
+  max-width: 820px;
+  margin-bottom: 3.5rem;
+}
+
+.case-study-section .section-label {
+  margin-bottom: 1rem;
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.case-study-header h2 {
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.case-study-line {
+  width: 90px;
+  height: 4px;
+  margin-bottom: 2.5rem;
+  border-radius: 999px;
+  background: #2563eb;
+}
+
+.case-study-intro {
+  color: #475569;
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+.case-study-meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border: 1px solid #dbe4f0;
+  border-radius: 22px;
+  background: #ffffff;
+}
+
+.case-study-meta > div {
+  padding: 1.35rem;
+  border-right: 1px solid #e2e8f0;
+}
+
+.case-study-meta > div:last-child {
+  border-right: 0;
+}
+
+.case-study-meta span {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.case-study-meta strong {
+  color: #0f172a;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.case-study-workspace {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.case-study-panel,
+.case-study-evidence,
+.case-study-rubric,
+.case-study-verdict,
+.case-study-improved {
+  border: 1px solid #dbe4f0;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.055);
+}
+
+.case-study-panel {
+  padding: 2rem;
+}
+
+.case-study-panel-top,
+.case-study-evidence-header,
+.case-study-rubric-header,
+.case-study-improved-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.case-study-panel-label {
+  margin-bottom: 0.55rem;
+  color: #2563eb;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-study-panel h3,
+.case-study-evidence h3,
+.case-study-rubric h3,
+.case-study-improved h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.case-study-tag {
+  flex: 0 0 auto;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.case-study-tag-neutral {
+  border-color: #e2e8f0;
+  background: #f8fafc;
+  color: #475569;
+}
+
+.case-study-tag-success {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.case-study-prompt,
+.case-study-response-copy,
+.case-study-improved-copy {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+}
+
+.case-study-prompt {
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+}
+
+.case-study-response-copy {
+  border: 1px solid #fed7aa;
+  background: #fff7ed;
+}
+
+.case-study-improved-copy {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+}
+
+.case-study-prompt p,
+.case-study-response-copy p,
+.case-study-improved-copy p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.85;
+}
+
+.case-study-constraints,
+.case-study-improvement-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.case-study-constraints span,
+.case-study-improvement-notes span {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #dbe4f0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 0.74rem;
+  font-weight: 750;
+}
+
+.case-study-evidence,
+.case-study-rubric,
+.case-study-verdict,
+.case-study-improved {
+  margin-top: 1.5rem;
+  padding: 2rem;
+}
+
+.case-study-issue-count {
+  flex: 0 0 auto;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #fecaca;
+  border-radius: 999px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.case-study-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.evidence-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.evidence-severity {
+  padding: 0.38rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.evidence-severity-high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.evidence-severity-medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.evidence-item h4 {
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.evidence-item blockquote {
+  margin: 0 0 0.85rem;
+  padding-left: 1rem;
+  border-left: 3px solid #cbd5e1;
+  color: #475569;
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.evidence-item p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.case-study-rubric-header > p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+.case-study-score-list {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.case-study-score-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.case-study-score-row strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #0f172a;
+}
+
+.case-study-score-row div > span {
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.case-study-score {
+  min-width: 68px;
+  padding: 0.5rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.case-study-score-low {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.case-study-score-mid {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.case-study-verdict {
+  overflow: hidden;
+  padding: 0;
+}
+
+.case-study-verdict-summary {
+  padding: 2rem;
+  background: #0f172a;
+}
+
+.case-study-verdict-summary .case-study-panel-label {
+  color: #60a5fa;
+}
+
+.case-study-verdict-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.case-study-verdict-heading h3 {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-size: 1.65rem;
+}
+
+.case-study-verdict-heading p {
+  margin: 0;
+  max-width: 720px;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.case-study-overall-score {
+  display: grid;
+  min-width: 110px;
+  place-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(96, 165, 250, 0.34);
+  border-radius: 18px;
+  background: rgba(37, 99, 235, 0.14);
+}
+
+.case-study-overall-score span,
+.case-study-overall-score small {
+  color: #bfdbfe;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.case-study-overall-score strong {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.case-study-feedback {
+  padding: 2rem;
+}
+
+.case-study-feedback h4 {
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+.case-study-feedback p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.85;
+}
+
+.case-study-improvement-notes span {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+@media (max-width: 900px) {
+  .case-study-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study-meta > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .case-study-meta > div:nth-child(-n + 2) {
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .case-study-workspace,
+  .case-study-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .case-study-section {
+    padding: 5.5rem 0;
+  }
+
+  .case-study-header {
+    margin-bottom: 3rem;
+  }
+
+  .case-study-intro {
+    font-size: 1.05rem;
+  }
+
+  .case-study-panel-top,
+  .case-study-evidence-header,
+  .case-study-rubric-header,
+  .case-study-improved-header {
+    display: grid;
+  }
+
+  .case-study-verdict-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-overall-score {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-study-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-meta > div {
+    border-right: 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .case-study-meta > div:last-child {
+    border-bottom: 0;
+  }
+
+  .case-study-score-row {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .case-study-score {
+    width: fit-content;
+  }
+
+  .evidence-item {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-panel,
+  .case-study-evidence,
+  .case-study-rubric,
+  .case-study-improved,
+  .case-study-feedback,
+  .case-study-verdict-summary {
+    padding: 1.5rem;
+  }
+
+  .case-study-header h2 {
+    font-size: clamp(2.15rem, 12vw, 3rem);
+  }
+}
   
  </style>
 </head>
@@ -1891,6 +2394,331 @@
         The final decision should be understandable to another reviewer,
         repeatable under the same rubric, and useful for improving the system.
       </p>
+    </div>
+
+  </div>
+</section>
+    
+    <section class="case-study-section" id="evaluation-case-study">
+  <div class="container case-study-container">
+
+    <div class="case-study-header">
+      <p class="section-label">Evaluation Case Study</p>
+
+      <h2>Reviewing an AI answer from task to final verdict.</h2>
+
+      <div class="case-study-line"></div>
+
+      <p class="case-study-intro">
+        This demonstration shows how I assess an AI-generated response using
+        a structured rubric, traceable evidence, calibrated scoring, and
+        actionable written feedback.
+      </p>
+    </div>
+
+    <div class="case-study-meta">
+      <div>
+        <span>Case type</span>
+        <strong>Factual response evaluation</strong>
+      </div>
+
+      <div>
+        <span>Review method</span>
+        <strong>Rubric-led human assessment</strong>
+      </div>
+
+      <div>
+        <span>Decision standard</span>
+        <strong>Evidence over impression</strong>
+      </div>
+
+      <div>
+        <span>Status</span>
+        <strong>Demonstration case study</strong>
+      </div>
+    </div>
+
+    <div class="case-study-workspace">
+
+      <article class="case-study-panel case-study-task">
+        <div class="case-study-panel-top">
+          <div>
+            <p class="case-study-panel-label">01 · Evaluation Task</p>
+            <h3>Review the response against the user’s request</h3>
+          </div>
+
+          <span class="case-study-tag">Prompt</span>
+        </div>
+
+        <div class="case-study-prompt">
+          <p>
+            Explain why regular exercise is beneficial for adults. Provide
+            three clear benefits in fewer than 120 words and avoid making
+            unsupported medical claims.
+          </p>
+        </div>
+
+        <div class="case-study-constraints">
+          <span>Three benefits</span>
+          <span>Under 120 words</span>
+          <span>Adult audience</span>
+          <span>No unsupported claims</span>
+        </div>
+      </article>
+
+      <article class="case-study-panel case-study-response">
+        <div class="case-study-panel-top">
+          <div>
+            <p class="case-study-panel-label">02 · AI Response</p>
+            <h3>Output submitted for evaluation</h3>
+          </div>
+
+          <span class="case-study-tag case-study-tag-neutral">
+            Unreviewed
+          </span>
+        </div>
+
+        <div class="case-study-response-copy">
+          <p>
+            Regular exercise is essential because it prevents nearly every
+            major disease and guarantees a longer life. First, it completely
+            eliminates the risk of heart disease by strengthening the heart.
+            Second, exercise permanently cures anxiety and depression because
+            physical activity releases positive chemicals in the brain.
+            Third, exercising every day rapidly increases energy, improves
+            sleep, strengthens immunity, prevents ageing, and ensures that
+            adults remain healthy throughout life.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="case-study-evidence">
+      <div class="case-study-evidence-header">
+        <div>
+          <p class="case-study-panel-label">03 · Evidence Review</p>
+          <h3>Issues identified in the response</h3>
+        </div>
+
+        <span class="case-study-issue-count">4 material issues</span>
+      </div>
+
+      <div class="case-study-evidence-grid">
+
+        <article class="evidence-item">
+          <span class="evidence-severity evidence-severity-high">High</span>
+
+          <div>
+            <h4>Unsupported absolute claim</h4>
+
+            <blockquote>
+              “prevents nearly every major disease and guarantees a longer life”
+            </blockquote>
+
+            <p>
+              The wording overstates the evidence and presents health outcomes
+              as guaranteed rather than describing exercise as reducing risk.
+            </p>
+          </div>
+        </article>
+
+        <article class="evidence-item">
+          <span class="evidence-severity evidence-severity-high">High</span>
+
+          <div>
+            <h4>Medical misinformation</h4>
+
+            <blockquote>
+              “completely eliminates the risk of heart disease”
+            </blockquote>
+
+            <p>
+              Exercise can support cardiovascular health, but it does not
+              eliminate all risk of heart disease.
+            </p>
+          </div>
+        </article>
+
+        <article class="evidence-item">
+          <span class="evidence-severity evidence-severity-high">High</span>
+
+          <div>
+            <h4>Harmful certainty about mental health</h4>
+
+            <blockquote>
+              “permanently cures anxiety and depression”
+            </blockquote>
+
+            <p>
+              Physical activity may support mental wellbeing, but it should
+              not be presented as a permanent cure for clinical conditions.
+            </p>
+          </div>
+        </article>
+
+        <article class="evidence-item">
+          <span class="evidence-severity evidence-severity-medium">
+            Medium
+          </span>
+
+          <div>
+            <h4>Instruction and structure weakness</h4>
+
+            <blockquote>
+              “rapidly increases energy, improves sleep, strengthens immunity...”
+            </blockquote>
+
+            <p>
+              The response lists several additional benefits without clearly
+              organising the answer into the requested three distinct points.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="case-study-rubric">
+      <div class="case-study-rubric-header">
+        <div>
+          <p class="case-study-panel-label">04 · Rubric Assessment</p>
+          <h3>Dimension-by-dimension scoring</h3>
+        </div>
+
+        <p>Scale: 1 = poor · 5 = excellent</p>
+      </div>
+
+      <div class="case-study-score-list">
+
+        <div class="case-study-score-row">
+          <div>
+            <strong>Factual accuracy</strong>
+            <span>
+              Contains several unsupported and medically inaccurate claims.
+            </span>
+          </div>
+
+          <span class="case-study-score case-study-score-low">1 / 5</span>
+        </div>
+
+        <div class="case-study-score-row">
+          <div>
+            <strong>Reasoning quality</strong>
+            <span>
+              Benefits are asserted without appropriate qualification or
+              supporting reasoning.
+            </span>
+          </div>
+
+          <span class="case-study-score case-study-score-low">2 / 5</span>
+        </div>
+
+        <div class="case-study-score-row">
+          <div>
+            <strong>Instruction adherence</strong>
+            <span>
+              Meets the length requirement but does not present exactly three
+              clearly bounded benefits.
+            </span>
+          </div>
+
+          <span class="case-study-score case-study-score-mid">3 / 5</span>
+        </div>
+
+        <div class="case-study-score-row">
+          <div>
+            <strong>Safety and responsibility</strong>
+            <span>
+              Uses absolute medical language that could mislead users.
+            </span>
+          </div>
+
+          <span class="case-study-score case-study-score-low">1 / 5</span>
+        </div>
+
+        <div class="case-study-score-row">
+          <div>
+            <strong>Clarity and presentation</strong>
+            <span>
+              Readable overall, although the final benefit is overloaded.
+            </span>
+          </div>
+
+          <span class="case-study-score case-study-score-mid">3 / 5</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="case-study-verdict">
+      <div class="case-study-verdict-summary">
+        <p class="case-study-panel-label">05 · Final Verdict</p>
+
+        <div class="case-study-verdict-heading">
+          <div>
+            <h3>Major revision required</h3>
+
+            <p>
+              The answer is understandable but fails the factual reliability
+              and safety requirements because it presents health outcomes as
+              guaranteed facts.
+            </p>
+          </div>
+
+          <div class="case-study-overall-score">
+            <span>Overall</span>
+            <strong>2.0</strong>
+            <small>out of 5</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-feedback">
+        <h4>Actionable evaluator feedback</h4>
+
+        <p>
+          Replace absolute language such as “guarantees,” “completely
+          eliminates,” and “permanently cures” with appropriately qualified
+          statements. Present exactly three distinct benefits, explain each
+          clearly, and describe exercise as supporting health or reducing
+          risk rather than guaranteeing medical outcomes.
+        </p>
+      </div>
+    </div>
+
+    <div class="case-study-improved">
+      <div class="case-study-improved-header">
+        <div>
+          <p class="case-study-panel-label">06 · Improved Response</p>
+          <h3>A stronger answer after evaluation</h3>
+        </div>
+
+        <span class="case-study-tag case-study-tag-success">
+          Revised
+        </span>
+      </div>
+
+      <div class="case-study-improved-copy">
+        <p>
+          Regular exercise offers several important benefits for adults.
+          First, it supports cardiovascular health and can help reduce the
+          risk of conditions such as heart disease. Second, physical activity
+          can improve mood and reduce stress by supporting mental wellbeing.
+          Third, regular movement helps maintain muscle strength, mobility,
+          and healthy energy levels, which can make everyday activities
+          easier. The most suitable routine depends on a person’s health,
+          ability, and circumstances, so gradual and consistent activity is
+          generally more helpful than an extreme approach.
+        </p>
+      </div>
+
+      <div class="case-study-improvement-notes">
+        <span>Qualified health language</span>
+        <span>Three distinct benefits</span>
+        <span>Clear structure</span>
+        <span>Responsible framing</span>
+      </div>
     </div>
 
   </div>
