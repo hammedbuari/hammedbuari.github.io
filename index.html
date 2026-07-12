@@ -891,6 +891,97 @@
   }
 
 }
+  /*****************************************
+ RELEASE 3.0
+ SESSION 3 — EVALUATION PHILOSOPHY
+ Professional Principles
+*****************************************/
+  .philosophy-section {
+    padding: 7.5rem 0;
+    background: #f8fafc;
+}
+
+.philosophy-container {
+    max-width: 1120px;
+}
+
+.philosophy-header {
+    max-width: 760px;
+    margin-bottom: 4rem;
+}
+
+.philosophy-line {
+    width: 90px;
+    height: 4px;
+    margin: 1.5rem 0 2.5rem;
+    border-radius: 999px;
+    background: #2563eb;
+}
+
+.philosophy-intro {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #475569;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.principle-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+    padding: 2rem;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.principle-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, .08);
+}
+
+.principle-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.principle-card h3 {
+    margin-bottom: 1rem;
+    color: #0f172a;
+    font-size: 1.35rem;
+}
+
+.principle-card p {
+    color: #475569;
+    line-height: 1.8;
+}
+
+@media (max-width:850px) {
+
+    .philosophy-section {
+        padding: 5.5rem 0;
+    }
+
+    .philosophy-header {
+        margin-bottom: 3rem;
+    }
+
+    .philosophy-intro {
+        font-size: 1.05rem;
+    }
+
+}
  </style>
 </head>
 
@@ -1039,7 +1130,7 @@
   <div class="container purpose-container">
 
     <div class="purpose-header">
-      <p class="section-label">Release 3.0</p>
+      <p class="section-label">Evaluation Purpose</p>
       <h2>Why AI Evaluation Matters</h2>
       <div class="purpose-line"></div>
     </div>
@@ -1072,8 +1163,77 @@
     </blockquote>
 
   </div>
-</section>   
+</section> 
+    
+<section class="philosophy-section" id="philosophy">
+  <div class="container philosophy-container">
 
+    <div class="philosophy-header">
+      <p class="section-label">
+    Evaluation Philosophy
+</p>
+      <h2>My Evaluation Philosophy</h2>
+      <div class="philosophy-line"></div>
+
+      <p class="philosophy-intro">
+        Every evaluation is an opportunity to improve trust in AI systems.
+        My approach is guided by consistent principles that prioritise evidence,
+        fairness, and meaningful human judgement.
+      </p>
+    </div>
+
+    <div class="philosophy-grid">
+
+      <article class="principle-card">
+        <span class="principle-number">01</span>
+        <h3>Evidence before opinion</h3>
+        <p>
+          Every conclusion should be supported by observable evidence rather
+          than assumptions or personal preference.
+        </p>
+      </article>
+
+      <article class="principle-card">
+        <span class="principle-number">02</span>
+        <h3>Accuracy before confidence</h3>
+        <p>
+          Confident answers only create value when they are factually reliable
+          and appropriately supported.
+        </p>
+      </article>
+
+      <article class="principle-card">
+        <span class="principle-number">03</span>
+        <h3>Consistency builds trust</h3>
+        <p>
+          Applying structured evaluation standards ensures fairness,
+          repeatability, and dependable quality decisions.
+        </p>
+      </article>
+
+      <article class="principle-card">
+        <span class="principle-number">04</span>
+        <h3>Human judgement remains essential</h3>
+        <p>
+          AI generates outputs.
+          Human reviewers determine whether those outputs deserve trust.
+        </p>
+      </article>
+
+      <article class="principle-card">
+        <span class="principle-number">05</span>
+        <h3>Feedback improves systems</h3>
+        <p>
+          Constructive evaluation transforms individual responses into
+          stronger future AI performance.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+    
     <section id="expertise">
       <div class="container">
         <div class="section-head">
