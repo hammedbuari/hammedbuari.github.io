@@ -1926,7 +1926,157 @@
     font-size: clamp(2.15rem, 12vw, 3rem);
   }
 }
-  
+/*****************************************
+ RELEASE 4.1
+ SESSION 2 — TABLET POLISH
+ Responsive Refinement
+*****************************************/
+   @media (min-width: 851px) and (max-width: 1100px) {
+
+  /* Shared tablet rhythm */
+
+  .purpose-section,
+  .philosophy-section,
+  .evaluation-lab-section,
+  .walkthrough-section,
+  .case-study-section {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .purpose-container,
+  .philosophy-container,
+  .evaluation-lab-container,
+  .walkthrough-container,
+  .case-study-container {
+    width: min(1000px, 92%);
+  }
+
+  /* Purpose */
+
+  .purpose-header,
+  .purpose-content {
+    max-width: 860px;
+  }
+
+  .purpose-header h2 {
+    max-width: 760px;
+  }
+
+  .purpose-content p {
+    max-width: 900px;
+  }
+
+  /* Philosophy */
+
+  .philosophy-header {
+    max-width: 820px;
+    margin-bottom: 3.25rem;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.35rem;
+  }
+
+  .principle-card {
+    padding: 1.75rem;
+  }
+
+  .principle-card h3 {
+    font-size: 1.18rem;
+  }
+
+  /* Evaluation Lab */
+
+  .evaluation-lab-header {
+    max-width: 780px;
+    margin-bottom: 3.25rem;
+  }
+
+  .evaluation-lab-grid {
+    gap: 1rem;
+  }
+
+  .lab-pathway {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 1.75rem;
+  }
+
+  .evaluation-lab-footer {
+    gap: 1.5rem;
+  }
+
+  /* Guided Walkthrough */
+
+  .walkthrough-header {
+    max-width: 760px;
+    margin-bottom: 3.25rem;
+  }
+
+  .walkthrough-layout {
+    grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+    gap: 1.5rem;
+  }
+
+  .walkthrough-brief {
+    top: 92px;
+    padding: 1.75rem;
+  }
+
+  .walkthrough-step {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .walkthrough-outcome {
+    gap: 1.5rem;
+    padding: 1.75rem;
+  }
+
+  /* Case Study */
+
+  .case-study-header {
+    max-width: 780px;
+    margin-bottom: 3rem;
+  }
+
+  .case-study-meta > div {
+    padding: 1.15rem;
+  }
+
+  .case-study-workspace {
+    gap: 1.25rem;
+  }
+
+  .case-study-panel,
+  .case-study-evidence,
+  .case-study-rubric,
+  .case-study-improved,
+  .case-study-feedback,
+  .case-study-verdict-summary {
+    padding: 1.75rem;
+  }
+
+  .case-study-evidence-grid {
+    gap: 0.9rem;
+  }
+
+  .evidence-item {
+    padding: 1.25rem;
+  }
+
+  .case-study-verdict-heading {
+    gap: 1.5rem;
+  }
+
+  .case-study-improved-copy {
+    padding: 1.35rem;
+  }
+}
+   
  </style>
 </head>
 
