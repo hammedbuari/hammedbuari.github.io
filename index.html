@@ -2098,10 +2098,37 @@
   }
 }
    
+   /* Accessibility — keyboard focus */
+a:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Accessibility — skip link */
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1rem;
+  background: #111827;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 800;
+  transform: translateY(-160%);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+   
  </style>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header>
     <nav class="container">
       <a class="brand" href="#">Hammed Buari</a>
@@ -2115,7 +2142,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero hero-v21">
   <div class="container hero-v21-layout">
 
@@ -3080,8 +3107,13 @@
 
           <div class="contact-links">
             <a href="mailto:hammedbuarib@gmail.com">Email</a>
-            <a href="https://github.com/hammedbuari" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/hammedbuari"
+   target="_blank"
+   rel="noopener noreferrer">GitHub</a>
+
+<a href="https://www.linkedin.com/"
+   target="_blank"
+   rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
