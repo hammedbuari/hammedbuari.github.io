@@ -264,7 +264,11 @@
     section {
       padding: 4.5rem 0;
     }
-
+   
+section[id] {
+  scroll-margin-top: 96px;
+}
+   
     .section-head {
       max-width: 760px;
       margin-bottom: 2rem;
@@ -398,10 +402,11 @@
     }
 
     @media (max-width: 850px) {
-      .nav-links {
-        display: none;
-      }
 
+      section[id] {
+    scroll-margin-top: 84px;
+  }
+      
       .metrics,
       .grid {
         grid-template-columns: 1fr;
@@ -2691,6 +2696,182 @@
     padding: 1.5rem;
   }
 }
+
+   /*****************************************
+ RELEASE 5.1
+ EVALUATION PRACTICE
+ Visual Refinement
+*****************************************/
+
+/* Refine heading width and reduce empty visual space */
+
+.evaluation-practice-heading {
+  max-width: 900px;
+}
+
+.evaluation-practice-heading h2 {
+  max-width: 820px;
+}
+
+.evaluation-practice-introduction {
+  max-width: 820px;
+}
+
+/* Improve framework balance */
+
+.evaluation-practice-framework {
+  grid-template-columns:
+    minmax(310px, 0.82fr)
+    minmax(0, 1.18fr);
+  gap: 1.75rem;
+}
+
+/* Reduce excess vertical space inside the practice map */
+
+.evaluation-practice-grid {
+  align-content: start;
+}
+
+.evaluation-practice-grid .evaluation-practice-principle {
+  min-height: auto;
+}
+
+/* Tighten the governing principle relationship to the section */
+
+.evaluation-practice-principle,
+.evaluation-practice-framework > aside {
+  margin-top: 1.5rem;
+}
+
+/* Improve transition into Core Expertise */
+
+.evaluation-practice {
+  padding-bottom: 6.5rem;
+}
+
+/* Tablet refinement */
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  .evaluation-practice-framework {
+    grid-template-columns:
+      minmax(290px, 0.78fr)
+      minmax(0, 1.22fr);
+  }
+
+  .evaluation-practice {
+    padding-bottom: 5.75rem;
+  }
+}
+
+/* Mobile refinement */
+
+@media (max-width: 850px) {
+  .evaluation-practice-heading {
+    max-width: 100%;
+  }
+
+  .evaluation-practice-principle,
+  .evaluation-practice-framework > aside {
+    margin-top: 0;
+  }
+
+  .evaluation-practice {
+    padding-bottom: 5rem;
+  }
+}
+   /*****************************************
+ RELEASE 5.1
+ NAVIGATION ARCHITECTURE
+ Accessible Mobile Navigation
+*****************************************/
+
+.site-navigation {
+  position: relative;
+}
+
+.nav-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.nav-toggle-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 4px auto;
+  border-radius: 999px;
+  background: currentColor;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (max-width: 850px) {
+  .nav-toggle {
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    padding: 0.5rem;
+    border: 1px solid #dbe4f0;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.14);
+    backdrop-filter: blur(16px);
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    color: #334155;
+    font-weight: 750;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus-visible {
+    background: #eff6ff;
+    color: #1d4ed8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-toggle-line {
+    transition: none;
+  }
+}
    
    /* Accessibility — keyboard focus */
 a:focus-visible {
@@ -2724,16 +2905,29 @@ a:focus-visible {
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header>
-    <nav class="container" aria-label="Primary">
-      <a class="brand" href="#">Hammed Buari</a>
-      <div class="nav-links">
-  <a href="#expertise">Practice</a>
-  <a href="#framework">Framework</a>
-  <a href="#projects">Case Studies</a>
-  <a href="#experience">Career</a>
-  <a href="#contact">Contact</a>
-</div>
-    </nav>
+    <nav class="container site-navigation" aria-label="Primary">
+  <a class="brand" href="#main-content">Hammed Buari</a>
+
+  <button
+    class="nav-toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="primary-navigation"
+    aria-label="Open navigation menu"
+  >
+    <span class="nav-toggle-line"></span>
+    <span class="nav-toggle-line"></span>
+    <span class="nav-toggle-line"></span>
+  </button>
+
+  <div class="nav-links" id="primary-navigation">
+    <a href="#evaluation-practice">Practice</a>
+    <a href="#framework">Framework</a>
+    <a href="#evaluation-case-study">Case Studies</a>
+    <a href="#experience">Career</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
   </header>
 
   <main id="main-content">
@@ -3987,6 +4181,67 @@ a:focus-visible {
       © 2026 Hammed Babatunde Buari. AI Evaluation • Data Quality • UX Review.
     </div>
   </footer>
+    <script>
+  const navigationToggle = document.querySelector(".nav-toggle");
+  const primaryNavigation = document.querySelector("#primary-navigation");
+  const navigationLinks = primaryNavigation?.querySelectorAll("a") ?? [];
+
+  function closeNavigation() {
+    if (!navigationToggle || !primaryNavigation) return;
+
+    navigationToggle.setAttribute("aria-expanded", "false");
+    navigationToggle.setAttribute("aria-label", "Open navigation menu");
+    primaryNavigation.classList.remove("is-open");
+  }
+
+  function openNavigation() {
+    if (!navigationToggle || !primaryNavigation) return;
+
+    navigationToggle.setAttribute("aria-expanded", "true");
+    navigationToggle.setAttribute("aria-label", "Close navigation menu");
+    primaryNavigation.classList.add("is-open");
+  }
+
+  navigationToggle?.addEventListener("click", () => {
+    const isExpanded =
+      navigationToggle.getAttribute("aria-expanded") === "true";
+
+    if (isExpanded) {
+      closeNavigation();
+    } else {
+      openNavigation();
+    }
+  });
+
+  navigationLinks.forEach((link) => {
+    link.addEventListener("click", closeNavigation);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeNavigation();
+      navigationToggle?.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (
+      target instanceof Node &&
+      !navigationToggle?.contains(target) &&
+      !primaryNavigation?.contains(target)
+    ) {
+      closeNavigation();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 850) {
+      closeNavigation();
+    }
+  });
+</script>
 </body>
 </html>
 
