@@ -3095,6 +3095,47 @@ section[id] {
     transform: none;
   }
 }
+  /*****************************************
+ RELEASE 5.1
+ GOVERNING PRINCIPLE LABEL CORRECTION
+*****************************************/
+
+.evaluation-practice-framework > aside
+.evaluation-practice-principle-label {
+  grid-column: 1 / -1;
+  width: fit-content;
+  margin: 0 0 0.75rem;
+  position: static;
+}
+
+.evaluation-practice-framework > aside:not(
+  :has(.evaluation-practice-principle-content)
+) {
+  padding-top: 1.75rem;
+}
+
+.evaluation-practice-framework > aside:not(
+  :has(.evaluation-practice-principle-content)
+) h3 {
+  grid-column: 1;
+}
+
+.evaluation-practice-framework > aside:not(
+  :has(.evaluation-practice-principle-content)
+) > p:last-child {
+  grid-column: 2;
+}
+
+@media (max-width: 850px) {
+  .evaluation-practice-framework > aside:not(
+    :has(.evaluation-practice-principle-content)
+  ) h3,
+  .evaluation-practice-framework > aside:not(
+    :has(.evaluation-practice-principle-content)
+  ) > p:last-child {
+    grid-column: 1;
+  }
+}
    
    /* Accessibility — keyboard focus */
 a:focus-visible {
