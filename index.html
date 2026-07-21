@@ -3136,6 +3136,124 @@ section[id] {
     grid-column: 1;
   }
 }
+   /*****************************************
+ RELEASE 5.1
+ FINAL CANONICAL VISUAL POLISH
+ Governing Principle and Section Rhythm
+*****************************************/
+
+/* Give the closing principle the authority
+   and composure of the Major Verdict */
+
+.evaluation-practice-framework
+  > aside.evaluation-practice-principle {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.82fr)
+    minmax(0, 1.18fr);
+  gap: 0.75rem 3rem;
+  align-items: center;
+  width: 100%;
+  margin: 0.75rem 0 0;
+  padding: 2.5rem 2.75rem;
+}
+
+/* Keep the editorial label fully inside
+   the panel and aligned with its content */
+
+.evaluation-practice-framework
+  > aside.evaluation-practice-principle
+  > .evaluation-practice-principle-label {
+  grid-column: 1 / -1;
+  width: fit-content;
+  margin: 0 0 0.35rem;
+  padding: 0;
+  position: static;
+  letter-spacing: 0.15em;
+}
+
+/* Strengthen the concluding statement */
+
+.evaluation-practice-framework
+  > aside.evaluation-practice-principle
+  > h3 {
+  grid-column: 1;
+  max-width: 16ch;
+  margin: 0;
+  font-size: clamp(1.5rem, 2.3vw, 1.75rem);
+  line-height: 1.25;
+}
+
+/* Calm and constrain the supporting explanation */
+
+.evaluation-practice-framework
+  > aside.evaluation-practice-principle
+  > p {
+  grid-column: 2;
+  max-width: 42ch;
+  margin: 0;
+  justify-self: start;
+  line-height: 1.8;
+}
+
+/* Preserve a deliberate transition into Core Expertise */
+
+.evaluation-practice {
+  padding-bottom: 7rem;
+}
+
+/* Tablet refinement */
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle {
+    gap: 0.75rem 2.25rem;
+    padding: 2.25rem;
+  }
+
+  .evaluation-practice {
+    padding-bottom: 6.25rem;
+  }
+}
+
+/* Mobile refinement */
+
+@media (max-width: 850px) {
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+    padding: 1.75rem 1.5rem;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > .evaluation-practice-principle-label,
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > h3,
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > p {
+    grid-column: 1;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > h3 {
+    max-width: 18ch;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > p {
+    max-width: none;
+  }
+
+  .evaluation-practice {
+    padding-bottom: 5.5rem;
+  }
+}
    
    /* Accessibility — keyboard focus */
 a:focus-visible {
