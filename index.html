@@ -3254,6 +3254,61 @@ section[id] {
     padding-bottom: 5.5rem;
   }
 }
+   /*****************************************
+ RELEASE 5.1
+ FINAL LAYOUT REFINEMENT
+ Governing Principle Optical Balance
+*****************************************/
+
+/* Rebalance the desktop composition so the
+   statement occupies the panel with greater calm */
+
+@media (min-width: 1101px) {
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle {
+    grid-template-columns:
+      minmax(0, 0.95fr)
+      minmax(0, 1.05fr);
+    column-gap: 4rem;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > h3 {
+    max-width: 20ch;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > p {
+    max-width: 46ch;
+  }
+}
+
+/* Preserve the same balance on tablet without
+   allowing either column to feel compressed */
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
+    column-gap: 2.5rem;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > h3 {
+    max-width: 19ch;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > p {
+    max-width: 40ch;
+  }
+}
    
    /* Accessibility — keyboard focus */
 a:focus-visible {
