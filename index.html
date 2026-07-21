@@ -3340,14 +3340,17 @@ section[id] {
   }
 
   .evaluation-practice-framework
-    > aside.evaluation-practice-principle
-    > .evaluation-practice-panel-label {
-    grid-column: 1;
-    width: 100%;
-    margin: 0 0 1.75rem;
-    padding-inline: 2rem;
-    text-align: center;
-  }
+  > aside.evaluation-practice-principle
+  > .evaluation-practice-panel-label {
+  grid-column: 1;
+  justify-self: start;
+  width: auto;
+  max-width: fit-content;
+  margin: 0 0 1.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+}
 
   .evaluation-practice-framework
     > aside.evaluation-practice-principle
