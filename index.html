@@ -3254,59 +3254,61 @@ section[id] {
     padding-bottom: 5.5rem;
   }
 }
-   /*****************************************
+  /*****************************************
  RELEASE 5.1
  FINAL LAYOUT REFINEMENT
  Governing Principle Optical Balance
 *****************************************/
 
-/* Rebalance the desktop composition so the
-   statement occupies the panel with greater calm */
+/* Desktop */
 
 @media (min-width: 1101px) {
   .evaluation-practice-framework
-    > aside.evaluation-practice-principle {
+    > aside.evaluation-practice-principle
+    > .evaluation-practice-principle-content {
+    display: grid;
     grid-template-columns:
-      minmax(0, 0.95fr)
-      minmax(0, 1.05fr);
-    column-gap: 4rem;
+      minmax(0, 0.9fr)
+      minmax(0, 1.1fr);
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
   }
 
-  .evaluation-practice-framework
-    > aside.evaluation-practice-principle
-    > h3 {
+  .evaluation-practice-principle-content > h3 {
     max-width: 20ch;
+    margin: 0;
   }
 
-  .evaluation-practice-framework
-    > aside.evaluation-practice-principle
-    > p {
+  .evaluation-practice-principle-content > p {
     max-width: 46ch;
+    margin: 0;
   }
 }
 
-/* Preserve the same balance on tablet without
-   allowing either column to feel compressed */
+/* Tablet */
 
 @media (min-width: 851px) and (max-width: 1100px) {
   .evaluation-practice-framework
-    > aside.evaluation-practice-principle {
+    > aside.evaluation-practice-principle
+    > .evaluation-practice-principle-content {
+    display: grid;
     grid-template-columns:
-      minmax(0, 1fr)
-      minmax(0, 1fr);
-    column-gap: 2.5rem;
+      minmax(0, 0.95fr)
+      minmax(0, 1.05fr);
+    gap: 2.75rem;
+    align-items: center;
+    width: 100%;
   }
 
-  .evaluation-practice-framework
-    > aside.evaluation-practice-principle
-    > h3 {
-    max-width: 19ch;
+  .evaluation-practice-principle-content > h3 {
+    max-width: 20ch;
+    margin: 0;
   }
 
-  .evaluation-practice-framework
-    > aside.evaluation-practice-principle
-    > p {
-    max-width: 40ch;
+  .evaluation-practice-principle-content > p {
+    max-width: 42ch;
+    margin: 0;
   }
 }
    
