@@ -3254,61 +3254,84 @@ section[id] {
     padding-bottom: 5.5rem;
   }
 }
-  /*****************************************
+ /*****************************************
  RELEASE 5.1
  FINAL LAYOUT REFINEMENT
  Governing Principle Optical Balance
 *****************************************/
 
-/* Desktop */
+/* Desktop and tablet:
+   reset the outer panel to one full-width column */
+
+@media (min-width: 851px) {
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > .evaluation-practice-principle-label {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .evaluation-practice-framework
+    > aside.evaluation-practice-principle
+    > .evaluation-practice-principle-content {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .evaluation-practice-principle-content > h3,
+  .evaluation-practice-principle-content > p {
+    margin: 0;
+  }
+}
+
+/* Desktop composition */
 
 @media (min-width: 1101px) {
   .evaluation-practice-framework
     > aside.evaluation-practice-principle
     > .evaluation-practice-principle-content {
-    display: grid;
-    grid-template-columns:
-      minmax(0, 0.9fr)
-      minmax(0, 1.1fr);
-    gap: 4rem;
-    align-items: center;
-    width: 100%;
+    column-gap: 5rem;
+    padding-inline: 2rem;
   }
 
   .evaluation-practice-principle-content > h3 {
-    max-width: 20ch;
-    margin: 0;
+    max-width: 19ch;
   }
 
   .evaluation-practice-principle-content > p {
-    max-width: 46ch;
-    margin: 0;
+    max-width: 44ch;
   }
 }
 
-/* Tablet */
+/* Tablet composition */
 
 @media (min-width: 851px) and (max-width: 1100px) {
   .evaluation-practice-framework
     > aside.evaluation-practice-principle
     > .evaluation-practice-principle-content {
-    display: grid;
-    grid-template-columns:
-      minmax(0, 0.95fr)
-      minmax(0, 1.05fr);
-    gap: 2.75rem;
-    align-items: center;
-    width: 100%;
+    column-gap: 3rem;
   }
 
   .evaluation-practice-principle-content > h3 {
-    max-width: 20ch;
-    margin: 0;
+    max-width: 18ch;
   }
 
   .evaluation-practice-principle-content > p {
-    max-width: 42ch;
-    margin: 0;
+    max-width: 40ch;
   }
 }
    
