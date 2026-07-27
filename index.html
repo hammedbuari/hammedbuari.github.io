@@ -1985,6 +1985,393 @@ section[id] {
   }
 }
 /*****************************************
+ RELEASE 9.1
+ SESSION 1 — EVALUATION ARCHIVE
+ Section Foundation
+*****************************************/
+
+.evaluation-archive-section{
+  padding:7.5rem 0;
+  background:#ffffff;
+}
+
+.evaluation-archive-container{
+  max-width:1120px;
+}
+
+.evaluation-archive-header{
+  max-width:820px;
+  margin-bottom:3.5rem;
+}
+
+.evaluation-archive-section .section-label{
+  margin-bottom:1rem;
+  color:#2563eb;
+  font-size:.8rem;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.evaluation-archive-header h2{
+  margin-bottom:1.5rem;
+  color:#0f172a;
+  font-size:clamp(2.5rem,5vw,4rem);
+  line-height:1.05;
+  letter-spacing:-.04em;
+}
+
+.evaluation-archive-line{
+  width:90px;
+  height:4px;
+  margin-bottom:2.5rem;
+  border-radius:999px;
+  background:#2563eb;
+}
+
+.evaluation-archive-intro{
+  color:#475569;
+  font-size:1.15rem;
+  line-height:1.9;
+}
+/*****************************************
+ RELEASE 9.1
+ SESSION 2 — ARCHIVE WORKSPACE
+*****************************************/
+
+.evaluation-archive-workspace{
+  display:flex;
+  flex-direction:column;
+  gap:3rem;
+}
+
+.archive-workspace-intro{
+  max-width:760px;
+}
+
+.archive-workspace-label{
+  margin:0 0 .75rem;
+  color:#2563eb;
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+.archive-workspace-intro h3{
+  margin-bottom:1.25rem;
+  color:#0f172a;
+  font-size:clamp(1.8rem,3vw,2.5rem);
+  line-height:1.2;
+}
+
+.archive-workspace-intro p{
+  margin:0;
+  color:#475569;
+  font-size:1.05rem;
+  line-height:1.85;
+}
+
+.archive-records{
+  display:grid;
+  gap:2rem;
+}
+/*****************************************
+ RELEASE 9.1
+ SESSION 3 — CANONICAL RECORD CARD
+*****************************************/
+
+.archive-record{
+  padding:2.5rem;
+  border:1px solid #dbe4f0;
+  border-radius:24px;
+  background:#ffffff;
+  box-shadow:0 18px 45px rgba(15,23,42,.06);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.archive-record:hover{
+  transform:translateY(-4px);
+  border-color:#bfdbfe;
+  box-shadow:0 24px 55px rgba(37,99,235,.12);
+}
+
+.archive-record-header{
+  margin-bottom:2rem;
+}
+
+.archive-record-id{
+  display:inline-flex;
+  align-items:center;
+  padding:.4rem .85rem;
+  border-radius:999px;
+  background:#dbeafe;
+  color:#1d4ed8;
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.archive-record-status{
+  float:right;
+  display:inline-flex;
+  align-items:center;
+  padding:.4rem .85rem;
+  border-radius:999px;
+  background:#dcfce7;
+  color:#166534;
+  font-size:.78rem;
+  font-weight:700;
+}
+
+.archive-record-header h3{
+  clear:both;
+  margin:1.4rem 0 1rem;
+  color:#0f172a;
+  font-size:clamp(1.7rem,3vw,2.35rem);
+  line-height:1.2;
+}
+
+.archive-record-description{
+  max-width:760px;
+  margin:0;
+  color:#475569;
+  font-size:1.05rem;
+  line-height:1.8;
+}
+/*****************************************
+ RELEASE 9.1
+ SESSION 4 — RECORD METADATA
+*****************************************/
+
+.archive-record-meta{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1.25rem;
+  margin-bottom:2.5rem;
+}
+
+.record-meta-item{
+  padding:1.35rem;
+  border:1px solid #e2e8f0;
+  border-radius:18px;
+  background:#f8fafc;
+}
+
+.meta-label{
+  display:block;
+  margin-bottom:.6rem;
+  color:#64748b;
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.meta-value{
+  display:block;
+  color:#0f172a;
+  font-size:1rem;
+  font-weight:600;
+  line-height:1.6;
+}
+
+.record-meta-item:hover{
+  border-color:#bfdbfe;
+  background:#ffffff;
+  transition:
+    background .25s ease,
+    border-color .25s ease;
+}
+/*****************************************
+ RELEASE 9.1
+ SESSION 5 — SUMMARY & OUTCOME
+*****************************************/
+
+.archive-record-summary,
+.archive-record-outcome{
+  margin-top:2.5rem;
+}
+
+.archive-record-summary h4,
+.archive-record-outcome h4{
+  margin-bottom:1rem;
+  color:#0f172a;
+  font-size:1.25rem;
+  font-weight:700;
+}
+
+.archive-record-summary p,
+.archive-record-outcome p{
+  margin-bottom:1.25rem;
+  color:#475569;
+  font-size:1.02rem;
+  line-height:1.9;
+}
+
+.archive-ranking{
+  margin:1.75rem 0 0;
+  padding-left:1.5rem;
+}
+
+.archive-ranking li{
+  margin-bottom:1.35rem;
+  color:#0f172a;
+  line-height:1.8;
+}
+
+.archive-ranking strong{
+  display:block;
+  margin-bottom:.35rem;
+  color:#2563eb;
+  font-size:1.02rem;
+}
+
+.archive-ranking span{
+  display:block;
+  color:#475569;
+}
+/*****************************************
+ RELEASE 9.1
+ SESSION 6 — CANONICAL RECORD STATEMENT
+*****************************************/
+
+.archive-record-statement{
+  margin-top:2.75rem;
+}
+
+.archive-record-statement h4{
+  margin-bottom:1rem;
+  color:#0f172a;
+  font-size:1.25rem;
+  font-weight:700;
+}
+
+.canonical-record{
+  margin:0;
+  padding:2rem 2.25rem;
+  border-left:5px solid #2563eb;
+  border-radius:0 18px 18px 0;
+  background:#eff6ff;
+}
+
+.canonical-record p{
+  margin:0;
+  color:#334155;
+  font-size:1.05rem;
+  line-height:1.95;
+}
+
+.canonical-record strong{
+  color:#1d4ed8;
+  font-weight:700;
+}
+/*****************************************
+ RELEASE 9.1
+ SESSION 7 — RESPONSIVE REFINEMENT
+*****************************************/
+
+@media (max-width: 768px){
+
+  .archive-record{
+    padding:2rem 1.5rem;
+  }
+
+  .archive-record-meta{
+    grid-template-columns:1fr;
+  }
+
+  .archive-record-status{
+    float:none;
+    display:inline-flex;
+    margin-top:.75rem;
+  }
+
+  .archive-record-header h3{
+    margin-top:1.25rem;
+  }
+
+  .canonical-record{
+    padding:1.5rem;
+  }
+
+  .archive-workspace-intro h3{
+    font-size:2rem;
+  }
+
+  .archive-ranking{
+    padding-left:1.2rem;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .evaluation-archive-section{
+    padding:5rem 0;
+  }
+
+  .archive-record{
+    padding:1.5rem 1.25rem;
+    border-radius:20px;
+  }
+
+  .record-meta-item{
+    padding:1.15rem;
+  }
+
+  .canonical-record{
+    border-left-width:4px;
+    border-radius:0 14px 14px 0;
+  }
+
+}
+/*****************************************
+ RELEASE 9.1
+ SESSION 8 — PRODUCTION POLISH & QA
+*****************************************/
+
+.archive-record *{
+  box-sizing:border-box;
+}
+
+.archive-record p:last-child,
+.archive-record li:last-child{
+  margin-bottom:0;
+}
+
+.archive-record a{
+  color:#2563eb;
+  text-decoration:none;
+  transition:color .2s ease;
+}
+
+.archive-record a:hover{
+  color:#1d4ed8;
+}
+
+.archive-record:focus-within{
+  border-color:#93c5fd;
+  box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+.archive-record-meta,
+.archive-ranking{
+  scroll-margin-top:100px;
+}
+
+.archive-record-header,
+.archive-record-summary,
+.archive-record-outcome,
+.archive-record-statement{
+  scroll-margin-top:100px;
+}
+   
+/*****************************************
  RELEASE 4.1
  SESSION 2 — TABLET POLISH
  Responsive Refinement
@@ -3483,6 +3870,7 @@ a:focus-visible {
     <a href="#evaluation-practice">Practice</a>
     <a href="#framework">Framework</a>
     <a href="#evaluation-case-study">Case Studies</a>
+    <a href="#evaluation-archive">Archive</a>
     <a href="#experience">Career</a>
     <a href="#contact">Contact</a>
   </div>
@@ -4612,7 +5000,212 @@ a:focus-visible {
         </div>
       </div>
     </section>
+    
+    <!-- =========================================
+         RELEASE 9.0
+         EVALUATION ARCHIVE
+         Canonical Record Library
+    ========================================== -->
 
+    <section
+      class="evaluation-archive-section"
+      id="evaluation-archive"
+      aria-labelledby="evaluation-archive-title"
+    >
+      <div class="container evaluation-archive-container">
+
+        <header class="evaluation-archive-header">
+          <p class="section-label">Evaluation Archive</p>
+
+          <h2 id="evaluation-archive-title">
+            A permanent record of evidence-based AI evaluation.
+          </h2>
+
+          <div class="evaluation-archive-line"></div>
+
+          <p class="evaluation-archive-intro">
+            This archive publishes completed evaluation records with their
+            evidence, comparative findings, final judgements, and documented
+            limitations preserved as part of one accountable body of work.
+          </p>
+        </header>
+                <div class="evaluation-archive-workspace">
+
+          <div class="archive-workspace-intro">
+            <p class="archive-workspace-label">Canonical Record Library</p>
+
+            <h3>
+              Completed evaluations, preserved as structured evidence.
+            </h3>
+
+            <p>
+              Each archive entry records the evaluation brief, assessed
+              responses, comparative reasoning, final ordering, synthesis,
+              and canonical record statement.
+            </p>
+          </div>
+
+          <div
+            class="archive-records"
+            role="list"
+            aria-label="Published AI evaluation records"
+          >
+            <!-- =========================================
+                 AI-R-001
+                 Canonical Evaluation Record
+            ========================================== -->
+
+            <article
+              class="archive-record"
+              id="ai-r-001"
+              role="listitem"
+              aria-labelledby="ai-r-001-title"
+            >
+
+              <header class="archive-record-header">
+
+                <span class="archive-record-id">
+                  AI-R-001
+                </span>
+
+                <span class="archive-record-status">
+                  Published
+                </span>
+
+                <h3 id="ai-r-001-title">
+                  Comparative Evaluation of Three Frontier AI Systems
+                </h3>
+
+                <p class="archive-record-description">
+                  Independent comparative evaluation demonstrating structured
+                  reasoning, evidence synthesis, comparative judgement and
+                  canonical record construction across multiple AI systems.
+                </p>
+
+              </header>
+                     <div class="archive-record-meta">
+
+                <div class="record-meta-item">
+                  <span class="meta-label">Record Type</span>
+                  <span class="meta-value">
+                    Comparative AI Evaluation
+                  </span>
+                </div>
+
+                <div class="record-meta-item">
+                  <span class="meta-label">Evaluation Status</span>
+                  <span class="meta-value">
+                    Canonical
+                  </span>
+                </div>
+
+                <div class="record-meta-item">
+                  <span class="meta-label">Evidence Base</span>
+                  <span class="meta-value">
+                    Comparative Analysis · Record-Level Synthesis · Canonical Record Statement
+                  </span>
+                </div>
+
+                <div class="record-meta-item">
+                  <span class="meta-label">Systems Evaluated</span>
+                  <span class="meta-value">
+                    ChatGPT · Claude · Gemini
+                  </span>
+                </div>
+
+              </div>     
+               <div class="archive-record-summary">
+
+                <h4>Evaluation Summary</h4>
+
+                <p>
+                  AI-R-001 evaluated three frontier AI systems against a single
+                  policy reasoning task requiring balanced analysis,
+                  acknowledgement of uncertainty, and a justified final
+                  recommendation. Each response was examined independently
+                  before comparative synthesis was performed to establish the
+                  canonical evaluation record.
+                </p>
+
+                <p>
+                  The assessment considered reasoning quality, balance,
+                  structure, completeness, communication, and adherence to the
+                  evaluation brief. Comparative findings were then consolidated
+                  into one evidence-based record rather than isolated model
+                  reviews.
+                </p>
+
+              </div>
+                <div class="archive-record-outcome">
+
+                <h4>Comparative Outcome</h4>
+
+                <p>
+                  Following independent assessment and comparative synthesis,
+                  the evaluated responses were ranked according to their overall
+                  performance against the evaluation brief.
+                </p>
+
+                <ol class="archive-ranking">
+
+                  <li>
+                    <strong>Gemini (R-03)</strong>
+                    <span>
+                      Most complete balance of reasoning, trade-off analysis,
+                      recommendation quality, and acknowledgement of uncertainty.
+                    </span>
+                  </li>
+
+                  <li>
+                    <strong>Claude (R-02)</strong>
+                    <span>
+                      Strong analytical structure and balanced discussion with
+                      minor limitations in comparative justification.
+                    </span>
+                  </li>
+
+                  <li>
+                    <strong>ChatGPT (R-01)</strong>
+                    <span>
+                      Sound reasoning and recommendation, though comparatively
+                      less comprehensive in synthesis and evaluation depth.
+                    </span>
+                  </li>
+
+                </ol>
+
+              </div>
+                   <section class="archive-record-statement">
+
+                <h4>Canonical Record Statement</h4>
+
+                <blockquote class="canonical-record">
+
+                  <p>
+                    AI-R-001 establishes the first canonical evaluation record
+                    within this archive. Following independent assessment,
+                    comparative analysis, and record-level synthesis, the final
+                    comparative ordering for this evaluation is:
+                    <strong>Gemini (R-03)</strong>,
+                    <strong>Claude (R-02)</strong>,
+                    and
+                    <strong>ChatGPT (R-01)</strong>.
+                    This ordering is specific to the evaluation brief and should
+                    not be interpreted as a universal ranking across unrelated
+                    tasks or domains.
+                  </p>
+
+                </blockquote>
+
+              </section>
+              </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- End Release 9.0 — Evaluation Archive -->
+    
     <section id="experience">
       <div class="container">
         <div class="section-head">
