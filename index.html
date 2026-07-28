@@ -2370,6 +2370,230 @@ section[id] {
 .archive-record-statement{
   scroll-margin-top:100px;
 }
+/*****************************************
+ RELEASE 9.3
+ SESSION 1 — ARCHIVE INDEX
+*****************************************/
+
+.archive-index{
+    margin-bottom:3rem;
+    padding:2rem;
+    border:1px solid #dbe4f0;
+    border-radius:24px;
+    background:#ffffff;
+    box-shadow:0 16px 42px rgba(15,23,42,.05);
+}
+
+.archive-index-header{
+    max-width:760px;
+    margin-bottom:2rem;
+}
+
+.archive-index-label{
+    display:inline-block;
+    margin-bottom:.7rem;
+    color:#2563eb;
+    font-size:.74rem;
+    font-weight:850;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+}
+
+.archive-index-header h3{
+    margin-bottom:1rem;
+    color:#0f172a;
+    font-size:2rem;
+    line-height:1.2;
+}
+
+.archive-index-header p{
+    color:#475569;
+    line-height:1.85;
+}
+
+.archive-index-list{
+    display:grid;
+    gap:1rem;
+}
+/*****************************************
+ RELEASE 9.3
+ SESSION 2 — ARCHIVE RECORD CARD
+*****************************************/
+
+.archive-index-link{
+    display:grid;
+    grid-template-columns:110px minmax(0,1fr) auto auto;
+    gap:1.5rem;
+    align-items:center;
+    padding:1.6rem;
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+    background:#f8fafc;
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        background 180ms ease;
+}
+
+.archive-index-link:hover{
+    transform:translateY(-3px);
+    border-color:#bfdbfe;
+    background:#ffffff;
+    box-shadow:0 16px 36px rgba(15,23,42,.07);
+}
+
+.archive-index-id{
+    color:#2563eb;
+    font-size:1rem;
+    font-weight:900;
+    letter-spacing:.04em;
+}
+
+.archive-index-content h4{
+    margin-bottom:.45rem;
+    color:#0f172a;
+    font-size:1.18rem;
+    line-height:1.35;
+}
+
+.archive-index-content p{
+    color:#64748b;
+    line-height:1.75;
+}
+/*****************************************
+ RELEASE 9.3
+ SESSION 3 — RECORD METADATA
+*****************************************/
+
+.archive-index-status,
+.archive-index-meta,
+.archive-index-action{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:.45rem;
+}
+
+.archive-status{
+    display:inline-flex;
+    align-items:center;
+    padding:.42rem .72rem;
+    border-radius:999px;
+    font-size:.72rem;
+    font-weight:850;
+    border:1px solid transparent;
+}
+
+.archive-status.published{
+    color:#15803d;
+    background:#f0fdf4;
+    border-color:#bbf7d0;
+}
+
+.archive-meta-label{
+    color:#64748b;
+    font-size:.68rem;
+    font-weight:800;
+    letter-spacing:.10em;
+    text-transform:uppercase;
+}
+
+.archive-index-meta strong{
+    color:#0f172a;
+    font-size:.9rem;
+    font-weight:800;
+}
+
+.archive-index-action-text{
+    color:#2563eb;
+    font-size:.82rem;
+    font-weight:850;
+}
+
+.archive-index-action-arrow{
+    color:#2563eb;
+    font-size:1rem;
+    line-height:1;
+    transition:transform 180ms ease;
+}
+
+.archive-index-link:hover .archive-index-action-arrow{
+    transform:translateY(3px);
+}
+/*****************************************
+ RELEASE 9.3
+ SESSION 4 — ARCHIVE STATISTICS
+*****************************************/
+
+.archive-archive-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1rem;
+    margin:2rem 0;
+}
+
+.archive-stat{
+    padding:1.5rem;
+    border:1px solid #dbe4f0;
+    border-radius:20px;
+    background:#ffffff;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(15,23,42,.05);
+}
+
+.archive-stat-value{
+    display:block;
+    margin-bottom:.45rem;
+    color:#2563eb;
+    font-size:1.7rem;
+    font-weight:900;
+    line-height:1;
+}
+
+.archive-stat-label{
+    display:block;
+    color:#64748b;
+    font-size:.78rem;
+    font-weight:800;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+}
+/*****************************************
+ RELEASE 9.3
+ SESSION 5 — ARCHIVE NOTICES
+*****************************************/
+
+.archive-integrity-notice,
+.archive-roadmap{
+    margin-top:2rem;
+    padding:1.6rem 1.8rem;
+    border-left:5px solid #2563eb;
+    border-radius:0 18px 18px 0;
+    background:#f8fbff;
+}
+
+.archive-roadmap{
+    margin-bottom:2.5rem;
+}
+
+.archive-integrity-label,
+.archive-roadmap-label{
+    display:inline-block;
+    margin-bottom:.7rem;
+    color:#2563eb;
+    font-size:.72rem;
+    font-weight:850;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+}
+
+.archive-integrity-notice p,
+.archive-roadmap p{
+    margin:0;
+    color:#475569;
+    line-height:1.85;
+}
    
 /*****************************************
  RELEASE 4.1
@@ -3818,6 +4042,240 @@ section[id] {
   }
 
 }
+/*****************************************
+ RELEASE 9.3
+ SESSION 6 — RESPONSIVE ARCHIVE
+*****************************************/
+
+@media (max-width:992px){
+
+    .archive-index-link{
+        grid-template-columns:1fr;
+        gap:1.2rem;
+    }
+
+    .archive-index-status,
+    .archive-index-meta,
+    .archive-index-action{
+        flex-direction:row;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .archive-archive-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:640px){
+
+    .archive-index{
+        padding:1.5rem;
+    }
+
+    .archive-index-header h3{
+        font-size:1.6rem;
+    }
+
+    .archive-archive-stats{
+        grid-template-columns:1fr;
+    }
+
+    .archive-index-link{
+        padding:1.3rem;
+    }
+
+}
+/*****************************************
+ RELEASE 9.4
+ SESSION 1 — INTERACTIVE REFINEMENT
+*****************************************/
+
+.archive-index-link{
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+}
+
+.archive-index-link::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(37,99,235,0) 0%,
+        rgba(37,99,235,.05) 50%,
+        rgba(37,99,235,0) 100%
+    );
+    transform:translateX(-100%);
+    transition:transform 500ms ease;
+    pointer-events:none;
+}
+
+.archive-index-link:hover::before{
+    transform:translateX(100%);
+}
+
+.archive-index-link:focus-visible{
+    outline:3px solid #2563eb;
+    outline-offset:4px;
+}
+
+.archive-index-link:hover .archive-index-id{
+    color:#1d4ed8;
+}
+
+.archive-index-link:hover .archive-index-content h4{
+    color:#1e3a8a;
+}
+/*****************************************
+ RELEASE 9.4
+ SESSION 2 — STATISTICS INTERACTION
+*****************************************/
+
+.archive-stat{
+    position:relative;
+    overflow:hidden;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.archive-stat:hover{
+    transform:translateY(-4px);
+    border-color:#bfdbfe;
+    box-shadow:0 18px 40px rgba(15,23,42,.08);
+}
+
+.archive-stat::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:3px;
+    background:#2563eb;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform 220ms ease;
+}
+
+.archive-stat:hover::after{
+    transform:scaleX(1);
+}
+
+.archive-stat-value{
+    transition:transform 180ms ease;
+}
+
+.archive-stat:hover .archive-stat-value{
+    transform:scale(1.04);
+}
+/*****************************************
+ RELEASE 9.4
+ SESSION 3 — EDITORIAL NOTICE REFINEMENT
+*****************************************/
+
+.archive-integrity-notice,
+.archive-roadmap{
+    position:relative;
+    overflow:hidden;
+    transition:
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        background 180ms ease;
+}
+
+.archive-integrity-notice::before,
+.archive-roadmap::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:4px;
+    height:100%;
+    background:#2563eb;
+    transition:width 180ms ease;
+}
+
+.archive-integrity-notice:hover,
+.archive-roadmap:hover{
+    background:#ffffff;
+    box-shadow:0 14px 34px rgba(15,23,42,.06);
+}
+
+.archive-integrity-notice:hover::before,
+.archive-roadmap:hover::before{
+    width:8px;
+}
+
+.archive-integrity-label,
+.archive-roadmap-label{
+    transition:letter-spacing 180ms ease;
+}
+
+.archive-integrity-notice:hover .archive-integrity-label,
+.archive-roadmap:hover .archive-roadmap-label{
+    letter-spacing:.15em;
+}
+/*****************************************
+ RELEASE 9.4
+ SESSION 4 — ENTRANCE MOTION
+*****************************************/
+
+.archive-index,
+.archive-archive-stats,
+.archive-integrity-notice,
+.archive-roadmap{
+    animation:archiveFadeUp .55s ease both;
+}
+
+.archive-archive-stats{
+    animation-delay:.08s;
+}
+
+.archive-integrity-notice{
+    animation-delay:.14s;
+}
+
+.archive-roadmap{
+    animation-delay:.20s;
+}
+
+@keyframes archiveFadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(18px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce){
+
+    .archive-index,
+    .archive-archive-stats,
+    .archive-integrity-notice,
+    .archive-roadmap{
+        animation:none;
+    }
+
+    .archive-index-link,
+    .archive-stat,
+    .archive-integrity-notice,
+    .archive-roadmap{
+        transition:none;
+    }
+
+}
    
    /* Accessibility — keyboard focus */
 a:focus-visible {
@@ -5044,7 +5502,154 @@ a:focus-visible {
               and canonical record statement.
             </p>
           </div>
+                  
+<div class="archive-index">
 
+  <div class="archive-index-header">
+    <span class="archive-index-label">
+      Archive Index
+    </span>
+
+    <h3>
+      Published Evaluation Records
+    </h3>
+
+    <p>
+      Every published evaluation receives a permanent AI-R identifier and remains preserved in its original editorial state. New evaluations are appended to this archive without altering previously published records.
+    </p>
+  </div>
+
+  <div class="archive-index-list">
+    
+    <article class="archive-index-item">
+
+  <a href="#ai-r-001" class="archive-index-link">
+
+  <div class="archive-index-id">
+    AI-R-001
+  </div>
+
+  <div class="archive-index-content">
+
+    <h4>
+      Comparative Evaluation of Three Large Language Models
+    </h4>
+
+    <p>
+      Independent comparative evaluation examining reasoning quality, trade-off analysis, recommendation strength, and editorial judgement across three frontier AI systems.
+    </p>
+
+  </div>
+
+  <div class="archive-index-status">
+
+    <span class="archive-status published">
+      Published
+    </span>
+
+  </div>
+<div class="archive-index-meta">
+
+  <span class="archive-meta-label">
+    Record
+  </span>
+
+  <strong>
+    Canonical Edition
+  </strong>
+
+</div>
+ <div class="archive-index-action">
+
+  <span class="archive-index-action-text">
+    View Evaluation
+  </span>
+
+  <span class="archive-index-action-arrow">
+    ↓
+  </span>
+
+</div>
+</a>
+      
+</article>
+
+</div>
+
+<div class="archive-index-footer">
+
+  <p>
+    The archive expands sequentially. Each published evaluation receives a permanent identifier and remains preserved as part of the project's permanent evidence record.
+  </p>
+
+</div>
+
+</div>
+                  
+    <div class="archive-archive-stats">
+
+  <div class="archive-stat">
+
+    <span class="archive-stat-value">
+      001
+    </span>
+
+    <span class="archive-stat-label">
+      Published Records
+    </span>
+
+  </div>
+
+  <div class="archive-stat">
+
+    <span class="archive-stat-value">
+      001
+    </span>
+
+    <span class="archive-stat-label">
+      Canonical Editions
+    </span>
+
+  </div>
+
+  <div class="archive-stat">
+
+    <span class="archive-stat-value">
+      Active
+    </span>
+
+    <span class="archive-stat-label">
+      Archive Status
+    </span>
+
+  </div>
+
+</div>
+                  
+      <div class="archive-integrity-notice">
+
+  <span class="archive-integrity-label">
+    Archive Integrity
+  </span>
+
+  <p>
+    Published evaluation records are preserved in their original editorial form. Where revisions, corrections, or subsequent analyses are required, they are issued as new canonical records rather than replacing previously published work.
+  </p>
+
+</div>
+                  
+     <div class="archive-roadmap">
+
+  <span class="archive-roadmap-label">
+    Publication Roadmap
+  </span>
+
+  <p>
+    Future evaluations will be released as AI-R-002, AI-R-003, and subsequent canonical records as new evidence-based assessments are completed. Only fully reviewed evaluations are admitted into the permanent archive.
+  </p>
+
+</div>
+                  
           <div
             class="archive-records"
             role="list"
