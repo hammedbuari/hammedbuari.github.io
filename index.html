@@ -5272,13 +5272,300 @@ a:focus-visible {
 
   }
 
+
+  /* ==========================================
+     RELEASE 10.4.0
+     CANONICAL MOBILE AND PRESENTATION BASELINE
+  ========================================== */
+
+  :root {
+    --release-10-4-header-height: 5rem;
+  }
+
+  /*
+   * Persistent navigation
+   */
+
+  .release-10-4-site-header {
+    position: sticky;
+    top: 0;
+    z-index: 3000;
+    width: 100%;
+    max-width: 100%;
+    background: rgba(248, 250, 252, 0.97);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+
+  .release-10-4-site-header > * {
+    min-width: 0;
+  }
+
+  .release-10-4-site-header button,
+  .release-10-4-site-header a {
+    position: relative;
+    z-index: 1;
+  }
+
+  .release-10-4-site-header button {
+    flex: 0 0 auto;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    touch-action: manipulation;
+  }
+
+  html {
+    scroll-padding-top:
+      calc(var(--release-10-4-header-height) + 1rem);
+  }
+
+  #evaluation-archive,
+  #evaluation-archive [id] {
+    scroll-margin-top:
+      calc(var(--release-10-4-header-height) + 1rem);
+  }
+
+  /*
+   * Archive introduction
+   */
+
+  .evaluation-archive-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .evaluation-archive-header h2 {
+    margin-top: 0.65rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .evaluation-archive-intro {
+    margin-top: 1rem;
+  }
+
+  /*
+   * Unified publication rhythm
+   */
+
+  .archive-record-meta,
+  .evaluation-response,
+  .independent-evaluation,
+  .comparative-analysis,
+  .comparative-matrix,
+  .archive-record-summary,
+  .archive-record-outcome,
+  .archive-record-statement {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .evaluation-response,
+  .independent-evaluation,
+  .comparative-analysis,
+  .comparative-matrix,
+  .archive-record-summary,
+  .archive-record-outcome,
+  .archive-record-statement {
+    margin-top: 1.5rem;
+  }
+
+  .evaluation-response,
+  .independent-evaluation,
+  .comparative-analysis,
+  .comparative-matrix {
+    box-shadow:
+      0 1px 2px rgba(15, 23, 42, 0.025),
+      0 10px 28px rgba(15, 23, 42, 0.03);
+  }
+
+  .evaluation-analysis > section,
+  .comparative-analysis-content > section {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .evaluation-analysis h5,
+  .comparative-analysis-content h5 {
+    margin-bottom: 0.55rem;
+  }
+
+  .evaluation-analysis p,
+  .comparative-analysis-content p,
+  .evaluation-analysis li,
+  .comparative-analysis-content li {
+    line-height: 1.7;
+  }
+
+  /*
+   * Comparative matrix
+   */
+
+  .comparative-matrix {
+    overflow: hidden;
+  }
+
+  .comparison-table-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.45rem;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scrollbar-color:
+      rgba(100, 116, 139, 0.6)
+      rgba(226, 232, 240, 0.7);
+  }
+
+  .comparison-table-wrapper::-webkit-scrollbar {
+    height: 0.55rem;
+  }
+
+  .comparison-table-wrapper::-webkit-scrollbar-track {
+    background: rgba(226, 232, 240, 0.7);
+    border-radius: 999px;
+  }
+
+  .comparison-table-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.6);
+    border-radius: 999px;
+  }
+
+  .comparison-table {
+    width: max-content;
+    min-width: 680px;
+    max-width: none;
+  }
+
+  .comparison-table thead th {
+    background: #f1f5f9;
+  }
+
+  .comparison-table tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 13rem;
+    background: #f8fafc;
+    box-shadow: 1px 0 0 rgba(148, 163, 184, 0.28);
+  }
+
+  .comparison-table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+
+  /*
+   * Tablet and mobile
+   */
+
+  @media (max-width: 768px) {
+
+    :root {
+      --release-10-4-header-height: 4.5rem;
+    }
+
+    .release-10-4-site-header {
+      padding-top: env(safe-area-inset-top, 0px);
+    }
+
+    .release-10-4-site-header button {
+      min-width: 2.85rem;
+      min-height: 2.85rem;
+    }
+
+    .evaluation-archive-section {
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+    }
+
+    .evaluation-archive-header {
+      margin-bottom: 1.75rem;
+    }
+
+    .evaluation-archive-header h2 {
+      font-size: clamp(2rem, 9vw, 3rem);
+      line-height: 1.08;
+    }
+
+    .evaluation-archive-intro {
+      line-height: 1.65;
+    }
+
+    .evaluation-response,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix,
+    .archive-record-summary,
+    .archive-record-outcome,
+    .archive-record-statement {
+      margin-top: 1.15rem;
+    }
+
+    .evaluation-analysis > section,
+    .comparative-analysis-content > section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .comparison-table {
+      min-width: 640px;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+
+    :root {
+      --release-10-4-header-height: 4.35rem;
+    }
+
+    .evaluation-archive-section {
+      padding-top: 1.5rem;
+    }
+
+    .evaluation-archive-header {
+      margin-bottom: 1.4rem;
+    }
+
+    .evaluation-response,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix,
+    .archive-record-summary,
+    .archive-record-outcome,
+    .archive-record-statement {
+      border-radius: 0.75rem;
+    }
+
+  }
+
+  @supports not (
+    (-webkit-backdrop-filter: blur(1px)) or
+    (backdrop-filter: blur(1px))
+  ) {
+
+    .release-10-4-site-header {
+      background: #f8fafc;
+    }
+
+  }
+
 </style>
 
 </head>
 
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header>
+  <header class="release-10-4-site-header">
     <nav class="container site-navigation" aria-label="Primary">
   <a class="brand" href="#main-content">Hammed Buari</a>
 
