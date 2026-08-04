@@ -4968,6 +4968,310 @@ a:focus-visible {
 
   }
 
+
+  /* ==========================================
+     RELEASE 10.3.1
+     AI-R-001
+     MOBILE WIDTH CONTAINMENT
+     AND OVERFLOW HARDENING
+  ========================================== */
+
+  /*
+   * Archive-wide sizing discipline
+   */
+
+  #evaluation-archive,
+  #evaluation-archive *,
+  #evaluation-archive *::before,
+  #evaluation-archive *::after {
+    box-sizing: border-box;
+  }
+
+  #evaluation-archive,
+  .evaluation-archive-container,
+  .evaluation-archive-workspace,
+  .archive-records,
+  .archive-record,
+  .archive-record-meta,
+  .archive-record-summary,
+  .archive-record-outcome,
+  .archive-record-statement,
+  .evaluation-response,
+  .evaluation-response-header,
+  .evaluation-response-content,
+  .independent-evaluation,
+  .evaluation-analysis,
+  .comparative-analysis,
+  .comparative-analysis-content,
+  .comparative-matrix {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /*
+   * Flex and grid children must be allowed to shrink
+   */
+
+  #evaluation-archive div,
+  #evaluation-archive section,
+  #evaluation-archive article,
+  #evaluation-archive header,
+  #evaluation-archive footer,
+  #evaluation-archive aside,
+  #evaluation-archive main,
+  #evaluation-archive nav {
+    min-width: 0;
+  }
+
+  #evaluation-archive .archive-record-meta-grid,
+  #evaluation-archive .archive-record-meta-grid > *,
+  #evaluation-archive .evaluation-response-header > *,
+  #evaluation-archive .evaluation-response-content > *,
+  #evaluation-archive .evaluation-analysis > *,
+  #evaluation-archive .comparative-analysis-content > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /*
+   * Text containment and wrapping
+   */
+
+  #evaluation-archive h1,
+  #evaluation-archive h2,
+  #evaluation-archive h3,
+  #evaluation-archive h4,
+  #evaluation-archive h5,
+  #evaluation-archive h6,
+  #evaluation-archive p,
+  #evaluation-archive li,
+  #evaluation-archive span,
+  #evaluation-archive strong,
+  #evaluation-archive th,
+  #evaluation-archive td,
+  #evaluation-archive blockquote {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  #evaluation-archive a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  #evaluation-archive ul,
+  #evaluation-archive ol {
+    max-width: 100%;
+  }
+
+  /*
+   * Media and embedded content containment
+   */
+
+  #evaluation-archive img,
+  #evaluation-archive svg,
+  #evaluation-archive video,
+  #evaluation-archive canvas,
+  #evaluation-archive iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #evaluation-archive pre,
+  #evaluation-archive code {
+    max-width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /*
+   * Prevent page-level horizontal overflow
+   */
+
+  .evaluation-archive-section,
+  .evaluation-archive-container,
+  .evaluation-archive-workspace,
+  .archive-records,
+  .archive-record {
+    overflow-x: clip;
+  }
+
+  /*
+   * Matrix is the only intentional horizontal scroller
+   */
+
+  .comparative-matrix {
+    overflow: hidden;
+  }
+
+  .comparison-table-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x pan-y;
+  }
+
+  .comparison-table {
+    width: max-content;
+    min-width: 680px;
+    max-width: none;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  /*
+   * Mobile and split-view containment
+   */
+
+  @media (max-width: 768px) {
+
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    #evaluation-archive {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: hidden;
+    }
+
+    .evaluation-archive-container {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 0.65rem;
+      padding-left: 0.65rem;
+    }
+
+    .evaluation-archive-workspace,
+    .archive-records,
+    .archive-record {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .archive-record-meta,
+    .evaluation-response,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix,
+    .archive-record-summary,
+    .archive-record-outcome,
+    .archive-record-statement {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .archive-record-meta-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .archive-record-meta-item,
+    .archive-record-meta-card {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .evaluation-response-header,
+    .evaluation-response-content,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix {
+      overflow: hidden;
+    }
+
+    .evaluation-response-content > section,
+    .evaluation-analysis > section,
+    .comparative-analysis-content > section {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .publication-label,
+    .evaluation-response-system,
+    .matrix-note {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .comparison-table-wrapper {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+  }
+
+  /*
+   * Narrow split-view refinement
+   */
+
+  @media (max-width: 480px) {
+
+    .evaluation-archive-container {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    .archive-record-meta,
+    .evaluation-response,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix,
+    .archive-record-summary,
+    .archive-record-outcome,
+    .archive-record-statement {
+      border-radius: 0.75rem;
+    }
+
+    .evaluation-response-header,
+    .evaluation-response-content,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix {
+      padding-right: 0.95rem;
+      padding-left: 0.95rem;
+    }
+
+    .comparison-table {
+      min-width: 640px;
+    }
+
+  }
+
 </style>
 
 </head>
