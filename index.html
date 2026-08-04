@@ -4582,6 +4582,392 @@ a:focus-visible {
 
   }
 
+
+  /* ==========================================
+     RELEASE 10.3.0
+     AI-R-001
+     INTEGRATED PUBLICATION RESPONSIVENESS
+     AND VISUAL RHYTHM
+  ========================================== */
+
+  /*
+   * Shared publication rhythm
+   */
+
+  .evaluation-response,
+  .independent-evaluation,
+  .comparative-analysis,
+  .comparative-matrix,
+  .archive-record-summary,
+  .archive-record-outcome,
+  .archive-record-statement {
+    scroll-margin-top: 7rem;
+  }
+
+  .independent-evaluation,
+  .comparative-analysis {
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 1px solid rgba(100, 116, 139, 0.18);
+    border-radius: 1rem;
+    background: #ffffff;
+  }
+
+  .independent-evaluation > .publication-label,
+  .comparative-analysis > .publication-label,
+  .comparative-matrix > .publication-label {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: #475569;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .independent-evaluation > h4,
+  .comparative-analysis > h4,
+  .comparative-matrix > h4 {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(1.3rem, 2vw, 1.65rem);
+    line-height: 1.35;
+  }
+
+  .evaluation-analysis,
+  .comparative-analysis-content {
+    margin-top: 1.5rem;
+  }
+
+  .evaluation-analysis > section,
+  .comparative-analysis-content > section {
+    margin: 0;
+    padding: 1.45rem 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.22);
+  }
+
+  .evaluation-analysis > section:first-child,
+  .comparative-analysis-content > section:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .evaluation-analysis > section:last-child,
+  .comparative-analysis-content > section:last-child {
+    padding-bottom: 0;
+  }
+
+  .evaluation-analysis h5,
+  .comparative-analysis-content h5 {
+    margin: 0 0 0.7rem;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .evaluation-analysis p,
+  .comparative-analysis-content p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.75;
+  }
+
+  .evaluation-analysis p + p,
+  .comparative-analysis-content p + p {
+    margin-top: 0.9rem;
+  }
+
+  .evaluation-analysis ul,
+  .comparative-analysis-content ul {
+    margin: 0.7rem 0 0;
+    padding-left: 1.25rem;
+  }
+
+  .evaluation-analysis li,
+  .comparative-analysis-content li {
+    margin: 0.45rem 0;
+    padding-left: 0.15rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+
+  /*
+   * Response publication blocks
+   */
+
+  .evaluation-response {
+    margin-top: 2rem;
+    overflow: hidden;
+  }
+
+  .evaluation-response-header {
+    padding: 1.65rem 2rem;
+  }
+
+  .evaluation-response-content {
+    padding: 2rem;
+  }
+
+  .evaluation-response-content > section {
+    margin-top: 1.6rem;
+    padding-top: 1.45rem;
+  }
+
+  .evaluation-response-content > section:first-child {
+    margin-top: 1.35rem;
+  }
+
+  .evaluation-response-content h5 {
+    margin-bottom: 0.75rem;
+  }
+
+  .evaluation-response-content p,
+  .evaluation-response-content li {
+    line-height: 1.75;
+  }
+
+  /*
+   * Comparative matrix
+   */
+
+  .comparative-matrix {
+    margin-top: 2rem;
+  }
+
+  .comparison-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+  }
+
+  .comparison-table {
+    margin-bottom: 0;
+  }
+
+  /*
+   * Closing record rhythm
+   */
+
+  .archive-record-summary,
+  .archive-record-outcome,
+  .archive-record-statement {
+    margin-top: 2rem;
+  }
+
+  .archive-record-summary h4,
+  .archive-record-outcome h4,
+  .archive-record-statement h4 {
+    margin-bottom: 1rem;
+  }
+
+  /*
+   * Tablet refinement
+   */
+
+  @media (min-width: 769px) and (max-width: 1100px) {
+
+    .evaluation-archive-container {
+      width: min(100%, 960px);
+    }
+
+    .archive-record {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .evaluation-response-header,
+    .evaluation-response-content,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix {
+      padding-right: 1.65rem;
+      padding-left: 1.65rem;
+    }
+
+    .evaluation-analysis > section,
+    .comparative-analysis-content > section {
+      padding-top: 1.3rem;
+      padding-bottom: 1.3rem;
+    }
+
+  }
+
+  /*
+   * Mobile publication hardening
+   */
+
+  @media (max-width: 768px) {
+
+    .evaluation-archive-section {
+      overflow-x: hidden;
+    }
+
+    .evaluation-archive-container {
+      width: 100%;
+      max-width: 100%;
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+    }
+
+    .evaluation-archive-workspace,
+    .archive-records,
+    .archive-record {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .archive-record {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .evaluation-response,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix {
+      margin-top: 1.25rem;
+      border-radius: 0.85rem;
+    }
+
+    .evaluation-response-header {
+      padding: 1.25rem;
+    }
+
+    .evaluation-response-content {
+      padding: 1.25rem;
+    }
+
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix {
+      padding: 1.25rem;
+    }
+
+    .independent-evaluation > .publication-label,
+    .comparative-analysis > .publication-label,
+    .comparative-matrix > .publication-label {
+      margin-bottom: 0.45rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+    }
+
+    .independent-evaluation > h4,
+    .comparative-analysis > h4,
+    .comparative-matrix > h4 {
+      font-size: 1.2rem;
+    }
+
+    .evaluation-analysis,
+    .comparative-analysis-content {
+      margin-top: 1.15rem;
+    }
+
+    .evaluation-analysis > section,
+    .comparative-analysis-content > section {
+      padding: 1.05rem 0;
+    }
+
+    .evaluation-analysis h5,
+    .comparative-analysis-content h5 {
+      margin-bottom: 0.5rem;
+      font-size: 0.94rem;
+    }
+
+    .evaluation-analysis p,
+    .comparative-analysis-content p,
+    .evaluation-analysis li,
+    .comparative-analysis-content li {
+      font-size: 0.96rem;
+      line-height: 1.65;
+    }
+
+    .evaluation-analysis ul,
+    .comparative-analysis-content ul {
+      margin-top: 0.55rem;
+      padding-left: 1.1rem;
+    }
+
+    .evaluation-analysis li,
+    .comparative-analysis-content li {
+      margin: 0.35rem 0;
+    }
+
+    .evaluation-response-content > section {
+      margin-top: 1.15rem;
+      padding-top: 1.05rem;
+    }
+
+    .evaluation-response-content p,
+    .evaluation-response-content li {
+      font-size: 0.96rem;
+      line-height: 1.67;
+    }
+
+    .comparison-table-wrapper {
+      margin-top: 1rem;
+      padding-bottom: 0.35rem;
+    }
+
+    .comparison-table {
+      min-width: 680px;
+      font-size: 0.84rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 0.7rem 0.65rem;
+      line-height: 1.45;
+    }
+
+    .matrix-note {
+      margin-top: 1rem;
+      font-size: 0.86rem;
+      line-height: 1.6;
+    }
+
+    .archive-record-summary,
+    .archive-record-outcome,
+    .archive-record-statement {
+      margin-top: 1.5rem;
+    }
+
+  }
+
+  /*
+   * Small-screen refinement
+   */
+
+  @media (max-width: 480px) {
+
+    .evaluation-archive-container {
+      padding-right: 0.55rem;
+      padding-left: 0.55rem;
+    }
+
+    .evaluation-response-header,
+    .evaluation-response-content,
+    .independent-evaluation,
+    .comparative-analysis,
+    .comparative-matrix {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    .evaluation-response-content p,
+    .evaluation-response-content li,
+    .evaluation-analysis p,
+    .evaluation-analysis li,
+    .comparative-analysis-content p,
+    .comparative-analysis-content li {
+      font-size: 0.94rem;
+    }
+
+  }
+
 </style>
 
 </head>
