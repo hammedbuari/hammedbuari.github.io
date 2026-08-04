@@ -5749,6 +5749,86 @@ a:focus-visible {
 
   }
 
+
+  /* ==========================================
+     RELEASE 10.4.3
+     ARCHIVE CONTAINER ALIGNMENT
+  ========================================== */
+
+  .evaluation-archive-container {
+    width: min(1120px, 92%);
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .evaluation-archive-header,
+  .archive-workspace-intro,
+  .archive-index-header {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .evaluation-archive-header {
+    max-width: 1000px;
+  }
+
+  .evaluation-archive-header h2,
+  .archive-workspace-intro h3 {
+    max-width: 980px;
+  }
+
+  .evaluation-archive-intro,
+  .archive-workspace-intro > p:last-child,
+  .archive-index-header > p {
+    max-width: 940px;
+  }
+
+  .evaluation-archive-workspace,
+  .archive-index,
+  .archive-records,
+  .archive-record {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (max-width: 850px) {
+
+    .evaluation-archive-container {
+      width: 100%;
+      max-width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    .evaluation-archive-header,
+    .archive-workspace-intro,
+    .archive-index-header,
+    .evaluation-archive-header h2,
+    .archive-workspace-intro h3,
+    .evaluation-archive-intro,
+    .archive-workspace-intro > p:last-child,
+    .archive-index-header > p {
+      width: 100%;
+      max-width: 100%;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+
+    .evaluation-archive-container {
+      padding-right: 0.85rem;
+      padding-left: 0.85rem;
+    }
+
+  }
+
 </style>
 
 </head>
