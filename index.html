@@ -5594,6 +5594,161 @@ a:focus-visible {
     }
 
   }
+
+  /* ==========================================
+     RELEASE 10.4.2
+     FINAL LAYOUT POLISH
+     Archive width and matrix rebalancing
+  ========================================== */
+
+  /*
+   * Archive opening composition
+   *
+   * Expand the editorial canvas while retaining
+   * controlled paragraph measures for readability.
+   */
+
+  .evaluation-archive-header {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .evaluation-archive-header h2 {
+    max-width: 980px;
+  }
+
+  .evaluation-archive-intro {
+    width: 100%;
+    max-width: 940px;
+  }
+
+  /*
+   * Canonical Record Library introduction
+   */
+
+  .archive-workspace-intro {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .archive-workspace-intro h3 {
+    max-width: 980px;
+  }
+
+  .archive-workspace-intro > p:last-child {
+    max-width: 940px;
+  }
+
+  /*
+   * Archive Index introduction
+   */
+
+  .archive-index-header {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .archive-index-header > p {
+    max-width: 940px;
+  }
+
+  /*
+   * Desktop and full-width tablet matrix
+   *
+   * The table fills the available card instead of
+   * retaining a narrow intrinsic content width.
+   */
+
+  @media (min-width: 851px) {
+
+    .comparison-table-wrapper {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: visible;
+      padding-bottom: 0;
+    }
+
+    .comparison-table {
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: fixed;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      overflow-wrap: break-word;
+      word-break: normal;
+    }
+
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+      width: 37%;
+    }
+
+    .comparison-table th:not(:first-child),
+    .comparison-table td:not(:first-child) {
+      width: 21%;
+    }
+
+    .comparison-table tbody th {
+      position: static;
+      min-width: 0;
+      box-shadow: none;
+    }
+
+    .comparison-table thead th:first-child {
+      position: static;
+    }
+
+  }
+
+  /*
+   * Mobile and Split View
+   *
+   * Preserve the established horizontal table
+   * scroller rather than compressing four columns.
+   */
+
+  @media (max-width: 850px) {
+
+    .evaluation-archive-header,
+    .evaluation-archive-header h2,
+    .evaluation-archive-intro,
+    .archive-workspace-intro,
+    .archive-workspace-intro h3,
+    .archive-workspace-intro > p:last-child,
+    .archive-index-header,
+    .archive-index-header > p {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .comparison-table-wrapper {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    .comparison-table {
+      width: max-content;
+      min-width: 640px;
+      max-width: none;
+      table-layout: auto;
+    }
+
+    .comparison-table tbody th {
+      position: sticky;
+      left: 0;
+      min-width: 13rem;
+    }
+
+    .comparison-table thead th:first-child {
+      position: sticky;
+      left: 0;
+    }
+
+  }
+
 </style>
 
 </head>
