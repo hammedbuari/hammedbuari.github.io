@@ -5273,20 +5273,28 @@ a:focus-visible {
   }
 
 
+
   /* ==========================================
-     RELEASE 10.4.0
-     CANONICAL MOBILE AND PRESENTATION BASELINE
+     RELEASE 10.4.1
+     NAVIGATION AND ARCHIVE CSS CONSOLIDATION
+     Canonical responsive publication baseline
   ========================================== */
 
   :root {
-    --release-10-4-header-height: 5rem;
+    --site-header-height: 72px;
+    --archive-scroll-offset: 96px;
   }
 
   /*
-   * Persistent navigation
+   * Canonical site header
+   *
+   * Desktop retains normal sticky behaviour.
+   * Narrow screens use fixed positioning to
+   * guarantee persistent access in iOS Safari
+   * and iPad Split View.
    */
 
-  .release-10-4-site-header {
+  body > header.release-10-4-site-header {
     position: sticky;
     top: 0;
     z-index: 3000;
@@ -5294,45 +5302,52 @@ a:focus-visible {
     max-width: 100%;
     background: rgba(248, 250, 252, 0.97);
     border-bottom: 1px solid rgba(148, 163, 184, 0.24);
-    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.055);
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
   }
 
-  .release-10-4-site-header > * {
+  .release-10-4-site-header .site-navigation {
+    position: relative;
+    width: min(1120px, 92%);
+    min-width: 0;
+    min-height: var(--site-header-height);
+    margin-inline: auto;
+  }
+
+  .release-10-4-site-header .brand {
     min-width: 0;
   }
 
-  .release-10-4-site-header button,
-  .release-10-4-site-header a {
+  .release-10-4-site-header .nav-toggle {
     position: relative;
-    z-index: 1;
-  }
-
-  .release-10-4-site-header button {
+    z-index: 2;
     flex: 0 0 auto;
-    min-width: 2.75rem;
-    min-height: 2.75rem;
+    min-width: 46px;
+    min-height: 46px;
     touch-action: manipulation;
   }
 
-  html {
-    scroll-padding-top:
-      calc(var(--release-10-4-header-height) + 1rem);
+  .release-10-4-site-header .nav-links {
+    z-index: 3;
   }
 
+  html {
+    scroll-padding-top: var(--archive-scroll-offset);
+  }
+
+  section[id],
   #evaluation-archive,
   #evaluation-archive [id] {
-    scroll-margin-top:
-      calc(var(--release-10-4-header-height) + 1rem);
+    scroll-margin-top: var(--archive-scroll-offset);
   }
 
   /*
-   * Archive introduction
+   * Canonical archive rhythm
    */
 
   .evaluation-archive-header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.25rem;
   }
 
   .evaluation-archive-header h2 {
@@ -5343,10 +5358,6 @@ a:focus-visible {
   .evaluation-archive-intro {
     margin-top: 1rem;
   }
-
-  /*
-   * Unified publication rhythm
-   */
 
   .archive-record-meta,
   .evaluation-response,
@@ -5369,7 +5380,7 @@ a:focus-visible {
   .archive-record-summary,
   .archive-record-outcome,
   .archive-record-statement {
-    margin-top: 1.5rem;
+    margin-top: 1.35rem;
   }
 
   .evaluation-response,
@@ -5378,13 +5389,13 @@ a:focus-visible {
   .comparative-matrix {
     box-shadow:
       0 1px 2px rgba(15, 23, 42, 0.025),
-      0 10px 28px rgba(15, 23, 42, 0.03);
+      0 9px 26px rgba(15, 23, 42, 0.028);
   }
 
   .evaluation-analysis > section,
   .comparative-analysis-content > section {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
   }
 
   .evaluation-analysis h5,
@@ -5400,7 +5411,7 @@ a:focus-visible {
   }
 
   /*
-   * Comparative matrix
+   * Matrix: the sole horizontal scroll region
    */
 
   .comparative-matrix {
@@ -5464,22 +5475,51 @@ a:focus-visible {
   }
 
   /*
-   * Tablet and mobile
+   * Mobile and iPad Split View
    */
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
 
     :root {
-      --release-10-4-header-height: 4.5rem;
+      --site-header-height:
+        calc(72px + env(safe-area-inset-top, 0px));
+      --archive-scroll-offset:
+        calc(var(--site-header-height) + 12px);
     }
 
-    .release-10-4-site-header {
+    body {
+      padding-top: var(--site-header-height);
+    }
+
+    body > header.release-10-4-site-header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
       padding-top: env(safe-area-inset-top, 0px);
     }
 
-    .release-10-4-site-header button {
-      min-width: 2.85rem;
-      min-height: 2.85rem;
+    .release-10-4-site-header .site-navigation {
+      width: min(1120px, 92%);
+      min-height: 72px;
+    }
+
+    .release-10-4-site-header .nav-toggle {
+      display: block;
+      min-width: 46px;
+      min-height: 46px;
+    }
+
+    .release-10-4-site-header .nav-links {
+      top: calc(100% + 0.5rem);
+      max-height:
+        calc(
+          100dvh
+          - var(--site-header-height)
+          - 1rem
+        );
+      overflow-y: auto;
+      overscroll-behavior: contain;
     }
 
     .evaluation-archive-section {
@@ -5488,7 +5528,7 @@ a:focus-visible {
     }
 
     .evaluation-archive-header {
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.65rem;
     }
 
     .evaluation-archive-header h2 {
@@ -5507,7 +5547,7 @@ a:focus-visible {
     .archive-record-summary,
     .archive-record-outcome,
     .archive-record-statement {
-      margin-top: 1.15rem;
+      margin-top: 1.1rem;
     }
 
     .evaluation-analysis > section,
@@ -5524,16 +5564,12 @@ a:focus-visible {
 
   @media (max-width: 480px) {
 
-    :root {
-      --release-10-4-header-height: 4.35rem;
-    }
-
     .evaluation-archive-section {
       padding-top: 1.5rem;
     }
 
     .evaluation-archive-header {
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.35rem;
     }
 
     .evaluation-response,
@@ -5553,12 +5589,11 @@ a:focus-visible {
     (backdrop-filter: blur(1px))
   ) {
 
-    .release-10-4-site-header {
+    body > header.release-10-4-site-header {
       background: #f8fafc;
     }
 
   }
-
 </style>
 
 </head>
