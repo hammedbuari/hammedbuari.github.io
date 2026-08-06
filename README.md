@@ -1,4 +1,6 @@
-# Hammed Babatunde Buari AI Evaluation Publication Platform
+# Hammed Babatunde Buari
+
+## AI Evaluation Publication Platform
 
 > *Thoughtful evaluation and thoughtful engineering share the same foundation: understanding systems, questioning assumptions, documenting evidence, and continuously improving what already exists.*
 
