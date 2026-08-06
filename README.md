@@ -1,12 +1,12 @@
-# The Hammed Babatunde Buari Digital Home
+# Hammed Babatunde Buari AI Evaluation Publication Platform
 
 > *Thoughtful evaluation and thoughtful engineering share the same foundation: understanding systems, questioning assumptions, documenting evidence, and continuously improving what already exists.*
 
 Welcome.
 
-This repository is the canonical home of my work on GitHub.
+This repository is the canonical repository for my AI Evaluation Publication Platform and serves as the engineering, documentation and publication foundation of my professional work.
 
-It is not intended to be another résumé, nor is it simply a collection of projects. It is a carefully organised digital home that documents how I think, how I build, how I evaluate, and how my work evolves over time.
+It is not intended to be another résumé, nor is it simply a collection of projects. It is a carefully organised publication platform documenting how I evaluate, engineer, document and continuously refine professional work through evidence-based practice.
 
 Every repository, document, project and release found here exists for a reason. Together they form a living record of professional growth rather than a snapshot of completed work.
 
@@ -26,7 +26,7 @@ Likewise, good evaluation is not simply identifying whether something is right o
 
 It is understanding why.
 
-That philosophy guides every project contained within this Digital Home.
+That philosophy guides every publication, evaluation, framework and engineering decision contained within this platform.
 
 Whenever possible, work is accompanied by context, reasoning, documentation and continuous refinement rather than isolated deliverables.
 
@@ -36,47 +36,39 @@ The objective is to build understanding.
 
 ---
 
-# The Digital Home
+# The Publication Platform
 
-Think of this repository as the front entrance to a house.
+Think of this repository as the editorial and engineering foundation of the AI Evaluation Publication Platform.
 
-Every room inside serves a different purpose.
+Rather than functioning as a conventional portfolio, it serves as the version-controlled source from which the platform is built, documented and continuously refined.
 
-Some rooms contain finished work.
+Each directory has a defined responsibility supporting publication, documentation, engineering or evaluation.
 
-Some contain documentation.
+Instead of presenting disconnected projects, the repository provides a structured system that allows visitors to understand:
 
-Some record progress.
+- what has been published;
+- how evaluations are conducted;
+- how engineering decisions are documented;
+- how the platform evolves through versioned releases; and
+- where to continue exploring the published work.
 
-Others exist to support future work.
-
-Together they represent a single system rather than unrelated files.
-
-Instead of presenting disconnected projects, this repository provides one organised location where visitors can understand:
-
-- what I am building;
-- how I approach problems;
-- how my work is organised;
-- how projects evolve over time; and
-- where to continue exploring.
+Together these components form a coherent publication system rather than an isolated collection of files.
 
 ---
 
-# Portfolio
+# Live Platform
 
-The primary destination from this repository is my live portfolio.
+The primary destination from this repository is the live AI Evaluation Publication Platform.
 
-The website presents selected work in a more visual and narrative format while this repository serves as its engineering and documentation foundation.
+The website presents published evaluations, professional methodologies and canonical records in a structured editorial experience, while this repository preserves the engineering history, documentation and release process behind the platform.
 
-**Portfolio**
+**Website**
 
 https://hammedbuari.github.io
 
-The portfolio and this repository complement one another.
+The publication platform presents the published work.
 
-The website tells the story.
-
-The repository documents the system.
+The repository preserves how it is engineered.
 
 ---
 
@@ -118,111 +110,115 @@ hammedbuari.github.io/
 
 # Repository Architecture
 
-This Digital Home is organised as a documentation-first engineering system.
+This publication platform repository is organised as a documentation-first engineering system.
 
-Rather than allowing the repository to evolve into an unstructured collection of files, each directory has a clearly defined architectural responsibility. The objective is not simply organisation—it is long-term maintainability.
+Rather than evolving into an unstructured collection of files, each directory has a clearly defined architectural responsibility supporting publication, documentation, engineering or evaluation.
 
-As the portfolio expands, new work should extend the existing architecture rather than introduce new organisational patterns. This preserves clarity, reduces future restructuring, and allows the Digital Home to grow without losing its identity.
+As the platform evolves, new work should extend the existing architecture rather than introduce new organisational patterns. This preserves clarity, improves maintainability and allows the publication platform to grow without sacrificing its editorial identity.
 
 | Component | Architectural Responsibility |
 |-----------|------------------------------|
 | `assets/` | Stores static resources used throughout the Digital Home while keeping presentation assets isolated from documentation and application files. |
 | `docs/` | Houses repository-level documentation, architectural notes, engineering decisions and supporting reference material. |
-| `portfolio/` | Represents the evidence layer of the Digital Home, containing evaluation work, case studies and technical projects. |
+| `portfolio/` | Contains published evaluations, case studies, technical investigations and supporting evidence. |
 | `CHANGELOG.md` | Maintains the engineering history of the repository by recording meaningful releases instead of undocumented revisions. |
 | `LICENSE` | Defines the permitted use of repository content while protecting original work. |
-| `README.md` | Serves as the canonical entrance to the Digital Home and introduces visitors to the repository. |
-| `index.html` | Acts as the entry point of the live GitHub Pages portfolio. |
+| `README.md` | Serves as the canonical introduction to the AI Evaluation Publication Platform. |
+| `index.html` | Acts as the entry point of the live AI Evaluation Publication Platform. |
 
-The architecture is intentionally truthful, scalable and elegant.
+The architecture is intentionally truthful, scalable and editorially consistent.
 
-It is designed so that future work is incorporated by extending existing sections rather than restructuring the repository itself. In doing so, the Digital Home remains coherent, maintainable and architecturally consistent as it continues to evolve.
+Future releases should extend the existing publication system rather than restructure it, ensuring the platform remains coherent, maintainable and faithful to its documentation-first philosophy.
 
 ---
 
 # Engineering Principles
 
-This Digital Home is maintained according to a small number of engineering principles that govern every meaningful decision made within the repository.
+This AI Evaluation Publication Platform is maintained according to a small number of engineering and editorial principles that guide every meaningful decision made within the repository.
 
-These principles provide consistency as the portfolio evolves and ensure that growth never compromises structure or purpose.
+These principles preserve consistency as the platform evolves and ensure that each release strengthens its structure, credibility and long-term maintainability.
 
 ## Purpose before presentation
 
-Every file, directory and document should exist because it serves a clearly defined purpose.
+Every file, directory, document and published evaluation should exist because it serves a clearly defined purpose.
 
-Nothing should be introduced simply because it is common practice or because it appears in other repositories.
+Nothing should be introduced simply because it is conventional or commonly found in other repositories.
 
 ## Structure before scale
 
 Growth should strengthen the existing architecture rather than increase complexity.
 
-A repository that scales through deliberate organisation remains understandable long after it expands.
+A publication platform that scales through deliberate organisation remains understandable long after it expands.
 
 ## Documentation before memory
 
-Important decisions should be recorded.
+Important decisions should be documented.
 
-The repository should explain itself through documentation rather than rely upon personal recollection or undocumented assumptions.
+The platform should explain itself through versioned documentation rather than rely on personal recollection or undocumented assumptions.
 
 ## Evidence before claims
 
-Professional capability is demonstrated through visible work.
+Professional capability is demonstrated through published work.
 
-Projects, case studies and documentation should communicate competence more effectively than unsupported statements.
+Evaluation records, methodologies, case studies and engineering documentation should communicate competence more effectively than unsupported statements.
 
 ## Continuous refinement
 
-This repository is intentionally evergreen.
+This publication platform is intentionally evergreen.
 
-Every meaningful improvement should preserve the integrity of the architecture while moving the Digital Home forward through deliberate iteration.
+Every meaningful release should preserve the integrity of previously published work while improving the platform through deliberate iteration.
 
 ---
 
-# What You Will Find Here
+# Published Content
 
-As the Digital Home matures, it will continue to develop around a carefully curated collection of professional work.
+As the AI Evaluation Publication Platform evolves, it will continue to expand through carefully reviewed professional publications.
 
-Each addition should strengthen the overall system rather than simply increase the number of repositories or documents.
+Each addition should strengthen the integrity of the publication platform rather than simply increase its volume.
 
-## AI Evaluation
+## Published AI Evaluations
 
-Structured evaluation work demonstrating human judgement, response assessment, reasoning analysis and evidence-based quality review.
+Evidence-based AI evaluation records demonstrating structured reasoning, comparative assessment, instruction adherence, factual analysis and professional judgement.
 
-## Product and UX Evaluation
+## Product & UX Evaluation
 
-Professional evaluations of digital experiences with emphasis on usability, interaction quality, accessibility and product thinking.
+Published usability reviews and product evaluations focused on interaction quality, user experience, heuristic assessment and practical recommendations.
 
-## Technical Projects
+## Evaluation Methodologies
 
-Engineering work demonstrating practical problem-solving, maintainable implementation and thoughtful software development.
+Documented evaluation frameworks, review criteria and editorial methodologies that support consistent, repeatable professional assessment.
+
+## Technical Engineering
+
+Software engineering work supporting evaluation practice, publication systems and documentation-first development.
 
 ## Case Studies
 
-Documented investigations that explain not only the outcome of a project but the reasoning, decisions and lessons that shaped it.
+Detailed investigations explaining not only final outcomes but also the evidence, reasoning and engineering decisions that produced them.
 
 ## Documentation
 
-Supporting engineering documentation, architectural notes and technical writing that provide context for the work contained throughout the repository.
+Architectural documentation, technical writing and release history supporting the long-term integrity of the publication platform.
 
 ---
 
 # Development Philosophy
 
-This Digital Home is designed to evolve deliberately rather than rapidly.
+This AI Evaluation Publication Platform is designed to evolve deliberately rather than rapidly.
 
 Growth should never compromise clarity.
 
-Future work will extend the existing architecture instead of replacing it.
+Future work should extend the existing architecture instead of replacing it.
 
-Completed work will remain documented.
+Published evaluations remain permanent.
 
-New work will be introduced with appropriate context.
+New evaluations are introduced through versioned releases.
 
-Planned work will always be distinguished from completed work.
+Methodologies continue to mature.
 
-The objective is not to build the largest portfolio.
+The objective is not to publish the largest collection of work.
 
-The objective is to build one that remains coherent, understandable and professionally representative for years to come.
+The objective is to maintain a publication platform that remains coherent, trustworthy and professionally representative over time.
 
 ---
 
@@ -232,58 +228,56 @@ Development follows a release philosophy rather than isolated edits.
 
 Meaningful improvements are documented through versioned releases recorded in the project changelog.
 
-This provides traceability, preserves architectural decisions and demonstrates continuous refinement over time.
+This provides traceability, preserves editorial decisions and demonstrates continuous refinement over time.
 
-The README itself is intended to remain stable.
+This README is intended to remain the canonical editorial introduction to the publication platform.
 
-As the repository grows, supporting projects, documentation and portfolio evidence will expand around it while this document continues to serve as the permanent entrance to the Digital Home.
+As the platform evolves, published evaluation records, methodologies, engineering documentation and supporting evidence will continue to expand around it while preserving a stable architectural foundation.
 
 ---
 
 # Current Status
 
-The Digital Home is operational and intentionally under continuous refinement.
+The AI Evaluation Publication Platform is operational and under deliberate continuous refinement.
 
-Its architectural foundation has now been established.
+Its architectural and editorial foundations have been established.
 
-Future development will strengthen this foundation rather than redesign it.
+Future development will strengthen these foundations through new published evaluations, improved methodologies and carefully documented engineering releases.
 
-Every meaningful addition should improve clarity, maintainability and long-term value.
-
-The objective remains steady, deliberate progress rather than rapid expansion.
+The objective remains steady, evidence-based progress rather than rapid expansion.
 
 ---
 
 # Future Direction
 
-The next stage of development focuses on strengthening evidence rather than increasing volume.
+Future releases will focus on strengthening evidence rather than increasing volume.
 
-Future releases will gradually introduce:
+Planned development includes:
 
-- documented AI evaluation case studies;
-- structured product and UX evaluation work;
-- engineering write-ups and technical documentation;
-- carefully selected software projects;
-- supporting visual evidence where appropriate; and
-- continuous refinements recorded through the project changelog.
+- additional published AI evaluation records;
+- expanded product and UX evaluation studies;
+- documented evaluation methodologies;
+- engineering documentation supporting publication workflows;
+- carefully selected technical projects; and
+- continuous platform refinements recorded through versioned releases.
 
-Each addition should strengthen the Digital Home as a complete system rather than exist as an isolated artifact.
+Every addition should strengthen the publication platform as a coherent editorial system rather than exist as an isolated publication.
 
 The guiding principle remains unchanged:
 
-**Build deliberately. Evaluate thoughtfully. Improve continuously.**
+**Build deliberately. Evaluate thoughtfully. Publish responsibly.**
 
 ---
 
 # Connect
 
-Whether you are a recruiter, collaborator, fellow engineer or simply exploring my work, thank you for visiting.
+Whether you are a recruiter, collaborator, researcher or fellow engineer, thank you for visiting the AI Evaluation Publication Platform.
 
-**Portfolio**
+**AI Evaluation Publication Platform**
 
 https://hammedbuari.github.io
 
-**GitHub**
+**GitHub Repository**
 
 https://github.com/hammedbuari
 
@@ -293,24 +287,26 @@ https://github.com/hammedbuari
 
 This repository was never intended to become another collection of files.
 
-It was designed to become a Digital Home.
+It was designed to become an AI Evaluation Publication Platform.
 
-A place where engineering, evaluation, documentation and continuous learning coexist within a single, coherent system.
-
-Projects may change.
+A platform where published evaluations, engineering work, documentation and continuous learning coexist within a single version-controlled system.
 
 Technologies will evolve.
 
-Experience will grow.
+Evaluation methodologies will mature.
 
-This repository will grow alongside them—carefully, deliberately and with respect for the architectural decisions that shaped it from the beginning.
+New evidence will be published.
+
+Experience will continue to grow.
+
+This platform will evolve alongside them—carefully, deliberately and with respect for the architectural principles that have guided it from the beginning.
 
 Thank you for visiting.
 
-I hope you leave with a clearer understanding not only of what I build, but of how I think.
+I hope you leave with a clearer understanding not only of the work that has been published, but also of the methodology, discipline and engineering mindset behind it.
 
 ---
 
-**The Hammed Babatunde Buari Digital Home**
+**Hammed Babatunde Buari AI Evaluation Publication Platform**
 
-*Designed with intention. Built through iteration. Maintained with care.*
+*Evidence-based evaluation. Documentation-first engineering. Continuous refinement.*
