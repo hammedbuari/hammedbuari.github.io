@@ -5838,6 +5838,99 @@ a:focus-visible {
 
 </style>
 
+
+<style id="release-12-2-1-responsive-grid">
+/* =========================================================
+   RELEASE 12.2.1 — CANONICAL RESPONSIVE GRID
+   Device-agnostic layout authority
+   ========================================================= */
+
+:root {
+  --canonical-content-max: 1280px;
+  --canonical-gutter: 32px;
+}
+
+/* One outer grid across the publication platform */
+.container,
+.evaluation-lab-container,
+.walkthrough-container,
+.case-study-container,
+.purpose-container,
+.philosophy-container,
+.evaluation-archive-container {
+  width: min(
+    calc(100% - (var(--canonical-gutter) * 2)),
+    var(--canonical-content-max)
+  );
+  max-width: var(--canonical-content-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Editorial measure remains intentionally narrower */
+.purpose-header,
+.purpose-content,
+.purpose-section blockquote,
+.philosophy-header {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  :root {
+    --canonical-content-max: 1280px;
+    --canonical-gutter: 40px;
+  }
+}
+
+/* Standard desktop */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  :root {
+    --canonical-content-max: 100%;
+    --canonical-gutter: 32px;
+  }
+}
+
+/* Tablet landscape / compact desktop */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  :root {
+    --canonical-content-max: 100%;
+    --canonical-gutter: 28px;
+  }
+}
+
+/* Tablet portrait */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --canonical-content-max: 100%;
+    --canonical-gutter: 24px;
+  }
+
+  .purpose-header,
+  .purpose-content,
+  .purpose-section blockquote,
+  .philosophy-header {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  :root {
+    --canonical-content-max: 100%;
+    --canonical-gutter: 18px;
+  }
+
+  .purpose-header,
+  .purpose-content,
+  .purpose-section blockquote,
+  .philosophy-header {
+    max-width: 100%;
+  }
+}
+</style>
+
 </head>
 
 <body>
