@@ -8,6 +8,23 @@ This changelog records what changed. The reasoning behind significant engineerin
 
 ---
 
+## [12.3.0] — Career Content Alignment
+
+### Improved
+
+- Career experience aligned with the canonical resume.
+- Featured projects aligned with the AI Evaluation portfolio.
+- Skills refined around AI evaluation, Product/UX evaluation, data quality, and supporting technical capabilities.
+- Removed legacy career content that no longer represented the canonical professional profile.
+
+### Preserved
+
+- Existing Career section structure and visual system.
+- Responsive layout across desktop and tablet views.
+- Established portfolio architecture and evaluation content.
+
+---
+
 ## [4.3] — Repository Engineering
 
 ### Added
