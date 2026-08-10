@@ -5931,6 +5931,31 @@ a:focus-visible {
 }
 </style>
 
+
+<style id="release-12-2-2-wide-editorial">
+/* =========================================================
+   RELEASE 12.2.2 — WIDE VIEWPORT EDITORIAL HARMONIZATION
+   Landscape tablet + desktop refinement only
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  /* Let editorial introductions follow the canonical page grid. */
+  .purpose-header,
+  .purpose-content,
+  .purpose-section blockquote,
+  .philosophy-header {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Five principles form one balanced wide-screen sequence. */
+  .philosophy-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+</style>
+
 </head>
 
 <body>
