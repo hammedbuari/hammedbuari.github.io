@@ -5956,6 +5956,93 @@ a:focus-visible {
 }
 </style>
 
+
+<style id="release-12-2-3-wide-canvas-alignment">
+/* ==========================================================
+   RELEASE 12.2.3 — CASE STUDY / WALKTHROUGH / PRACTICE WIDE-CANVAS ALIGNMENT
+   Desktop + wide landscape only
+   Preserves tablet portrait and mobile behaviour
+========================================================== */
+
+@media (min-width: 1200px) {
+
+  /* -------------------------------------------------------
+     Canonical wide section canvases
+  ------------------------------------------------------- */
+
+  .case-study-container,
+  .walkthrough-container,
+  #evaluation-practice > .container {
+    width: min(
+      calc(100% - (2 * var(--canonical-gutter, 32px))),
+      var(--canonical-content-max, 1280px)
+    );
+    max-width: var(--canonical-content-max, 1280px);
+    margin-inline: auto;
+  }
+
+  /* -------------------------------------------------------
+     Case Study — release legacy narrow editorial cap
+  ------------------------------------------------------- */
+
+  .case-study-header {
+    width: 100%;
+    max-width: none;
+  }
+
+  .case-study-header h2,
+  .case-study-intro {
+    max-width: none;
+  }
+
+  .case-study-meta,
+  .case-study-workspace {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* -------------------------------------------------------
+     Evaluation Walkthrough — use the full canonical canvas
+  ------------------------------------------------------- */
+
+  .walkthrough-header {
+    width: 100%;
+    max-width: none;
+  }
+
+  .walkthrough-header h2,
+  .walkthrough-intro {
+    max-width: none;
+  }
+
+  .walkthrough-layout,
+  .walkthrough-outcome {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* -------------------------------------------------------
+     Evaluation Practice — align with Purpose architecture
+  ------------------------------------------------------- */
+
+  .evaluation-practice-heading {
+    width: 100%;
+    max-width: none;
+  }
+
+  .evaluation-practice-heading h2,
+  .evaluation-practice-introduction {
+    max-width: none;
+  }
+
+  .evaluation-practice-framework {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
