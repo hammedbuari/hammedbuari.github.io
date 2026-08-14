@@ -8,6 +8,22 @@ This changelog records what changed. The reasoning behind significant engineerin
 
 ---
 
+## [12.4.0] — Career Experience Depth
+
+### Improved
+
+- Added a concise `Evaluation relevance:` layer to each of the four canonical Experience cards.
+- Connected each role's existing responsibilities to role-specific evaluation evidence without duplicating the résumé.
+- Strengthened the Career section's professional context across AI evaluation, data quality, healthcare data validation, and software development.
+
+### Preserved
+
+- Existing four-role chronology and canonical role descriptions.
+- Career section structure, visual system, and responsive behaviour.
+- Featured Projects, Skills, Contact, and the wider portfolio architecture.
+
+---
+
 ## [12.3.0] — Career Content Alignment
 
 ### Improved
