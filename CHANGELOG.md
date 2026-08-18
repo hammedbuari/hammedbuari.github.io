@@ -8,6 +8,24 @@ This changelog records what changed. The reasoning behind significant engineerin
 
 ---
 
+## [12.5.0] — Featured Projects Evidence Layer
+
+### Improved
+
+- Added a concise evidence layer to all four canonical Featured Project cards.
+- Made demonstrated evaluation capability explicit without changing canonical project titles or descriptions.
+- Strengthened portfolio evidence across AI response evaluation, Product/UX evaluation, evaluation-framework development, and the Digital Home portfolio.
+
+### Preserved
+
+- Canonical résumé alignment.
+- Existing Experience and Skills content.
+- Existing project titles and descriptions.
+- Layout, responsive behaviour, and section architecture.
+
+---
+
+
 ## [12.4.0] — Career Experience Depth
 
 ### Improved
