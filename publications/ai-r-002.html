@@ -1,0 +1,3474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    AI-R-002 | NHS Better Health Healthy Choices Quiz — Product & UX Evaluation
+  </title>
+
+  <meta
+    name="description"
+    content="AI-R-002: evidence-led Product & UX evaluation of the NHS Better Health Healthy Choices Quiz."
+  >
+
+  <meta
+    name="author"
+    content="Hammed Babatunde Buari"
+  >
+
+  <link
+    rel="canonical"
+    href="https://hammedbuari.github.io/publications/ai-r-002.html"
+  >
+
+  <meta
+    property="og:type"
+    content="article"
+  >
+
+  <meta
+    property="og:title"
+    content="AI-R-002 | NHS Better Health Healthy Choices Quiz — Product & UX Evaluation"
+  >
+
+  <meta
+    property="og:description"
+    content="Evidence-led Product & UX evaluation examining usability, interaction behaviour, transparency, interpretation and user control in the NHS Better Health Healthy Choices Quiz."
+  >
+
+  <meta
+    property="og:url"
+    content="https://hammedbuari.github.io/publications/ai-r-002.html"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Hammed Babatunde Buari AI Evaluation Publication Platform"
+  >
+
+  <meta
+    property="og:image"
+    content="https://hammedbuari.github.io/assets/images/social-preview.png"
+  >
+
+  <!-- ==========================================================
+       RELEASE 13.0.0
+       AI-R-002
+       PUBLICATION FOUNDATION & PRESERVED EVALUATION RECORD
+  =========================================================== -->
+
+  <!-- ==========================================================
+       RELEASE 13.0.1
+       AI-R-002
+       CANONICAL EVIDENCE & FINDINGS SYNTHESIS
+       S01–S69 RECONCILIATION
+  =========================================================== -->
+
+  <style>
+
+    /* ==========================================================
+       FOUNDATION
+    =========================================================== */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      margin: 0;
+      background: #f8fafc;
+      color: #0f172a;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    body,
+    main,
+    article,
+    section,
+    div,
+    header,
+    footer {
+      min-width: 0;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover {
+      color: #1d4ed8;
+    }
+
+    img,
+    svg,
+    video {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin-inline: auto;
+    }
+
+    /* ==========================================================
+       PUBLICATION NAVIGATION
+    =========================================================== */
+
+    .publication-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+      background: rgba(248, 250, 252, 0.96);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+
+    .publication-nav {
+      display: flex;
+      min-height: 72px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    .publication-brand {
+      color: #0f172a;
+      font-size: 0.98rem;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .publication-nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+
+    .publication-nav-links a {
+      color: #475569;
+      font-size: 0.86rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .publication-nav-links a:hover {
+      color: #2563eb;
+    }
+
+    /* ==========================================================
+       PUBLICATION HERO
+    =========================================================== */
+
+    .publication-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 6.5rem 0 5rem;
+      border-bottom: 1px solid #e2e8f0;
+      background:
+        radial-gradient(
+          circle at 88% 12%,
+          rgba(37, 99, 235, 0.10),
+          transparent 30%
+        ),
+        #f8fafc;
+    }
+
+    .publication-hero::after {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(
+          rgba(15, 23, 42, 0.025) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(15, 23, 42, 0.025) 1px,
+          transparent 1px
+        );
+      background-size: 42px 42px;
+      content: "";
+      mask-image:
+        linear-gradient(
+          to bottom,
+          black,
+          transparent 90%
+        );
+    }
+
+    .publication-hero-layout {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(300px, 0.8fr);
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .publication-eyebrow {
+      margin: 0 0 1rem;
+      color: #2563eb;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .publication-hero h1 {
+      max-width: 820px;
+      margin: 0;
+      color: #0f172a;
+      font-size:
+        clamp(
+          2.7rem,
+          6.2vw,
+          5.15rem
+        );
+      line-height: 1;
+      letter-spacing: -0.06em;
+    }
+
+    .publication-hero h1 span {
+      display: block;
+      margin-top: 0.25rem;
+      color: #2563eb;
+    }
+
+    .publication-deck {
+      max-width: 760px;
+      margin: 1.6rem 0 0;
+      color: #475569;
+      font-size: 1.12rem;
+      line-height: 1.85;
+    }
+
+    .publication-byline {
+      margin: 1.8rem 0 0;
+      color: #64748b;
+      font-size: 0.88rem;
+      font-weight: 750;
+    }
+
+    /* ==========================================================
+       HERO EVIDENCE PANEL
+    =========================================================== */
+
+    .publication-console {
+      padding: 1.5rem;
+      border: 1px solid #dbe4f0;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow:
+        0 28px 75px rgba(15, 23, 42, 0.10);
+    }
+
+    .publication-console-header {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .console-label {
+      margin: 0 0 0.3rem;
+      color: #2563eb;
+      font-size: 0.69rem;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .publication-console h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+    }
+
+    .console-status {
+      display: inline-flex;
+      margin-top: 0.75rem;
+      padding: 0.38rem 0.62rem;
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      background: #fffbeb;
+      color: #92400e;
+      font-size: 0.68rem;
+      font-weight: 900;
+    }
+
+    .console-list {
+      display: grid;
+    }
+
+    .console-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 0.7rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #edf1f5;
+    }
+
+    .console-index {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      place-items: center;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 0.7rem;
+      font-weight: 900;
+    }
+
+    .console-item strong {
+      display: block;
+      margin-bottom: 0.1rem;
+      font-size: 0.86rem;
+    }
+
+    .console-item p {
+      margin: 0;
+      color: #64748b;
+      font-size: 0.76rem;
+      line-height: 1.55;
+    }
+
+    /* ==========================================================
+       PUBLICATION BODY
+    =========================================================== */
+
+    .publication-main {
+      padding: 5rem 0 7rem;
+    }
+
+    .publication-record {
+      width: 100%;
+      max-width: 100%;
+      padding: 2.5rem;
+      border: 1px solid #dbe4f0;
+      border-radius: 26px;
+      background: #ffffff;
+      box-shadow:
+        0 18px 48px rgba(15, 23, 42, 0.055);
+    }
+
+    .record-header {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .record-identity {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .record-id {
+      color: #2563eb;
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .record-state {
+      display: inline-flex;
+      padding: 0.35rem 0.6rem;
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      background: #fffbeb;
+      color: #92400e;
+      font-size: 0.68rem;
+      font-weight: 900;
+    }
+
+    .record-header h2 {
+      max-width: 860px;
+      margin: 0;
+      font-size:
+        clamp(
+          2rem,
+          4.4vw,
+          3.4rem
+        );
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+    }
+
+    .record-introduction {
+      max-width: 900px;
+      margin: 1.25rem 0 0;
+      color: #475569;
+      font-size: 1.04rem;
+      line-height: 1.85;
+    }
+
+    /* ==========================================================
+       RECORD METADATA
+    =========================================================== */
+
+    .record-meta {
+      display: grid;
+      grid-template-columns:
+        repeat(
+          4,
+          minmax(0, 1fr)
+        );
+      gap: 0.85rem;
+      margin-top: 1.5rem;
+    }
+
+    .meta-item {
+      padding: 1rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+
+    .meta-label {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #64748b;
+      font-size: 0.66rem;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .meta-value {
+      display: block;
+      color: #0f172a;
+      font-size: 0.85rem;
+      font-weight: 750;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================
+       SHARED PUBLICATION SECTIONS
+    =========================================================== */
+
+    .publication-section {
+      margin-top: 1.5rem;
+      padding: 1.8rem;
+      border: 1px solid rgba(100, 116, 139, 0.20);
+      border-radius: 18px;
+      background: #ffffff;
+    }
+
+    .publication-label {
+      display: inline-block;
+      margin-bottom: 0.65rem;
+      color: #475569;
+      font-size: 0.74rem;
+      font-weight: 900;
+      line-height: 1.4;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .publication-section h3 {
+      max-width: 850px;
+      margin: 0;
+      color: #0f172a;
+      font-size:
+        clamp(
+          1.45rem,
+          2.7vw,
+          2rem
+        );
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    .publication-section h4 {
+      margin: 0;
+      color: #0f172a;
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+
+    .publication-section p,
+    .publication-section li {
+      color: #475569;
+      line-height: 1.8;
+    }
+
+    .publication-section p {
+      margin: 0.9rem 0 0;
+    }
+
+    .publication-section ul,
+    .publication-section ol {
+      margin: 1rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .publication-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    /* ==========================================================
+       EVALUATION BRIEF
+    =========================================================== */
+
+    .brief-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(
+          2,
+          minmax(0, 1fr)
+        );
+      gap: 0.9rem;
+      margin-top: 1.25rem;
+    }
+
+    .brief-card {
+      padding: 1.1rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+
+    .brief-card strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #0f172a;
+      font-size: 0.88rem;
+    }
+
+    .brief-card span {
+      display: block;
+      color: #64748b;
+      font-size: 0.86rem;
+      line-height: 1.65;
+    }
+
+    /* ==========================================================
+       EVIDENCE LOG
+    =========================================================== */
+
+    .evidence-log {
+      display: grid;
+      gap: 0.7rem;
+      margin-top: 1.2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .evidence-log li {
+      display: grid;
+      grid-template-columns:
+        58px
+        minmax(0, 1fr);
+      gap: 0.85rem;
+      align-items: start;
+      margin: 0;
+      padding: 0.95rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      background: #fbfdff;
+    }
+
+    .screen-id {
+      display: inline-flex;
+      justify-content: center;
+      padding: 0.28rem 0.4rem;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.69rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+    }
+
+    .evidence-log strong {
+      color: #0f172a;
+    }
+
+    /* ==========================================================
+       FINDINGS
+    =========================================================== */
+
+    .finding {
+      margin-top: 1rem;
+      padding: 1.25rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      background: #ffffff;
+    }
+
+    .finding-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .finding-id {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: #2563eb;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+    }
+
+    .severity {
+      flex: 0 0 auto;
+      padding: 0.36rem 0.6rem;
+      border: 1px solid;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 900;
+    }
+
+    .severity-moderate {
+      border-color: #fde68a;
+      background: #fffbeb;
+      color: #92400e;
+    }
+
+    .severity-low {
+      border-color: #bfdbfe;
+      background: #eff6ff;
+      color: #1e40af;
+    }
+
+    .finding-details {
+      margin: 0.85rem 0 0;
+    }
+
+    .finding-details div {
+      display: grid;
+      grid-template-columns:
+        115px
+        minmax(0, 1fr);
+      gap: 0.8rem;
+      padding: 0.65rem 0;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    .finding-details dt {
+      color: #0f172a;
+      font-size: 0.84rem;
+      font-weight: 850;
+    }
+
+    .finding-details dd {
+      margin: 0;
+      color: #475569;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .severity-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.2rem;
+    }
+
+    .severity-summary span {
+      display: inline-flex;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 0.75rem;
+      font-weight: 850;
+    }
+
+    /* ==========================================================
+       STRENGTHS / LIMITS / CHECKPOINT
+    =========================================================== */
+
+    .strength-section {
+      border-left: 5px solid #16a34a;
+      background: #f7fdf9;
+    }
+
+    .limit-section {
+      border-left: 5px solid #64748b;
+      background: #f8fafc;
+    }
+
+    .checkpoint-section {
+      border-left: 5px solid #2563eb;
+      background: #f8fbff;
+    }
+
+    .checkpoint-state {
+      display: inline-flex;
+      margin-top: 1rem;
+      padding: 0.45rem 0.7rem;
+      border: 1px solid #bfdbfe;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.74rem;
+      font-weight: 900;
+    }
+
+    /* ==========================================================
+       FOOTER
+    =========================================================== */
+
+    .publication-footer {
+      padding: 2rem 0 3rem;
+      border-top: 1px solid #e2e8f0;
+      color: #64748b;
+      font-size: 0.84rem;
+    }
+
+    .publication-footer-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .publication-footer a {
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    /* ==========================================================
+       RESPONSIVE PUBLICATION ENGINEERING
+    =========================================================== */
+
+    @media (max-width: 850px) {
+
+      html {
+        scroll-padding-top: 84px;
+      }
+
+      .publication-hero {
+        padding:
+          4.5rem
+          0
+          3.8rem;
+      }
+
+      .publication-hero-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .publication-console {
+        max-width: 620px;
+      }
+
+      .record-meta {
+        grid-template-columns:
+          repeat(
+            2,
+            minmax(0, 1fr)
+          );
+      }
+
+    }
+
+    @media (max-width: 640px) {
+
+      .container {
+        width: 100%;
+        padding-inline: 0.85rem;
+      }
+
+      .publication-nav {
+        min-height: 64px;
+      }
+
+      .publication-nav-links {
+        gap: 0.65rem;
+      }
+
+      .publication-nav-links a {
+        font-size: 0.76rem;
+      }
+
+      .publication-hero {
+        padding:
+          3.5rem
+          0
+          3rem;
+      }
+
+      .publication-hero h1 {
+        font-size:
+          clamp(
+            2.45rem,
+            12vw,
+            3.6rem
+          );
+      }
+
+      .publication-deck {
+        font-size: 1rem;
+      }
+
+      .publication-main {
+        padding:
+          2.5rem
+          0
+          4rem;
+      }
+
+      .publication-record {
+        padding: 1.1rem;
+        border-radius: 20px;
+      }
+
+      .record-meta,
+      .brief-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .publication-section {
+        padding: 1.2rem;
+        border-radius: 14px;
+      }
+
+      .evidence-log li {
+        grid-template-columns: 1fr;
+      }
+
+      .screen-id {
+        width: fit-content;
+      }
+
+      .finding-header {
+        flex-direction: column;
+      }
+
+      .finding-details div {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+      }
+
+      .publication-footer-layout {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+  
+
+    /* Release 13.0.2 — evidence-ledger navigation landmarks */
+    .evidence-log > .evidence-domain {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 1.7rem 0 0.45rem;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      list-style: none;
+    }
+
+    .evidence-log > .evidence-domain:first-child {
+      margin-top: 0.55rem;
+    }
+
+    .evidence-log > .evidence-domain::after {
+      content: "";
+      flex: 1 1 auto;
+      height: 1px;
+      background: #dbe5f0;
+    }
+
+    .evidence-log > .evidence-domain h3 {
+      flex: 0 0 auto;
+      margin: 0;
+      color: #52627a;
+      font-size: 0.76rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 560px) {
+      .evidence-log > .evidence-domain {
+        margin-top: 1.45rem;
+        gap: 0.65rem;
+      }
+
+      .evidence-log > .evidence-domain h3 {
+        font-size: 0.7rem;
+        letter-spacing: 0.09em;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ==========================================================
+       RELEASE 13.0.0
+       STANDALONE AI-R-002 PUBLICATION
+  =========================================================== -->
+
+  <!-- ==========================================================
+       RELEASE 13.0.1
+       CANONICAL EVIDENCE & FINDINGS SYNTHESIS
+  =========================================================== -->
+
+  <header class="publication-header">
+
+    <div class="container">
+
+      <nav
+        class="publication-nav"
+        aria-label="Publication navigation"
+      >
+
+        <a
+          class="publication-brand"
+          href="../index.html"
+        >
+          Hammed Babatunde Buari
+        </a>
+
+        <div class="publication-nav-links">
+
+          <a href="#evaluation">
+            Evaluation
+          </a>
+
+          <a href="#evidence">
+            Evidence
+          </a>
+
+          <a href="#findings">
+            Findings
+          </a>
+
+          <a href="../index.html#evaluation-archive">
+            Archive
+          </a>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========================================================
+         PUBLICATION HERO
+    ========================================================= -->
+
+    <section class="publication-hero">
+
+      <div
+        class="container publication-hero-layout"
+      >
+
+        <div>
+
+          <p class="publication-eyebrow">
+            AI-R-002 · Product &amp; UX Evaluation
+          </p>
+
+          <h1>
+            NHS Better Health
+            <span>
+              Healthy Choices Quiz
+            </span>
+          </h1>
+
+          <p class="publication-deck">
+            Evidence-led evaluation of a public health digital
+            experience, examining eligibility, interaction
+            behaviour, user control, data transparency,
+            interpretability and trust.
+          </p>
+
+          <p class="publication-byline">
+            Independent evaluation by Hammed Babatunde Buari ·
+            Evidence captured 20 August–1 September 2026
+          </p>
+
+        </div>
+
+        <aside
+          class="publication-console"
+          aria-label="Evaluation checkpoint"
+        >
+
+          <div class="publication-console-header">
+
+            <p class="console-label">
+              Evaluation Record
+            </p>
+
+            <h2>
+              Canonical evaluation record
+            </h2>
+
+            <span class="console-status">
+              Canonical synthesis complete
+            </span>
+
+          </div>
+
+          <div class="console-list">
+
+            <div class="console-item">
+
+              <span class="console-index">
+                01
+              </span>
+
+              <div>
+                <strong>
+                  Published evidence
+                </strong>
+                <p>
+                  NHS product, scoring, privacy and
+                  accessibility information reviewed.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="console-item">
+
+              <span class="console-index">
+                02
+              </span>
+
+              <div>
+                <strong>
+                  Direct interaction
+                </strong>
+                <p>
+                  Sixty-nine-screen end-to-end walkthrough
+                  completed and reconciled.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="console-item">
+
+              <span class="console-index">
+                03
+              </span>
+
+              <div>
+                <strong>
+                  Findings
+                </strong>
+                <p>
+                  Nine severity-rated findings retained after
+                  canonical reconciliation.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="console-item">
+
+              <span class="console-index">
+                04
+              </span>
+
+              <div>
+                <strong>
+                  Final publication
+                </strong>
+                <p>
+                  Visual QA is complete; Evaluation Archive integration remains before
+                  canonical publication.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================
+         PUBLICATION RECORD
+    ========================================================= -->
+
+    <section
+      class="publication-main"
+      id="evaluation"
+    >
+
+      <div class="container">
+
+        <article
+          class="publication-record"
+          id="ai-r-002"
+          aria-labelledby="ai-r-002-title"
+        >
+
+          <header class="record-header">
+
+            <div class="record-identity">
+
+              <span class="record-id">
+                AI-R-002
+              </span>
+
+              <span class="record-state">
+                Canonical synthesis complete
+              </span>
+
+            </div>
+
+            <h2 id="ai-r-002-title">
+              Evidence-led Product &amp; UX Evaluation
+            </h2>
+
+            <p class="record-introduction">
+              This publication preserves the completed end-to-end
+              Product &amp; UX evaluation of the NHS Better Health
+              Healthy Choices Quiz. The canonical synthesis reconciles
+              sixty-nine directly observed interaction states with
+              NHS-published product, scoring, privacy and accessibility
+              information. Observed behaviour, published evidence,
+              evaluator judgement and unresolved limitations remain
+              deliberately separated. The record does not claim
+              recruited-user research, analytics evidence, formal
+              accessibility certification or outcomes that were not
+              directly established.
+            </p>
+
+            <div class="record-meta">
+
+              <div class="meta-item">
+
+                <span class="meta-label">
+                  Record
+                </span>
+
+                <span class="meta-value">
+                  AI-R-002
+                </span>
+
+              </div>
+
+              <div class="meta-item">
+
+                <span class="meta-label">
+                  Discipline
+                </span>
+
+                <span class="meta-value">
+                  Product &amp; UX Evaluation
+                </span>
+
+              </div>
+
+              <div class="meta-item">
+
+                <span class="meta-label">
+                  Evidence
+                </span>
+
+                <span class="meta-value">
+                  Published + Direct Observation
+                </span>
+
+              </div>
+
+              <div class="meta-item">
+
+                <span class="meta-label">
+                  Current State
+                </span>
+
+                <span class="meta-value">
+                  Publication QA complete
+                </span>
+
+              </div>
+
+            </div>
+
+          </header>
+
+          <!-- ==================================================
+               EVALUATION BRIEF
+          =================================================== -->
+
+          <section
+            class="publication-section"
+            aria-labelledby="evaluation-brief-title"
+          >
+
+            <span class="publication-label">
+              Evaluation Brief
+            </span>
+
+            <h3 id="evaluation-brief-title">
+              Evaluate whether the Healthy Choices Quiz provides a
+              clear, trustworthy and usable public-health journey.
+            </h3>
+
+            <p>
+              The evaluation examines whether the quiz communicates
+              eligibility and expectations clearly, supports reliable
+              task completion, gives users appropriate control over
+              optional information, explains health-related scoring
+              responsibly, and provides sufficient context for users
+              to understand how their information and results are
+              handled.
+            </p>
+
+            <div class="brief-grid">
+
+              <div class="brief-card">
+
+                <strong>
+                  Primary task
+                </strong>
+
+                <span>
+                  Complete the lifestyle questionnaire and receive
+                  personalised health feedback and recommendations.
+                </span>
+
+              </div>
+
+              <div class="brief-card">
+
+                <strong>
+                  Evaluation mode
+                </strong>
+
+                <span>
+                  Independent heuristic review with deliberate
+                  evaluator-led interaction.
+                </span>
+
+              </div>
+
+              <div class="brief-card">
+
+                <strong>
+                  Evidence discipline
+                </strong>
+
+                <span>
+                  Direct observation is distinguished from published
+                  product claims and evaluator inference.
+                </span>
+
+              </div>
+
+              <div class="brief-card">
+
+                <strong>
+                  Severity model
+                </strong>
+
+                <span>
+                  S1 Low · S2 Moderate · S3 High · S4 Critical.
+                </span>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- ==================================================
+               METHOD
+          =================================================== -->
+
+          <section
+            class="publication-section"
+            aria-labelledby="method-title"
+          >
+
+            <span class="publication-label">
+              Evaluation Method
+            </span>
+
+            <h3 id="method-title">
+              Evidence before judgement
+            </h3>
+
+            <p>
+              The review followed a staged evaluation method:
+              establish the product objective and public claims,
+              inspect the live journey directly, deliberately test
+              interaction rules and edge conditions, separate
+              observed behaviour from inference, assign severity
+              only where supported by evidence, preserve positive
+              patterns as well as defects, and explicitly record
+              limitations.
+            </p>
+
+            <p>
+              The walkthrough was conducted on the live NHS Better
+              Health experience and included deliberate tests of
+              validation, eligibility, optionality, selection limits,
+              exclusive choices, disclosure controls, section
+              transitions and back-navigation state persistence.
+            </p>
+
+          </section>
+
+          <!-- ==================================================
+               PUBLISHED EVIDENCE
+          =================================================== -->
+
+          <section
+            class="publication-section"
+            id="evidence"
+            aria-labelledby="published-evidence-title"
+          >
+
+            <span class="publication-label">
+              Published Evidence
+            </span>
+
+            <h3 id="published-evidence-title">
+              The service establishes an intended experience before
+              the interactive journey begins.
+            </h3>
+
+            <p>
+              Public NHS information positions the Healthy Choices
+              Quiz as a short lifestyle assessment covering multiple
+              areas of health and wellbeing and leading to an overall
+              score, section-level feedback and recommended NHS
+              resources.
+            </p>
+
+            <p>
+              Additional NHS material provides information about
+              score calculation, privacy and interactive-tool data
+              handling, while the Better Health accessibility
+              statement documents the service's published
+              accessibility position.
+            </p>
+
+            <p>
+              These statements were treated as product claims to be
+              evaluated against the live interaction rather than as
+              proof that the intended behaviour always occurs.
+            </p>
+
+          </section>
+
+          <!-- ==================================================
+               DIRECT OBSERVATION LOG
+          =================================================== -->
+
+          <section
+            class="publication-section"
+            aria-labelledby="direct-observation-title"
+          >
+
+            <span class="publication-label">
+              Direct Observation Log
+            </span>
+
+            <h3 id="direct-observation-title">
+              Sixty-nine-screen end-to-end walkthrough
+            </h3>
+
+            <p>
+              The canonical observation ledger preserves the complete
+              primary evaluation path from eligibility through the
+              final result, score methodology and accessible chart
+              description. Interaction states are retained separately
+              where deliberate testing produced materially different
+              evidence.
+            </p>
+
+            <ol class="evidence-log">
+
+              <li class="evidence-domain">
+  <h3>About you</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S01
+                </span>
+
+                <span>
+                  <strong>
+                    Age and eligibility.
+                  </strong>
+                  The first interactive question asks the user&#x27;s age and states that the quiz is for adults aged 18 and over.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S02
+                </span>
+
+                <span>
+                  <strong>
+                    Empty-age validation.
+                  </strong>
+                  Continuing without an age produces both a prominent error summary and inline guidance to enter an age.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S03
+                </span>
+
+                <span>
+                  <strong>
+                    Under-18 handling.
+                  </strong>
+                  An ineligible age prevents continuation, explains why the quiz is unsuitable and provides a Health for Teens route.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S04
+                </span>
+
+                <span>
+                  <strong>
+                    First-name optionality.
+                  </strong>
+                  The first-name question is explicitly optional and can be skipped without blocking progression.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S05
+                </span>
+
+                <span>
+                  <strong>
+                    Gender optionality.
+                  </strong>
+                  Gender is optional, is stated not to affect the result and includes a Prefer not to say response.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S06
+                </span>
+
+                <span>
+                  <strong>
+                    Gender disclosure.
+                  </strong>
+                  An expandable explanation refers to uses described in the privacy policy rather than naming a specific immediate purpose.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S07
+                </span>
+
+                <span>
+                  <strong>
+                    Postcode optionality.
+                  </strong>
+                  Postcode is explicitly optional and is stated not to affect the result.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S08
+                </span>
+
+                <span>
+                  <strong>
+                    Postcode disclosure.
+                  </strong>
+                  The expandable explanation points to the privacy policy rather than stating a concrete purpose at the question.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S09
+                </span>
+
+                <span>
+                  <strong>
+                    About you transition.
+                  </strong>
+                  Completion of the About you section is explicitly acknowledged before Motivations begins.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Motivations</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S10
+                </span>
+
+                <span>
+                  <strong>
+                    Motivation selection.
+                  </strong>
+                  The interface says Select up to 3 and presents the choices as large checkbox cards.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S11
+                </span>
+
+                <span>
+                  <strong>
+                    Fourth motivation selection.
+                  </strong>
+                  A fourth motivation can become selected despite the stated maximum of three.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S12
+                </span>
+
+                <span>
+                  <strong>
+                    Motivation limit enforcement.
+                  </strong>
+                  Continuing with four selections produces a clear error instructing the user to select up to three.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S13
+                </span>
+
+                <span>
+                  <strong>
+                    Exclusive motivation alternative.
+                  </strong>
+                  Selecting None of the above clears competing motivation selections.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S14
+                </span>
+
+                <span>
+                  <strong>
+                    Support and guidance.
+                  </strong>
+                  A single-choice question asks how much support and guidance the user feels they have to make healthy changes.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S15
+                </span>
+
+                <span>
+                  <strong>
+                    Areas to improve.
+                  </strong>
+                  Users select up to two lifestyle areas while I&#x27;m not sure is visually separated as an alternative.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S16
+                </span>
+
+                <span>
+                  <strong>
+                    Back-navigation persistence.
+                  </strong>
+                  Returning to the preceding question preserves the existing answer rather than requiring re-entry.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S17
+                </span>
+
+                <span>
+                  <strong>
+                    Motivations transition.
+                  </strong>
+                  The service confirms completion of Motivations and previews Eating as the next section.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Eating</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S18
+                </span>
+
+                <span>
+                  <strong>
+                    Fruit and vegetable portions.
+                  </strong>
+                  Eating begins with a daily fruit-and-vegetable question supported by contextual portion examples.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S19
+                </span>
+
+                <span>
+                  <strong>
+                    Starchy foods.
+                  </strong>
+                  A multi-select question permits up to five choices, including wholegrain and refined options plus an exclusive I don&#x27;t eat these foods alternative.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S20
+                </span>
+
+                <span>
+                  <strong>
+                    Dairy and alternatives.
+                  </strong>
+                  A long multi-select question permits up to three dairy or plant-based alternatives and required multiple viewport captures to inspect fully.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S21
+                </span>
+
+                <span>
+                  <strong>
+                    Pre-prepared meals.
+                  </strong>
+                  Eating includes a mutually exclusive frequency question about pre-prepared meals.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S22
+                </span>
+
+                <span>
+                  <strong>
+                    Eating transition.
+                  </strong>
+                  The service confirms completion of Eating and previews Alcohol as the next section.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Alcohol</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S23
+                </span>
+
+                <span>
+                  <strong>
+                    Alcohol frequency.
+                  </strong>
+                  Alcohol begins with a frequency question and provides a collapsed Pregnancy and alcohol disclosure.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S24
+                </span>
+
+                <span>
+                  <strong>
+                    Pregnancy and alcohol disclosure.
+                  </strong>
+                  Pregnancy guidance expands inline without requiring the user to leave the questionnaire.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S25
+                </span>
+
+                <span>
+                  <strong>
+                    Alcohol type.
+                  </strong>
+                  The service asks which alcohol types are usually consumed and explicitly permits all relevant options to be selected.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S26
+                </span>
+
+                <span>
+                  <strong>
+                    Alcohol-type required validation.
+                  </strong>
+                  Submitting without an alcohol type produces both summary and inline guidance to select what type of alcohol is consumed.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S27
+                </span>
+
+                <span>
+                  <strong>
+                    Conditional drink quantities.
+                  </strong>
+                  Selecting beer or cider, wine and spirits or alcopops generates corresponding quantity fields with standard measures, ABV values, examples and illustrations.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S28
+                </span>
+
+                <span>
+                  <strong>
+                    Empty alcohol-quantity validation.
+                  </strong>
+                  Leaving all quantity fields empty produces one grouped instruction to enter an amount for at least one drink.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S29
+                </span>
+
+                <span>
+                  <strong>
+                    Negative quantity validation.
+                  </strong>
+                  A value of -1 is rejected with a measure-specific rule requiring a bottle amount between 1 and 50 using whole numbers.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S30
+                </span>
+
+                <span>
+                  <strong>
+                    Decimal bottle validation.
+                  </strong>
+                  A value of 1.5 is also rejected, confirming that the displayed whole-number rule is enforced.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S31
+                </span>
+
+                <span>
+                  <strong>
+                    Higher-consumption threshold.
+                  </strong>
+                  The service asks whether a single day in the last year included 6 or more units for females or 8 or more for males, with contextual unit explanations.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S32
+                </span>
+
+                <span>
+                  <strong>
+                    Six-unit explanation.
+                  </strong>
+                  The six-unit disclosure translates the threshold into examples using higher-strength beer, large wine and single spirits.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S33
+                </span>
+
+                <span>
+                  <strong>
+                    Eight-unit explanation.
+                  </strong>
+                  Both threshold disclosures can remain open together and the eight-unit guidance includes practical beer, spirit and wine equivalents.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S34
+                </span>
+
+                <span>
+                  <strong>
+                    Threshold required validation.
+                  </strong>
+                  Continuing without Yes or No produces a detailed error while preserving both expanded disclosure states.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S35
+                </span>
+
+                <span>
+                  <strong>
+                    Frequency of higher-consumption days.
+                  </strong>
+                  A Yes response triggers a follow-up asking how often the 6/8-unit threshold was exceeded.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S36
+                </span>
+
+                <span>
+                  <strong>
+                    Six-versus-eight guidance.
+                  </strong>
+                  The service explains explicitly which threshold should be used and repeats practical drink equivalents.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S37
+                </span>
+
+                <span>
+                  <strong>
+                    Alcohol transition.
+                  </strong>
+                  The service confirms completion of Alcohol and previews Movement.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S38
+                </span>
+
+                <span>
+                  <strong>
+                    Occupational physical activity.
+                  </strong>
+                  Movement begins with five ordered activity categories supported by concrete employment examples.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Movement</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S39
+                </span>
+
+                <span>
+                  <strong>
+                    Brisk walking.
+                  </strong>
+                  Weekly brisk walking is measured using four time bands and a practical definition based on pace, talking and breathlessness.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S40
+                </span>
+
+                <span>
+                  <strong>
+                    Cycling.
+                  </strong>
+                  Weekly cycling is measured separately and explicitly includes commuting and leisure cycling.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S41
+                </span>
+
+                <span>
+                  <strong>
+                    Breathless physical activity.
+                  </strong>
+                  A separate question captures activities such as swimming, jogging, sport and workouts and explicitly excludes walking.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S42
+                </span>
+
+                <span>
+                  <strong>
+                    Movement transition and progress milestone.
+                  </strong>
+                  Completion of Movement produces the message that the user is more than halfway through and previews Smoking and vaping.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S43
+                </span>
+
+                <span>
+                  <strong>
+                    Smoking status.
+                  </strong>
+                  Smoking distinguishes daily use, non-daily use, former smoking and never smoking and provides pregnancy guidance.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Smoking and vaping</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S44
+                </span>
+
+                <span>
+                  <strong>
+                    Vaping status.
+                  </strong>
+                  Vaping is assessed separately and explicitly includes nicotine-free vapes and electronic cigarettes.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S45
+                </span>
+
+                <span>
+                  <strong>
+                    Pregnancy and vaping.
+                  </strong>
+                  The expanded guidance advises stopping vaping during pregnancy while recognising its harm-reduction role in staying smoke free.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S46
+                </span>
+
+                <span>
+                  <strong>
+                    Vaping to quit smoking.
+                  </strong>
+                  For a user who both smokes and vapes, the questionnaire asks whether vaping is being used to quit smoking.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S47
+                </span>
+
+                <span>
+                  <strong>
+                    Smoking and vaping transition.
+                  </strong>
+                  Completion confirms 4 out of 6 sections finished and previews Mental health.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S48
+                </span>
+
+                <span>
+                  <strong>
+                    Mood.
+                  </strong>
+                  Mental health begins with a two-week mood question whose responses range from consistently positive mood to always feeling extremely low.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Mental health</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S49
+                </span>
+
+                <span>
+                  <strong>
+                    Anxiety.
+                  </strong>
+                  After the most severe mood response, the service proceeds to a two-week anxiety question without immediate support signposting.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S50
+                </span>
+
+                <span>
+                  <strong>
+                    Stress.
+                  </strong>
+                  After the most severe anxiety response, the service continues to a two-week stress question without immediate support signposting.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S51
+                </span>
+
+                <span>
+                  <strong>
+                    Mental-health transition.
+                  </strong>
+                  After maximum-severity mood, anxiety and stress responses, the service gives an ordinary section-completion message and moves to Sleep.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S52
+                </span>
+
+                <span>
+                  <strong>
+                    Sleep.
+                  </strong>
+                  The final section asks how well the user has slept over the last two weeks, with responses ranging to extremely sleep deprived.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Sleep</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S53
+                </span>
+
+                <span>
+                  <strong>
+                    End of questions.
+                  </strong>
+                  The service states that the questions are complete and promises a score out of 10 plus advice for each lifestyle area.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S54
+                </span>
+
+                <span>
+                  <strong>
+                    Result first viewport.
+                  </strong>
+                  The deliberately constructed profile receives 1 out of 10. Smoking and Sleep are Focus on changing, Eating and Alcohol are Try to improve, Movement is Great job, and Mental health is handled separately below.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S55
+                </span>
+
+                <span>
+                  <strong>
+                    Mental-health result and urgent support.
+                  </strong>
+                  The dedicated mental-health result includes urgent 111 signposting, Every Mind Matters urgent support, NHS Talking Therapies, GP support and a CBT starting point.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S56
+                </span>
+
+                <span>
+                  <strong>
+                    Mental-health follow-on and Smoking result.
+                  </strong>
+                  Mind Plan is offered as a further personalised mental-health route before the Smoking result recognises smoking, vaping and cessation intent.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Quiz completion</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S57
+                </span>
+
+                <span>
+                  <strong>
+                    Smoking cessation resources.
+                  </strong>
+                  The Smoking result provides a Personal Quit Plan and the NHS Quit Smoking app alongside tailored cessation advice.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S58
+                </span>
+
+                <span>
+                  <strong>
+                    Smoking service and Sleep result.
+                  </strong>
+                  A local Stop Smoking Service and pregnancy-specific advice complete Smoking before Sleep begins with targeted Every Mind Matters resources.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Results</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S59
+                </span>
+
+                <span>
+                  <strong>
+                    Eating result.
+                  </strong>
+                  The Try to improve tier identifies insufficient fruit and vegetable intake and provides practical 5 A Day guidance and NHS resources.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S60
+                </span>
+
+                <span>
+                  <strong>
+                    Eating resources and Alcohol result.
+                  </strong>
+                  Eating adds recipe and BMI resources before Alcohol states that the observed drinking pattern raises long-term health risk.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S61
+                </span>
+
+                <span>
+                  <strong>
+                    Alcohol support and Movement result.
+                  </strong>
+                  Alcohol provides Drink Free Days support and pregnancy guidance before Movement is correctly retained as Great job.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S62
+                </span>
+
+                <span>
+                  <strong>
+                    Result persistence.
+                  </strong>
+                  The result closes with movement resources, an Email your result form, a warning that closing the tab loses the result, a Quiz score explained link and Restart quiz.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S63
+                </span>
+
+                <span>
+                  <strong>
+                    Email-result consent validation.
+                  </strong>
+                  Submitting the result-email form empty proves that both an email address and agreement to one checkbox covering the result and supportive emails are required.
+                </span>
+
+              </li>
+
+              <li class="evidence-domain">
+  <h3>Scoring, labels and accessibility</h3>
+</li>
+<li>
+
+                <span class="screen-id">
+                  S64
+                </span>
+
+                <span>
+                  <strong>
+                    Score explainer entry.
+                  </strong>
+                  The Healthy Choices Quiz explained page states that it documents both the overall calculation and section scoring.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S65
+                </span>
+
+                <span>
+                  <strong>
+                    Overall-score formula.
+                  </strong>
+                  Each of six lifestyle sections scores 0, 1 or 2; the total is divided by 12 and multiplied by 10, except tobacco smoking or an Alcohol score of 0 caps the overall result through a multiplier of 3.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S66
+                </span>
+
+                <span>
+                  <strong>
+                    Section-scoring basis.
+                  </strong>
+                  The explainer documents the conceptual basis for Eating, Alcohol, Movement and Smoking and vaping, while leaving exact answer-to-0/1/2 thresholds undisclosed.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S67
+                </span>
+
+                <span>
+                  <strong>
+                    Mental health, Sleep and section labels.
+                  </strong>
+                  Mental health and Sleep scoring bases are documented and the Focus on this, Try to improve and Great job labels are explained.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S68
+                </span>
+
+                <span>
+                  <strong>
+                    Mental-health label exception and quiz limitations.
+                  </strong>
+                  The NHS explicitly explains that Mental health contributes to the overall score but intentionally receives no section label, and states that the quiz is not a medical diagnosis.
+                </span>
+
+              </li>
+
+              <li>
+
+                <span class="screen-id">
+                  S69
+                </span>
+
+                <span>
+                  <strong>
+                    Accessible score description.
+                  </strong>
+                  The result gauge provides a dedicated text description of the 1 out of 10 score and explains the numeric ranges and meaning of the red, amber and green bands.
+                </span>
+
+              </li>
+
+            </ol>
+
+          </section>
+
+          <!-- ==================================================
+               CANONICAL PRODUCT STRENGTHS
+          =================================================== -->
+
+          <section
+            class="publication-section strength-section"
+            aria-labelledby="strengths-title"
+          >
+
+            <span class="publication-label">
+              Canonical Product Strengths
+            </span>
+
+            <h3 id="strengths-title">
+              Strong interaction and result patterns substantiated
+              across the complete journey
+            </h3>
+
+            <ul>
+
+              <li>
+                <strong>Eligibility and recovery:</strong>
+                eligibility is surfaced early, ineligible users receive an explanation and alternative route, and validation consistently combines summary and inline guidance.
+              </li>
+              <li>
+                <strong>Domain-aware validation:</strong>
+                Alcohol quantity fields reject impossible or incompatible numeric values using measure-specific rules rather than simple presence checks.
+              </li>
+              <li>
+                <strong>State preservation:</strong>
+                Back navigation retains answers, invalid values remain available for correction and expanded help can survive validation failures.
+              </li>
+              <li>
+                <strong>Conditional branching:</strong>
+                Alcohol, smoking and vaping questions adapt meaningfully to preceding answers rather than forcing one generic pathway.
+              </li>
+              <li>
+                <strong>Progressive disclosure:</strong>
+                unit explanations, pregnancy guidance and threshold help are available contextually without permanently overloading the interface.
+              </li>
+              <li>
+                <strong>Translation of health concepts:</strong>
+                the service converts abstract concepts such as alcohol units and brisk walking into practical, recognisable examples.
+              </li>
+              <li>
+                <strong>Progress orientation:</strong>
+                although no persistent overall progress bar is shown, section transitions provide clear milestones including more than halfway and 4 out of 6.
+              </li>
+              <li>
+                <strong>Section-level nuance:</strong>
+                a 1 out of 10 overall result still preserves Movement as Great job rather than allowing poor scores elsewhere to flatten every domain.
+              </li>
+              <li>
+                <strong>Tailored results:</strong>
+                Smoking reflects smoking, vaping and cessation intent; Eating reflects fruit-and-vegetable answers; Sleep and Alcohol receive domain-specific interpretation and resources.
+              </li>
+              <li>
+                <strong>Actionability:</strong>
+                results connect directly to NHS tools and services including Talking Therapies, Stop Smoking Services, Personal Quit Plan, Drink Free Days, Every Mind Matters and movement resources.
+              </li>
+              <li>
+                <strong>Mental-health support quality:</strong>
+                once Results is reached, urgent and non-urgent mental-health routes are substantive and clearly signposted.
+              </li>
+              <li>
+                <strong>Accessible result representation:</strong>
+                the visual score gauge has an explicit textual alternative describing the numeric score, range boundaries and meaning of all colour bands.
+              </li>
+              <li>
+                <strong>Published scoring documentation:</strong>
+                the overall numerical calculation and special Smoking/Alcohol cap are documented in enough detail to reconstruct the observed 1 out of 10 result.
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!-- ==================================================
+               CANONICAL FINDINGS
+          =================================================== -->
+
+          <section
+            class="publication-section"
+            id="findings"
+            aria-labelledby="findings-title"
+          >
+
+            <span class="publication-label">
+              Canonical Findings Register
+            </span>
+
+            <h3 id="findings-title">
+              Nine severity-rated findings survive evidence reconciliation
+            </h3>
+
+            <p>
+              Earlier provisional findings were not automatically
+              preserved. Later evidence was allowed to strengthen,
+              narrow, downgrade or retire them. The register below is
+              therefore the reconciled finding set supported by the
+              completed primary walkthrough.
+            </p>
+
+            <article
+              class="finding"
+              id="finding-f01"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F01
+                  </span>
+
+                  <h4>
+                    Eligibility language around existing health conditions remains broad.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-moderate"
+                >
+                  S2 · Moderate
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    Published eligibility information advises people with an existing health condition not to use the quiz and provides examples, but does not establish a precise boundary for the exclusion.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    People with stable, minor or unrelated conditions may be uncertain whether the exclusion applies to them.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Clarify the intended exclusion boundary or provide a short decision aid explaining when clinical advice should be sought before using the quiz.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f02"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F02
+                  </span>
+
+                  <h4>
+                    Answer-to-section-score thresholds are only partially transparent.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-moderate"
+                >
+                  S2 · Moderate
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    The NHS documents the overall 0/1/2 section model, the final normalisation formula and the Smoking/Alcohol score cap. It also describes what each section considers, but does not fully disclose the thresholds that convert particular answer combinations into section scores of 0, 1 or 2.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    Users can understand the overall mathematics but cannot fully reconstruct why a particular section received Focus on this, Try to improve or Great job.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Publish concise section-level threshold logic or representative examples showing answer patterns that produce scores of 0, 1 and 2.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f04"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F04
+                  </span>
+
+                  <h4>
+                    Some quiz-related data-use and persistence information remains dependent on policy-level explanation.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-moderate"
+                >
+                  S2 · Moderate
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    Published privacy information explains interactive-tool data handling and progress-related processing, while the live flow does not consistently surface the same detail at the point where information is entered or persistence is relevant.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    Users may need to leave the immediate task context to understand important aspects of how quiz-related information is handled.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Add concise just-in-time summaries at relevant interaction points while retaining the privacy policy as the complete source.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f05"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F05
+                  </span>
+
+                  <h4>
+                    Current accessibility assurance for the interactive quiz is not fully evidenced by the published testing information.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-moderate"
+                >
+                  S2 · Moderate
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    The published accessibility position does not establish a fresh, comprehensive independent audit of the current Healthy Choices Quiz interaction. Direct observation nevertheless found positive patterns including textual error handling, preserved state and an accessible text description for the result gauge.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    The public assurance evidence cannot by itself establish that the current end-to-end quiz has been comprehensively tested against the stated accessibility standard.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Publish current interactive-tool audit evidence with scope, standard, dates, assistive technologies and known limitations clearly identified.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f06"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F06
+                  </span>
+
+                  <h4>
+                    Optional demographic collection lacks a specific just-in-time purpose explanation.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-moderate"
+                >
+                  S2 · Moderate
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    Gender and postcode are genuinely optional and are stated not to affect the result, but their expandable explanations refer users to the privacy policy rather than stating a concrete purpose at the point of collection.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    Users retain control over disclosure but may still be unsure why these particular details are being requested.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    State the immediate purpose in plain language beside each optional question while preserving the ability to skip it.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f07"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F07
+                  </span>
+
+                  <h4>
+                    The motivation maximum is enforced only after submission.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-low"
+                >
+                  S1 · Low
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    The interface says Select up to 3 but permits a fourth motivation to become selected and rejects the state only after Continue.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    The error is clear and recoverable but introduces avoidable friction.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Prevent a fourth selection, disable remaining choices at three, or provide immediate inline feedback.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f08"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F08
+                  </span>
+
+                  <h4>
+                    Support and guidance combines two potentially different constructs.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-low"
+                >
+                  S1 · Low
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    The Motivations section asks how much support and guidance the user has using one shared response scale.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    A user may have strong social support but little practical guidance, or the reverse, making one combined answer less precise.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Separate the constructs or explain that one deliberately combined judgement is required.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f09"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F09
+                  </span>
+
+                  <h4>
+                    Severe mental-health responses defer urgent-support signposting until Results.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-moderate"
+                >
+                  S2 · Moderate
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    The evaluation selected the most severe available responses for mood, anxiety and stress. The service then completed Mental health, continued through Sleep and the end-of-questions transition, and only surfaced urgent-support routes in the dedicated result.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    A user reporting severe distress must continue through the remaining journey before seeing urgent mental-health support options.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Consider a concise, non-blocking safety message immediately after sufficiently severe responses while retaining the fuller support pathway in Results.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <article
+              class="finding"
+              id="finding-f11"
+            >
+
+              <div class="finding-header">
+
+                <div>
+
+                  <span class="finding-id">
+                    F11
+                  </span>
+
+                  <h4>
+                    Result persistence is coupled to consent for supportive follow-up emails.
+                  </h4>
+
+                </div>
+
+                <span
+                  class="severity severity-moderate"
+                >
+                  S2 · Moderate
+                </span>
+
+              </div>
+
+              <dl class="finding-details">
+
+                <div>
+
+                  <dt>
+                    Evidence
+                  </dt>
+
+                  <dd>
+                    The result is otherwise ephemeral: closing the tab requires the quiz to be completed again. The Email your result form requires one checkbox covering both receipt of the result and supportive emails.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    User impact
+                  </dt>
+
+                  <dd>
+                    A user who only wants to retain the result is not visibly offered a separate choice from ongoing supportive communications.
+                  </dd>
+
+                </div>
+
+                <div>
+
+                  <dt>
+                    Recommendation
+                  </dt>
+
+                  <dd>
+                    Separate Email me my result from an independently optional consent for continuing supportive emails.
+                  </dd>
+
+                </div>
+
+              </dl>
+
+            </article>
+
+            <div
+              class="severity-summary"
+              aria-label="Canonical severity distribution"
+            >
+
+              <span>
+                7 × S2 Moderate
+              </span>
+
+              <span>
+                2 × S1 Low
+              </span>
+
+              <span>
+                0 × S3 High
+              </span>
+
+              <span>
+                0 × S4 Critical
+              </span>
+
+            </div>
+
+          </section>
+
+          <!-- ==================================================
+               RECONCILED OBSERVATIONS
+          =================================================== -->
+
+          <section
+            class="publication-section"
+            aria-labelledby="observations-title"
+          >
+
+            <span class="publication-label">
+              Reconciled Observations
+            </span>
+
+            <h3 id="observations-title">
+              Important evidence deliberately not promoted to findings
+            </h3>
+
+            <p>
+              The evaluation distinguishes a demonstrated defect from
+              an open question, design exception or hypothesis that
+              would require a controlled second run or additional
+              evidence.
+            </p>
+
+            <ul>
+
+              <li>
+                <strong>Retired F03:</strong>
+                Mental health is intentionally included in the overall score but excluded from the coloured section-label model. The exception is disclosed, explained and supported by a substantial dedicated result pathway, so it is retained as a design exception rather than a defect.
+              </li>
+              <li>
+                <strong>F10 not promoted:</strong>
+                the exploratory Alcohol profile mixed a low typical quantity with very frequent threshold exceedance, so the resulting Try to improve label cannot support a controlled claim that a coherent high-risk profile is systematically under-classified.
+              </li>
+              <li>
+                <strong>Progress:</strong>
+                there is no persistent overall progress indicator, but section-completion screens provide strong milestone and numerical progress feedback.
+              </li>
+              <li>
+                <strong>Movement overlap:</strong>
+                cycling is measured separately and the later breathless-activity question excludes walking but does not explicitly state whether previously reported cycling should also be excluded.
+              </li>
+              <li>
+                <strong>Alcohol threshold framing:</strong>
+                the 6-unit and 8-unit pathways use female/male categories and provide contextual guidance, but no further inclusion guidance was observed.
+              </li>
+              <li>
+                <strong>Response-scale consistency:</strong>
+                some Mental health and Sleep answer sets mix frequency and intensity descriptors. This was not shown to prevent completion or interpretation.
+              </li>
+              <li>
+                <strong>Employment/activity framing:</strong>
+                full-time caring appears within I am not in employment even though caring can involve substantial physical activity; later Movement questions may partly compensate for this.
+              </li>
+              <li>
+                <strong>Smoking granularity:</strong>
+                no cigarette-quantity or dependence measure was observed, but the result still produced highly actionable cessation guidance from the available smoking, vaping and quit-intent inputs.
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!-- ==================================================
+               DOCUMENTED EVALUATION BOUNDARY
+          =================================================== -->
+
+          <section
+            class="publication-section limit-section"
+            aria-labelledby="limitations-title"
+          >
+
+            <span class="publication-label">
+              Documented Evaluation Boundary
+            </span>
+
+            <h3 id="limitations-title">
+              What this evaluation does not claim
+            </h3>
+
+            <ul>
+
+              <li>
+                No recruited-user usability study, interview
+                programme or representative behavioural sample was
+                conducted.
+              </li>
+
+              <li>
+                No product analytics, abandonment data, conversion
+                metrics or A/B testing evidence was available.
+              </li>
+
+              <li>
+                No formal keyboard, screen-reader or
+                assistive-technology audit was conducted by the
+                evaluator.
+              </li>
+
+              <li>
+                The primary walkthrough used one deliberately
+                constructed evaluation profile designed to exercise
+                conditional and higher-risk branches; it is not a
+                representative user profile.
+              </li>
+
+              <li>
+                The exploratory Alcohol path mixed a low typical
+                quantity with frequent higher-unit days and therefore
+                is not used to make a controlled claim about the
+                appropriateness of the resulting Alcohol category.
+              </li>
+
+              <li>
+                The score methodology was assessed from the
+                NHS-published explainer and observed result. The
+                underlying implementation was not independently
+                reverse-engineered.
+              </li>
+
+              <li>
+                Current findings relate only to behaviour and
+                published evidence inspected during this evaluation
+                window.
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!-- ==================================================
+               CANONICAL SYNTHESIS
+          =================================================== -->
+
+          <section
+            class="publication-section checkpoint-section"
+            aria-labelledby="checkpoint-title"
+          >
+
+            <span class="publication-label">
+              Canonical Synthesis
+            </span>
+
+            <h3 id="checkpoint-title">
+              Evidence gathering and publication QA complete — archive integration remains
+            </h3>
+
+            <p>
+              The NHS Healthy Choices Quiz is a generally
+              well-structured and highly recoverable public-health
+              questionnaire. Across the primary journey it demonstrates
+              strong validation, state preservation, conditional
+              branching, progressive disclosure, practical translation
+              of health concepts and substantial section-level
+              personalisation.
+            </p>
+
+            <p>
+              The result experience is a particular strength. A low
+              overall score does not flatten individual domains:
+              Movement remained a demonstrated strength while Smoking,
+              Sleep, Eating and Alcohol received distinct interpretation
+              and actionable NHS resources. Mental health is treated
+              separately by design and receives meaningful urgent and
+              non-urgent support once the result is reached.
+            </p>
+
+            <p>
+              The most defensible weaknesses are concentrated not in
+              basic task completion but in transparency and choice
+              architecture: incomplete visibility of the thresholds
+              converting answers into section scores, limited
+              point-of-collection purpose explanation for optional
+              demographic data, delayed urgent-support signposting
+              after severe mental-health responses, coupling of result
+              persistence with supportive-email consent, and the
+              evidence supporting current accessibility assurance.
+            </p>
+
+            <p>
+              No S3 High or S4 Critical failure was substantiated in
+              the completed primary walkthrough. The canonical
+              evidence and findings synthesis is complete; visual
+              publication QA and Evaluation Archive integration remain
+              before AI-R-002 is frozen as a final publication.
+            </p>
+
+            <span class="checkpoint-state">
+              Canonical synthesis complete · Publication QA complete
+            </span>
+
+          </section>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="publication-footer">
+
+    <div
+      class="container publication-footer-layout"
+    >
+
+      <span>
+        © 2026 Hammed Babatunde Buari
+      </span>
+
+      <a href="../index.html#evaluation-archive">
+        Return to Evaluation Archive
+      </a>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
