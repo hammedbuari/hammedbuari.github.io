@@ -5804,13 +5804,146 @@ a:focus-visible {
 
   }
 
+
+
+/* =========================================================
+   AI-R-001 — PUBLICATION NAVIGATION PARITY
+   ========================================================= */
+
+.publication-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+      background: rgba(248, 250, 252, 0.96);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+
+.publication-nav {
+      display: flex;
+      min-height: 72px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+.publication-nav {
+        min-height: 64px;
+      }
+
+.publication-brand {
+      color: #0f172a;
+      font-size: 0.98rem;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+.publication-nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+
+.publication-nav-links a {
+      color: #475569;
+      font-size: 0.86rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+.publication-nav-links a:hover {
+      color: #2563eb;
+    }
+
+.publication-nav-links {
+        gap: 0.65rem;
+      }
+
+.publication-nav-links a {
+        font-size: 0.76rem;
+      }
+
+.publication-footer {
+      padding: 2rem 0 3rem;
+      border-top: 1px solid #e2e8f0;
+      color: #64748b;
+      font-size: 0.84rem;
+    }
+
+.publication-footer a {
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+.publication-footer-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+.publication-footer-layout {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+[data-publication-anchor] {
+  scroll-margin-top: 96px;
+}
+
+@media (max-width: 850px) {
+  .publication-nav {
+    gap: 0.75rem;
+  }
+
+  .publication-nav-links {
+    gap: 0.6rem;
+  }
+
+  .publication-nav-links a {
+    font-size: 0.76rem;
+  }
+
+  .publication-footer-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 </style>
 
 </head>
 
 <body>
 
-  <main id="main-content">
+  
+  <!-- =========================================================
+       AI-R-001 — PUBLICATION NAVIGATION PARITY
+       ========================================================= -->
+  <header class="publication-header">
+    <div class="container">
+      <nav
+        class="publication-nav"
+        aria-label="Publication navigation"
+      >
+        <a class="publication-brand" href="../index.html">
+          Hammed Babatunde Buari
+        </a>
+
+        <div class="publication-nav-links">
+          <a href="#evaluation-brief-ai-r-001">Evaluation</a>
+          <a href="#response-r-01">Evidence</a>
+          <a href="#comparative-analysis">Findings</a>
+          <a href="../index.html#evaluation-archive">Archive</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main id="main-content">
     <section id="evaluation-archive" aria-label="AI-R-001 Publication">
       <div class="container evaluation-archive-container">
         <div class="evaluation-archive-workspace">
@@ -7265,6 +7398,19 @@ a:focus-visible {
       </div>
     </section>
   </main>
+
+
+  <!-- =========================================================
+       AI-R-001 — ARCHIVE RETURN NAVIGATION
+       ========================================================= -->
+  <footer class="publication-footer">
+    <div class="container publication-footer-layout">
+      <span>© 2026 Hammed Babatunde Buari</span>
+      <a href="../index.html#evaluation-archive">
+        Return to Evaluation Archive
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
