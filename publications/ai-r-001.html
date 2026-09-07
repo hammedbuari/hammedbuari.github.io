@@ -5909,6 +5909,64 @@ a:focus-visible {
   }
 }
 
+
+
+/* =========================================================
+   AI-R-001 — FINAL PUBLICATION SHELL PARITY
+   ========================================================= */
+
+/* Preserve canonical archive-link colour in every state. */
+.publication-footer a,
+.publication-footer a:visited {
+  color: #2563eb;
+}
+
+.publication-footer a:hover {
+  color: #1d4ed8;
+}
+
+/*
+ * Narrow-screen publication shell:
+ * - persistent navigation during document scrolling
+ * - footer continues to occupy opposite edges
+ */
+@media (max-width: 850px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .publication-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3000;
+  }
+
+  .publication-nav {
+    min-height: 64px;
+  }
+
+  .publication-footer-layout {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .publication-footer-layout > span {
+    flex: 0 1 auto;
+  }
+
+  .publication-footer-layout > a {
+    flex: 0 1 auto;
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
 </style>
 
 </head>
