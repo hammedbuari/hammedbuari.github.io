@@ -5967,6 +5967,75 @@ a:focus-visible {
   }
 }
 
+
+
+/* ============================================================
+   RELEASE 13.0.4 — CANONICAL MOBILE PUBLICATION SHELL
+   ============================================================ */
+
+/* Archive return remains canonical blue in every link state. */
+.publication-footer a,
+.publication-footer a:visited {
+  color: #2563eb;
+}
+
+/*
+ * Narrow-screen publication shell:
+ * — identity remains left
+ * — navigation is a deliberate 2 × 2 grid on the right
+ * — footer retains opposite-edge alignment
+ */
+@media (max-width: 850px) {
+  .publication-nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .publication-brand {
+    min-width: 0;
+    line-height: 1.35;
+  }
+
+  .publication-nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: end;
+    align-items: center;
+    gap: 0.35rem 0.75rem;
+  }
+
+  .publication-footer-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .publication-footer-layout > span,
+  .publication-footer-layout > a {
+    min-width: 0;
+  }
+
+  .publication-footer-layout > a {
+    justify-self: end;
+    text-align: right;
+  }
+}
+
+/* Touch devices must not retain desktop hover colour. */
+@media (hover: none), (pointer: coarse) {
+  .publication-nav-links a:hover {
+    color: #475569;
+  }
+
+  .publication-footer a:hover {
+    color: #2563eb;
+  }
+}
+
 </style>
 
 </head>
