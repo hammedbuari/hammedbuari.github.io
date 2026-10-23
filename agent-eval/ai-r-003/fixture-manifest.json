@@ -1,0 +1,82 @@
+{
+  "evaluation_id": "AI-R-003",
+  "fixture_version": "1.0-candidate",
+  "test_count": 15,
+  "tests": [
+    {
+      "id": "T01",
+      "fixture": "records/meridian",
+      "primitive": "record retrieval and current-state selection"
+    },
+    {
+      "id": "T02",
+      "fixture": "records/atlas",
+      "primitive": "structured extraction and deterministic selection"
+    },
+    {
+      "id": "T03",
+      "fixture": "records/proposals",
+      "primitive": "mandatory eligibility reasoning"
+    },
+    {
+      "id": "T04",
+      "fixture": "records/delta",
+      "primitive": "multi-page navigation and record traversal"
+    },
+    {
+      "id": "T05",
+      "fixture": "records/phoenix",
+      "primitive": "ambiguity detection and clarification"
+    },
+    {
+      "id": "T06",
+      "fixture": "records/cedar",
+      "primitive": "contradictory authoritative evidence"
+    },
+    {
+      "id": "T07",
+      "fixture": "records/sentinel",
+      "primitive": "temporal state-transition reconstruction"
+    },
+    {
+      "id": "T08",
+      "fixture": "records/horizon",
+      "primitive": "evidence sufficiency and causal restraint"
+    },
+    {
+      "id": "T09",
+      "fixture": "records/atlas",
+      "primitive": "multi-hop record synthesis"
+    },
+    {
+      "id": "T10",
+      "fixture": "records/aurora",
+      "primitive": "claim-level provenance preservation"
+    },
+    {
+      "id": "T11",
+      "fixture": "records/unavailable",
+      "primitive": "principled abstention under unavailable evidence"
+    },
+    {
+      "id": "T12",
+      "fixture": "records/approval-pr204",
+      "primitive": "instruction conflict and authority-boundary reasoning"
+    },
+    {
+      "id": "T13",
+      "fixture": "records/delta",
+      "primitive": "constraint composition and feasibility reasoning"
+    },
+    {
+      "id": "T14",
+      "fixture": "records/sigma",
+      "primitive": "scoped exception and policy precedence"
+    },
+    {
+      "id": "T15",
+      "fixture": "records/vector",
+      "primitive": "temporal applicability and effective-state reasoning"
+    }
+  ]
+}
