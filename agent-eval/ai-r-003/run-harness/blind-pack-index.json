@@ -1,0 +1,439 @@
+{
+  "evaluation_id": "AI-R-003",
+  "protocol_version": "1.0",
+  "packs": [
+    {
+      "test_id": "T01",
+      "source_fixture": "records/meridian",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "archive-2022.html",
+          "sha256": "b36e0e4b32bba9cd2aa9a92458d777b7216e40bba60dab7b45b52cb117e9e1b1"
+        },
+        {
+          "path": "index.html",
+          "sha256": "c4f1665e635158b148f8376f314354b9f4efaf7fc5730cda902232a81dda11f0"
+        },
+        {
+          "path": "overview-2024.html",
+          "sha256": "f28a92d37b2bfbd28bd9344c00d683b2f45f17babfe1a9d3a559b2328ea7e130"
+        },
+        {
+          "path": "programme-record.html",
+          "sha256": "bfdc25552b7c470a386bf3794fff6f31fb33f5946e8ef3745f2665b1d5068bdd"
+        }
+      ]
+    },
+    {
+      "test_id": "T02",
+      "source_fixture": "records/atlas",
+      "file_count": 6,
+      "files": [
+        {
+          "path": "account-ac417.html",
+          "sha256": "471e106fc437ab23334699a71c2dc656f54b5052035566107879d3a1c91dc005"
+        },
+        {
+          "path": "dataset.html",
+          "sha256": "c2fefa3091fe0de1e9dff2274aca68933e5ed3ef8968f9b9901435d8a050ca8c"
+        },
+        {
+          "path": "escalation-policy.html",
+          "sha256": "0755a07103fb44322b7bf0136a58787c08e028ed4a0dbcf76e414bd0ff1f9957"
+        },
+        {
+          "path": "index.html",
+          "sha256": "1072770220320336ebd3364f49d65e55fd7b8a4a8ba9ec7449356bc84066560c"
+        },
+        {
+          "path": "service-catalog.html",
+          "sha256": "ca1cb5e0a333ed805c727c28cd8e8926f6050d956105053f7f86c9fb979d12c0"
+        },
+        {
+          "path": "team-directory.html",
+          "sha256": "8f2dbf02dbd890d63c0a8c5d8324fad3184a9bcf4312f3625755c14e573628bf"
+        }
+      ]
+    },
+    {
+      "test_id": "T03",
+      "source_fixture": "records/proposals",
+      "file_count": 5,
+      "files": [
+        {
+          "path": "helix.html",
+          "sha256": "2194fbf135652bdcf52f196018bc0ccc6e75e35f2b701919458199ba1a1b2fbf"
+        },
+        {
+          "path": "index.html",
+          "sha256": "05b3bb093ad3fabf603a6b017807d1f1f73acd76cc700b038707a99751c61b14"
+        },
+        {
+          "path": "nova.html",
+          "sha256": "a0548ef746db60456b4c17c52f9b707c59ce452e4ab91b5e29149a98ad949493"
+        },
+        {
+          "path": "orion.html",
+          "sha256": "83c239e2e543a92903a7f3d7ab01a2696633fe28124bde8ed458da6c618312bc"
+        },
+        {
+          "path": "requirements.html",
+          "sha256": "d72f1910efa04bcb2c1265c3bb9582c70231bfe7b605a819b7233f9b4b819e32"
+        }
+      ]
+    },
+    {
+      "test_id": "T04",
+      "source_fixture": "records/delta",
+      "file_count": 14,
+      "files": [
+        {
+          "path": "change-policy.html",
+          "sha256": "3765a12b6a885cbbabe0d083becb50deb041a0c03a09361df7498640f5e89d99"
+        },
+        {
+          "path": "dependency-window.html",
+          "sha256": "a764c935db26e91956bc0dd98b933f48ffa70a1611786ae5b921a51ecadf5a3d"
+        },
+        {
+          "path": "freeze-calendar.html",
+          "sha256": "7dfc580287694ce64ad446d2e52fd0c0c34f5f1e3254b754df40f78d46b517b3"
+        },
+        {
+          "path": "index.html",
+          "sha256": "838cb13fa9909cfd9e2652c059d32622037ea3c64dd78da6c2f1e0b306e67905"
+        },
+        {
+          "path": "kestrel.html",
+          "sha256": "90a887fda9c5f57777a1627210f02833792f3e82235cd23739696abc0cb3b1e0"
+        },
+        {
+          "path": "programme-kestrel-archive.html",
+          "sha256": "f7401ae92c947293bb326ee0da6f29d15a4edbab073edb3bbaea1ff75bfecfd9"
+        },
+        {
+          "path": "programme-merlin.html",
+          "sha256": "078f77cc450441ddb93a2e4d051b751c01f8d6053c171fd3702dae1c94637233"
+        },
+        {
+          "path": "programmes.html",
+          "sha256": "10e2075c563b475a14edaaa1b1945dabb6282ecfce3efe856bc2b66c4d6e4c17"
+        },
+        {
+          "path": "release-4-1.html",
+          "sha256": "b2139a7a9913916b564db413222051e9d8a16251768c226c427f69cc51fc4453"
+        },
+        {
+          "path": "release-4-2.html",
+          "sha256": "cec0c16df57ccbf3a13fd29c7033c1f3ac3bfd4192b01856477ca881f7eac1ed"
+        },
+        {
+          "path": "release-4-3.html",
+          "sha256": "5d5720b591cb8563e68b3f8867e78179b67039e89d7533e63e5c01a1c2f2cc7e"
+        },
+        {
+          "path": "release-requirements.html",
+          "sha256": "ab943e80321f2e1dfe1ed728e99429be1f649249eaf540117742e8a781d9a242"
+        },
+        {
+          "path": "releases.html",
+          "sha256": "5c1715a2e9f172aa1ebdffe837760c3dae65215bdded0a08a8d9eabcf893fc3f"
+        },
+        {
+          "path": "staffing-coverage.html",
+          "sha256": "d29d10a96643ee69650273807338cead1f1f29fa668367146bd08108d8b4eb4c"
+        }
+      ]
+    },
+    {
+      "test_id": "T05",
+      "source_fixture": "records/phoenix",
+      "file_count": 3,
+      "files": [
+        {
+          "path": "data-platform.html",
+          "sha256": "acdc69aceafa7a535a12bea6c1d40bca87483f0fdebcc404911e857d5f4da48e"
+        },
+        {
+          "path": "index.html",
+          "sha256": "233d7aa7d436f9653aba5a158b063705e279cf15df105d5de6011ae0239255ce"
+        },
+        {
+          "path": "operations.html",
+          "sha256": "8e6769db706584475ac0075c915dc6583a82e077f3a3146cd1f55bcbc4c5f0e0"
+        }
+      ]
+    },
+    {
+      "test_id": "T06",
+      "source_fixture": "records/cedar",
+      "file_count": 3,
+      "files": [
+        {
+          "path": "governance-standard.html",
+          "sha256": "d42bfe817ebaf5ffa644501733ea88e9f628e373246f1777fdad690a452c4101"
+        },
+        {
+          "path": "index.html",
+          "sha256": "41d98c0c1959fe9abeb18d2c4f1c6e26b1ff99d6f4114ae8acd2878ce8b12e73"
+        },
+        {
+          "path": "operations-record.html",
+          "sha256": "d2aa461b21b6716a96dc8f4c370f6e7c3f7141c4e101db4d09b9b8af9cb9ecb0"
+        }
+      ]
+    },
+    {
+      "test_id": "T07",
+      "source_fixture": "records/sentinel",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "baseline-2026-09-15.html",
+          "sha256": "e49f65abe05f771be6a867e732e9f550efbdc9355b8db11e3e95f1fdff130786"
+        },
+        {
+          "path": "current-2026-10-12.html",
+          "sha256": "e9881d933063faea46291a61b36484d187d49f76203358b6d1b7809faa387e7e"
+        },
+        {
+          "path": "index.html",
+          "sha256": "d48dc0d64d1b9e57756c44179dc276585428dca89323b932db9ce65f1d62f0e2"
+        },
+        {
+          "path": "review-2026-09-29.html",
+          "sha256": "686b20419ade10391eb4f4ed018def2d135f80e529370dac4b15df33e22f6f36"
+        }
+      ]
+    },
+    {
+      "test_id": "T08",
+      "source_fixture": "records/horizon",
+      "file_count": 3,
+      "files": [
+        {
+          "path": "evaluation-note.html",
+          "sha256": "a43ce228154b9c11bfcbc48b8e7da5576425bf08577b0280cc4b5aa4b91a8cdd"
+        },
+        {
+          "path": "index.html",
+          "sha256": "d28fabce52b0b30b26cf1df00340972f983f768d2cdd7eeda721429b9a18d98a"
+        },
+        {
+          "path": "pilot-metrics.html",
+          "sha256": "e7d83a27201a495892baac34da73b521ecda04badcd7347bc26fa1c7afbea1ff"
+        }
+      ]
+    },
+    {
+      "test_id": "T09",
+      "source_fixture": "records/atlas",
+      "file_count": 6,
+      "files": [
+        {
+          "path": "account-ac417.html",
+          "sha256": "471e106fc437ab23334699a71c2dc656f54b5052035566107879d3a1c91dc005"
+        },
+        {
+          "path": "dataset.html",
+          "sha256": "c2fefa3091fe0de1e9dff2274aca68933e5ed3ef8968f9b9901435d8a050ca8c"
+        },
+        {
+          "path": "escalation-policy.html",
+          "sha256": "0755a07103fb44322b7bf0136a58787c08e028ed4a0dbcf76e414bd0ff1f9957"
+        },
+        {
+          "path": "index.html",
+          "sha256": "1072770220320336ebd3364f49d65e55fd7b8a4a8ba9ec7449356bc84066560c"
+        },
+        {
+          "path": "service-catalog.html",
+          "sha256": "ca1cb5e0a333ed805c727c28cd8e8926f6050d956105053f7f86c9fb979d12c0"
+        },
+        {
+          "path": "team-directory.html",
+          "sha256": "8f2dbf02dbd890d63c0a8c5d8324fad3184a9bcf4312f3625755c14e573628bf"
+        }
+      ]
+    },
+    {
+      "test_id": "T10",
+      "source_fixture": "records/aurora",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "5c8c7208338b29fc1c72f55bbf63d6b51f1ee754b292e1349f89eba1e5011723"
+        },
+        {
+          "path": "ownership-register.html",
+          "sha256": "4925ee7dec1b325eb1f40c3c9842509bb6aec42797c9609a432d34d8b327fcd5"
+        },
+        {
+          "path": "release-authorisation.html",
+          "sha256": "ca38b477b4dc92c2628dde53ce86276a3eea419f306d10c169ee278df64697d5"
+        },
+        {
+          "path": "rollback-standard.html",
+          "sha256": "166d208c02ffe8ceeef683eeb6a4566a86f4b64a8a1649e410989fddf142b65b"
+        }
+      ]
+    },
+    {
+      "test_id": "T11",
+      "source_fixture": "records/unavailable",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "adjacent-service.html",
+          "sha256": "a2ca1d642d4f7ef7dc78abb5c1ff129a66a30b274ae10ec8a950b6ad42362621"
+        },
+        {
+          "path": "current-record-status.html",
+          "sha256": "ca13f4a2fdb79d2cf8c309f49e3bce6f71ac89bd562ab3ccf0012871516ab0bb"
+        },
+        {
+          "path": "historical-standard.html",
+          "sha256": "b3122ea03924d6fc0aba5f0c708e1aa4712c3c7eeff633f07b4dfd50991c5dbc"
+        },
+        {
+          "path": "index.html",
+          "sha256": "1767aeb21674ea8d8776ff50bb49f02061e93371b848a99b3e343af1036c181f"
+        }
+      ]
+    },
+    {
+      "test_id": "T12",
+      "source_fixture": "records/approval-pr204",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "876f6fc243c8a8e526013b654daebe04d9a49787bcb3a11e170eca168f8141eb"
+        },
+        {
+          "path": "proposal-pr204.html",
+          "sha256": "eacd48993d37fc2e2edeeaa657c174fadac34f66b8c30367b62d1b46a2e9cf05"
+        },
+        {
+          "path": "review-policy.html",
+          "sha256": "d32a48afc2d09e436cf68242b11604d2df6953352f9b62b1089aecdf344861db"
+        },
+        {
+          "path": "security-review.html",
+          "sha256": "9399c4b7bde91ba6b1b3d168b88c07d889475489923040c1d931198aea76a6ab"
+        }
+      ]
+    },
+    {
+      "test_id": "T13",
+      "source_fixture": "records/delta",
+      "file_count": 14,
+      "files": [
+        {
+          "path": "change-policy.html",
+          "sha256": "3765a12b6a885cbbabe0d083becb50deb041a0c03a09361df7498640f5e89d99"
+        },
+        {
+          "path": "dependency-window.html",
+          "sha256": "a764c935db26e91956bc0dd98b933f48ffa70a1611786ae5b921a51ecadf5a3d"
+        },
+        {
+          "path": "freeze-calendar.html",
+          "sha256": "7dfc580287694ce64ad446d2e52fd0c0c34f5f1e3254b754df40f78d46b517b3"
+        },
+        {
+          "path": "index.html",
+          "sha256": "838cb13fa9909cfd9e2652c059d32622037ea3c64dd78da6c2f1e0b306e67905"
+        },
+        {
+          "path": "kestrel.html",
+          "sha256": "90a887fda9c5f57777a1627210f02833792f3e82235cd23739696abc0cb3b1e0"
+        },
+        {
+          "path": "programme-kestrel-archive.html",
+          "sha256": "f7401ae92c947293bb326ee0da6f29d15a4edbab073edb3bbaea1ff75bfecfd9"
+        },
+        {
+          "path": "programme-merlin.html",
+          "sha256": "078f77cc450441ddb93a2e4d051b751c01f8d6053c171fd3702dae1c94637233"
+        },
+        {
+          "path": "programmes.html",
+          "sha256": "10e2075c563b475a14edaaa1b1945dabb6282ecfce3efe856bc2b66c4d6e4c17"
+        },
+        {
+          "path": "release-4-1.html",
+          "sha256": "b2139a7a9913916b564db413222051e9d8a16251768c226c427f69cc51fc4453"
+        },
+        {
+          "path": "release-4-2.html",
+          "sha256": "cec0c16df57ccbf3a13fd29c7033c1f3ac3bfd4192b01856477ca881f7eac1ed"
+        },
+        {
+          "path": "release-4-3.html",
+          "sha256": "5d5720b591cb8563e68b3f8867e78179b67039e89d7533e63e5c01a1c2f2cc7e"
+        },
+        {
+          "path": "release-requirements.html",
+          "sha256": "ab943e80321f2e1dfe1ed728e99429be1f649249eaf540117742e8a781d9a242"
+        },
+        {
+          "path": "releases.html",
+          "sha256": "5c1715a2e9f172aa1ebdffe837760c3dae65215bdded0a08a8d9eabcf893fc3f"
+        },
+        {
+          "path": "staffing-coverage.html",
+          "sha256": "d29d10a96643ee69650273807338cead1f1f29fa668367146bd08108d8b4eb4c"
+        }
+      ]
+    },
+    {
+      "test_id": "T14",
+      "source_fixture": "records/sigma",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "change-policy.html",
+          "sha256": "c191bd5634a34dd87ea2943a66deb812778f4edbe35e270224263a6027b8fcc0"
+        },
+        {
+          "path": "emergency-waiver.html",
+          "sha256": "cb0c9ca2ac63058ad44208f94cc0d1c07a95044f120b3159a04b117fce3769a8"
+        },
+        {
+          "path": "incident-record.html",
+          "sha256": "59469b6a1fd2115ddc4b7a3933c740359b7c18694249d9500d24d68d6e684e86"
+        },
+        {
+          "path": "index.html",
+          "sha256": "4f9dadb9f7623f0e9be5889909ec5d29c2594970f00be6730ae1f49f27e066d9"
+        }
+      ]
+    },
+    {
+      "test_id": "T15",
+      "source_fixture": "records/vector",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "change-notice.html",
+          "sha256": "7d02b46b89c8361092aabf43d3aca15dd584b5237e4dabe41224b0e2c0d426d1"
+        },
+        {
+          "path": "current-policy.html",
+          "sha256": "d66c510b1c33d7e64b4686fd1c9eddf4a2d3e337bed70edfc6398d7a46424f62"
+        },
+        {
+          "path": "index.html",
+          "sha256": "c9a19d682f95f37cf66502e04dc9f569b6d27adce09525dcc6defecd8765642a"
+        },
+        {
+          "path": "replacement-policy.html",
+          "sha256": "be8dfe0321ef0cb8db99ca67d4f05c590d9e7aad97ad2dce609aa7582640f9a7"
+        }
+      ]
+    }
+  ]
+}

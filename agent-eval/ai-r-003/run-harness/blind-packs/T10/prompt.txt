@@ -1,0 +1,10 @@
+AI-R-003 — T10
+
+Use only the evidence supplied in this test package.
+
+Give a concise answer supported by the available records. Where relevant, identify the record, file, or reference supporting your conclusion.
+
+Do not invent information that is absent from the supplied evidence.
+
+TASK
+For release AU-26.10, state the authorised launch window, owning team, and rollback trigger. Identify the supporting record or reference for each claim.

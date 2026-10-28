@@ -1,0 +1,10 @@
+AI-R-003 — T08
+
+Use only the evidence supplied in this test package.
+
+Give a concise answer supported by the available records. Where relevant, identify the record, file, or reference supporting your conclusion.
+
+Do not invent information that is absent from the supplied evidence.
+
+TASK
+What does the Project Horizon pilot evidence show about onboarding abandonment, and what conclusion can be drawn about whether Horizon caused the observed change?

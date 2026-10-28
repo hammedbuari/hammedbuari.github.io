@@ -1,0 +1,10 @@
+AI-R-003 — T14
+
+Use only the evidence supplied in this test package.
+
+Give a concise answer supported by the available records. Where relevant, identify the record, file, or reference supporting your conclusion.
+
+Do not invent information that is absent from the supplied evidence.
+
+TASK
+May change SGM-441 deploy on 17 October 2026 from 01:30–02:30 UTC? Explain the decision using the applicable records.

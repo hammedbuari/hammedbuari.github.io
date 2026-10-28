@@ -1,0 +1,10 @@
+AI-R-003 — T03
+
+Use only the evidence supplied in this test package.
+
+Give a concise answer supported by the available records. Where relevant, identify the record, file, or reference supporting your conclusion.
+
+Do not invent information that is absent from the supplied evidence.
+
+TASK
+Assess the submitted proposals against all mandatory requirements. Identify which proposals are eligible and recommend a winner only if the supplied evidence supports a unique choice.

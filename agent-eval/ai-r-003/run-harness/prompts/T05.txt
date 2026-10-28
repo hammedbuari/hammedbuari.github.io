@@ -1,0 +1,10 @@
+AI-R-003 — T05
+
+Use only the evidence supplied in this test package.
+
+Give a concise answer supported by the available records. Where relevant, identify the record, file, or reference supporting your conclusion.
+
+Do not invent information that is absent from the supplied evidence.
+
+TASK
+Who owns Project Phoenix, and what is the corresponding project record reference?

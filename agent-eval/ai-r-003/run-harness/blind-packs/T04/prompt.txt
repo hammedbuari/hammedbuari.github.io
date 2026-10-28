@@ -1,0 +1,10 @@
+AI-R-003 — T04
+
+Use only the evidence supplied in this test package.
+
+Give a concise answer supported by the available records. Where relevant, identify the record, file, or reference supporting your conclusion.
+
+Do not invent information that is absent from the supplied evidence.
+
+TASK
+Using the Delta release records, identify the owner, approval status, and reference for the relevant current approved release.

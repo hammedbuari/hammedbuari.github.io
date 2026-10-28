@@ -1,0 +1,82 @@
+{
+  "evaluation_id": "AI-R-003",
+  "protocol_version": "1.0",
+  "prompt_version": "1.0",
+  "tests": [
+    {
+      "id": "T01",
+      "prompt_file": "prompts/T01.txt",
+      "sha256": "e25fcf0450ab325c30ee1bfb7584cf02e1d7a7c6681111cc850319318a1c75f0"
+    },
+    {
+      "id": "T02",
+      "prompt_file": "prompts/T02.txt",
+      "sha256": "556307e7573eb6cca1af1a10cd0a457ecfa3cde7e753b5a855bb387cc1ab2426"
+    },
+    {
+      "id": "T03",
+      "prompt_file": "prompts/T03.txt",
+      "sha256": "ad396983f4dc303c599e10d16de82e81eb6402decdbdc8e510ef8ec8b10ed8a8"
+    },
+    {
+      "id": "T04",
+      "prompt_file": "prompts/T04.txt",
+      "sha256": "fe86ac60e5bb54e7624f203ae7fae5219f07f18f6fb92541ae577135f187216d"
+    },
+    {
+      "id": "T05",
+      "prompt_file": "prompts/T05.txt",
+      "sha256": "7c0c42e1f7efcd5977237f3ef74e392a616b28c043313986c374771ffc439d59"
+    },
+    {
+      "id": "T06",
+      "prompt_file": "prompts/T06.txt",
+      "sha256": "1179af3817fba93f83546560a8d055b98c01ccb8979bee60a24f482a1cab9f5b"
+    },
+    {
+      "id": "T07",
+      "prompt_file": "prompts/T07.txt",
+      "sha256": "e9582845396da869f0472f6e9d857ed1cd5d9cd6dcbeecc5d9c479a0d09ba392"
+    },
+    {
+      "id": "T08",
+      "prompt_file": "prompts/T08.txt",
+      "sha256": "3f6e249ce9329a97af99df5353c64ecdd973f360b65e6bb302429746dd37afa0"
+    },
+    {
+      "id": "T09",
+      "prompt_file": "prompts/T09.txt",
+      "sha256": "140ebb58cebd44afb4178f8988c93167c3cd09ede221b34d964a76f0fdce1a9f"
+    },
+    {
+      "id": "T10",
+      "prompt_file": "prompts/T10.txt",
+      "sha256": "a5600d209146ca2066d4139b338e0870383b7e2d9378c4cf676316a6a4b5cf67"
+    },
+    {
+      "id": "T11",
+      "prompt_file": "prompts/T11.txt",
+      "sha256": "7735704ed0d121ffe71173ccfa7b2e7208920bd334082fb2cdec010c7afba441"
+    },
+    {
+      "id": "T12",
+      "prompt_file": "prompts/T12.txt",
+      "sha256": "1375fdaea01bb2b11a8acbbf312d7cbc2c2ffcaca44a2c299fadc175a3368db0"
+    },
+    {
+      "id": "T13",
+      "prompt_file": "prompts/T13.txt",
+      "sha256": "aba6d034646ad717fe700475b909b0ec142890f9081a3b6a97b1defd9a6738ce"
+    },
+    {
+      "id": "T14",
+      "prompt_file": "prompts/T14.txt",
+      "sha256": "ebf2572ec7e759bd7f71b822f25f7d331e2a4dffee744acac043239b39c24501"
+    },
+    {
+      "id": "T15",
+      "prompt_file": "prompts/T15.txt",
+      "sha256": "4fc70441e0877a0e113c3c4c0015a0a627ec506a447ff12f03c4e71ea1159b51"
+    }
+  ]
+}

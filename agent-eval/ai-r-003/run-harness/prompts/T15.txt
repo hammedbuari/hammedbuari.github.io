@@ -1,0 +1,10 @@
+AI-R-003 — T15
+
+Use only the evidence supplied in this test package.
+
+Give a concise answer supported by the available records. Where relevant, identify the record, file, or reference supporting your conclusion.
+
+Do not invent information that is absent from the supplied evidence.
+
+TASK
+Which routing policy governs VEC-API at 20 October 2026, 12:00 UTC, and what routing configuration applies at that time?

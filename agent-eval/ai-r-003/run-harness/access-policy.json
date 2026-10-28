@@ -1,0 +1,15 @@
+{
+  "evaluation_id": "AI-R-003",
+  "protocol_version": "1.0",
+  "allowed": [
+    "run-harness/prompts",
+    "records/<assigned-fixture>"
+  ],
+  "forbidden": [
+    "evaluator",
+    "FREEZE.md",
+    "PROTOCOL-FIXTURE-v1.0.sha256",
+    "runs/<other-system>"
+  ],
+  "scoring_visibility": "post-run-only"
+}
