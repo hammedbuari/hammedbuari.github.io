@@ -1,0 +1,7 @@
+Project Sentinel progressed from a limited, conditionally approved deployment to fully approved general production:
+
+* 15 September 2026: Pilot only, with conditional approval. Security review was pending and rollback verification outstanding. (baseline-2026-09-15.html, SEN-CR-118)
+* 29 September 2026: Advanced to restricted production, still under conditional approval. The security review had been completed on 27 September, but rollback verification remained outstanding. (review-2026-09-29.html, SEN-CR-146)
+* 12 October 2026: Advanced to general production with approved status. Both security review and rollback verification were complete; rollback verification was completed on 10 October 2026, and there were no open controls. (current-2026-10-12.html, SEN-CR-173)
+
+Current state: General production, approved, with all listed controls complete and no open control. The index.html record states that later records supersede earlier operational states, making the 12 October 2026 record the current state.

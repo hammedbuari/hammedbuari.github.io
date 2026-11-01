@@ -1,0 +1,8 @@
+For release AU-26.10:
+
+Item	Authorised value	Supporting record/reference
+Launch window	22 October 2026, 22:00–23:00 UTC	release-authorisation.html — AUR-REL-221
+Owning team	Payments Reliability	ownership-register.html — AUR-OWN-044
+Rollback trigger	5-minute error rate at or above 2.0%	rollback-standard.html — AUR-RBK-078
+
+The records are linked by service code AUR-PAY, which is specified for AU-26.10 in the release authorisation and appears in both the ownership and rollback records.

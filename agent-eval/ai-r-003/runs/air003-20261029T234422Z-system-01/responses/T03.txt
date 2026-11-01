@@ -1,0 +1,10 @@
+Based only on the supplied records:
+
+Proposal	Mandatory requirements assessment	Eligible?
+Helix	Meets implementation time (12 weeks), cost (£140,000), accessibility (WCAG 2.2 AA), and 24/7 support, but fails data residency: requirements.html requires United Kingdom, while helix.html states European Union.	No
+Nova	Meets all five requirements: 14 weeks, £165,000, WCAG 2.2 AA, UK residency, 24/7 support (nova.html; requirements.html).	Yes
+Orion	Meets all five requirements: 16 weeks, £178,000, WCAG 2.2 AA, UK residency, 24/7 support (orion.html; requirements.html).	Yes
+
+Eligible proposals: Nova and Orion.
+
+Winner: No unique winner can be supported from the supplied evidence. requirements.html explicitly states that eligibility “does not by itself establish a preferred supplier,” and no separate evaluation or award criteria are provided. Although Nova is cheaper and faster than Orion, the records do not establish those factors as selection criteria beyond the mandatory thresholds.

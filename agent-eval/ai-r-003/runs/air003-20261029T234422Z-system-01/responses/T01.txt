@@ -1,0 +1,8 @@
+According to Project Meridian’s Current Programme Record:
+
+* Current programme owner: Office of Digital Delivery.
+* Current implementation objective: Consolidate fragmented case-management workflows into a single auditable digital service.
+
+Source: programme-record.html — Current Programme Record (Record state: Current).
+
+This is corroborated by overview-2024.html, which identifies programme-record.html as the authoritative source for ownership and implementation objectives. The earlier archive-2022.html record was superseded in March 2024.

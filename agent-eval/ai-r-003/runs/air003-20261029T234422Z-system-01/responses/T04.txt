@@ -1,0 +1,7 @@
+The relevant current approved release is Programme Kestrel Release 4.2.
+
+* Owner: Nadia Cole
+* Approval status: Approved
+* Reference: DK-R42-817
+
+Supporting record: release-4-2.html, which states “Release state: Current approved release.”

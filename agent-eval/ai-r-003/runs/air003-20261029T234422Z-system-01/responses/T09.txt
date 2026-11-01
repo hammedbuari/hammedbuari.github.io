@@ -1,0 +1,6 @@
+For account AC-417:
+
+* Responsible owning team: Reliability Engineering — Europe
+* Severity 1 acknowledgement target: 15 minutes
+
+Support: account-ac417.html identifies service AT-GW (Atlas Gateway); service-catalog.html maps AT-GW to EP-EU-1; escalation-policy.html assigns EP-EU-1 a 15-minute Sev 1 target and queue Q-RE-EU; team-directory.html maps Q-RE-EU to Reliability Engineering — Europe.

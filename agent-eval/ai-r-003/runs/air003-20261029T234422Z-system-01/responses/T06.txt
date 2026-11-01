@@ -1,0 +1,7 @@
+The supplied records do not establish a single approved production-data retention period for Project Cedar.
+
+* governance-standard.html specifies 30 days, approved under CED-GOV-304.
+* operations-record.html specifies 90 days, approved under CED-OPS-771.
+* index.html states both records are current and authoritative within their functions and that no precedence rule is documented for resolving conflicts.
+
+Therefore, based only on the supplied evidence, the approved retention period is ambiguous between 30 and 90 days.

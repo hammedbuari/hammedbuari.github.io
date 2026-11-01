@@ -1,0 +1,5 @@
+No qualifying record IDs can be determined from the supplied evidence.
+
+The dataset.html file provides record IDs, statuses, regions, risk scores, and review dates, but none of the supplied Atlas records states any selection rules or qualifying criteria to apply to that dataset. The other files concern account/service classification, escalation profiles, and team ownership.
+
+Therefore, listing qualifying IDs, scores, and dates would require inventing criteria not present in the evidence.

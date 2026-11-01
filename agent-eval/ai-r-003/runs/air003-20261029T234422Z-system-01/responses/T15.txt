@@ -1,0 +1,8 @@
+At 20 October 2026, 12:00 UTC, VEC-RTE-310 governs VEC-API.
+
+The applicable routing configuration is:
+
+* Primary region: Region A
+* Failover region: Region B
+
+This is supported by current-policy.html, which makes VEC-RTE-310 effective through 17:59 UTC that day, and change-notice.html, which states that replacement policy VEC-RTE-411 does not activate until 18:00 UTC.

@@ -1,0 +1,9 @@
+Yes. SGM-441 may deploy on 17 October 2026 from 01:30–02:30 UTC.
+
+The current Production Change Policy (change-policy.html, ref. SGM-CHG-101) normally prohibits Saturday production deployments, but permits a specifically authorised emergency waiver.
+
+The current Emergency Change Waiver (emergency-waiver.html, ref. SGM-WVR-771) applies specifically to SGM-441 / SGM-API on 17 October 2026 and authorises 01:00–02:30 UTC. The requested 01:30–02:30 UTC window is entirely within that authorised window.
+
+The waiver requires a SEV-1 incident. The current Incident Record (incident-record.html, ref. SGM-INC-884) confirms SGM-441 affects SGM-API, has severity SEV-1, and is Active.
+
+Therefore, the Saturday prohibition is waived for this deployment within the requested window.

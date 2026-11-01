@@ -1,0 +1,7 @@
+A compliant 60-minute deployment window does exist:
+
+Thursday 15 October 2026, 22:00–23:00 UTC.
+
+This satisfies all applicable constraints simultaneously: Thursday is permitted and 22:00–23:00 falls within the policy hours of 20:00–23:00 UTC (change-policy.html, DLT-CHG-112); there is no freeze on 15 October (freeze-calendar.html, DLT-FRZ-208); staffing is available 21:00–23:00 (staffing-coverage.html, DLT-OPS-419); and the required dependency is available 22:00–23:30 (dependency-window.html, DLT-DEP-327). It also provides the required 60 uninterrupted minutes (release-requirements.html, DLT-REL-610).
+
+14 October is excluded by the production freeze, and 16 October is excluded because Friday production deployments are not permitted.

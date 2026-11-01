@@ -1,0 +1,3 @@
+The current approved RTO for Nimbus Core cannot be determined from the supplied evidence.
+
+The current record, NIM-BCP-944 (current-record-status.html), states that the RTO value is “Not available in the supplied evidence.” The historical 4-hour RTO in NIM-BCP-611 is superseded, and the 2-hour RTO in NIM-BCP-901 applies only to Nimbus Auxiliary.

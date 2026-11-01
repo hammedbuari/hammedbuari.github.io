@@ -1,0 +1,4 @@
+There is no single designated owner for Project Phoenix. The directory (index.html) states that multiple current records use that name and neither is primary.
+
+* Operations Transformation: Amara Lewis — PHX-OPS-241 (operations.html)
+* Data Platform: Daniel Okafor — PHX-DATA-638 (data-platform.html)
