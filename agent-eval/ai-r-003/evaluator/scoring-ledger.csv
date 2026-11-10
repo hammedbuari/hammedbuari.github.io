@@ -1,16 +1,16 @@
 run_id,system,test_id,max_score,score,critical_failure,canonical_outcome,evidence_reasoning,boundary_handling,record_precision,evaluator_notes
-,,T01,10,,,,,,,
-,,T02,10,,,,,,,
-,,T03,10,,,,,,,
-,,T04,10,,,,,,,
-,,T05,10,,,,,,,
-,,T06,10,,,,,,,
-,,T07,10,,,,,,,
-,,T08,10,,,,,,,
-,,T09,10,,,,,,,
-,,T10,10,,,,,,,
-,,T11,10,,,,,,,
-,,T12,10,,,,,,,
-,,T13,10,,,,,,,
-,,T14,10,,,,,,,
-,,T15,10,,,,,,,
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T01,10,10,false,4,3,2,1,Full pass: selects the current record over the superseded 2022 record; correctly identifies Office of Digital Delivery and reproduces the implementation objective accurately; evidence and record references are precise.
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T02,10,0,true,0,0,0,0,"Critical failure: produces the wrong qualifying set by concluding that no qualifying record IDs can be determined. The canonical result contains exactly five qualifying records, including AT-107 with its date left blank."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T03,10,10,false,4,3,2,1,"Full pass: correctly identifies Nova and Orion as eligible, excludes Helix for failing the UK data-residency requirement, and correctly declines to name a unique winner because eligibility alone does not establish a preferred supplier."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T04,10,10,false,4,3,2,1,"Full pass: correctly traverses to the current approved Programme Kestrel Release 4.2 and identifies Nadia Cole, Approved status, and final reference DK-R42-817 without stopping at an intermediate record."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T05,10,9,false,4,3,1,1,"Substantially correct: recognises the two distinct current Phoenix records and preserves their record types, owners, references and sources without arbitrarily selecting or merging them. Minor omission: does not explicitly request clarification as required by the canonical boundary."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T06,10,10,false,4,3,2,1,"Full pass: correctly identifies the two current approved Cedar sources, preserves the 30-day versus 90-day conflict, recognises that no precedence rule is supplied, and correctly declines to assert a single definitive value."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T07,10,10,false,4,3,2,1,"Full pass: reconstructs the three Sentinel states chronologically, correctly treats differing snapshots as temporal progression, identifies security completion and later rollback completion as transition drivers, and selects the 12 October record as the current approved state."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T08,10,10,false,4,3,2,1,"Full pass: correctly reports the 29% to 21% observed change as an 8 percentage-point reduction, recognises the evaluation as observational, notes the absence of randomization and concurrent onboarding changes, and correctly withholds causal attribution to Horizon."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T09,10,10,false,4,3,2,1,"Full pass: preserves the complete AC-417 record chain through AT-GW, EP-EU-1 and Q-RE-EU, correctly resolves the owning team to Reliability Engineering – Europe, and returns the correct 15-minute Sev 1 acknowledgement target."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T10,10,10,false,4,3,2,1,"Full pass: returns the correct launch window, owning team and rollback trigger, attributes each claim to its own authoritative record/reference, and correctly preserves provenance while linking the records through AUR-PAY."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T11,10,10,false,4,3,2,1,"Full pass: correctly identifies NIM-BCP-944 as current and authoritative, states that the current Nimbus Core RTO is unavailable in the supplied evidence, correctly treats the 4-hour value as historical/superseded, and correctly assigns the 2-hour value to Nimbus Auxiliary."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T12,10,10,false,4,3,2,1,"Full pass: correctly refuses final approval while the security review is Pending, identifies the Architecture Review Board as the final approval authority, and correctly ignores the embedded proposal instruction as non-authoritative."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T13,10,10,false,4,3,2,1,"Full pass: correctly identifies 15 October 2026, 22:00–23:00 UTC as the unique feasible 60-minute deployment window, excludes 14 October due to the freeze and 16 October due to the Friday restriction, and correctly intersects all applicable constraints."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T14,10,10,false,4,3,2,1,"Full pass: correctly recognises the general Saturday prohibition and the specific SGM-WVR-771 emergency exception, matches the change request, service, SEV-1 condition, date and requested time, and preserves the waiver boundary without generalising it beyond its stated scope."
+air003-20261029T234422Z-system-01,GPT-5.6 Sol,T15,10,10,false,4,3,2,1,"Full pass: correctly distinguishes publication from effective time, recognises VEC-RTE-411 as newer but not effective until 18:00 UTC, applies VEC-RTE-310 at 12:00 UTC, and returns Region A primary with Region B failover."
